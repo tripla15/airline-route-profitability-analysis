@@ -58,29 +58,27 @@ The project requires **5 separate standalone deliverables** (Excel, SQL, Python,
 ## Repository Structure
 
 ```
-skies-under-pressure/
+airline-route-profitability-analysis/
 ├── README.md
-├── .gitignore
 │
-├── data/
-│   ├── raw/                         # Original, unprocessed source data files
-│   │   ├── BTS_Data.xlsx
-│   │   ├── covid_19_clean_complete.csv
-│   │   └── crude-oil-price.csv
-│   │
-│   └── processed/                   # Aggregated data files matched to the quarterly grain
-│       ├── BTS_Data.xlsx
-│       └── Oil_Qtr.xlsx
+├── Collected BTS data before processing/  # Storage directory preserving original raw downloads
+│   ├── BTS Data_CSV/
+│   ├── BTS_Load_Factor/
+│   ├── BTS_OLD/
+│   ├── BTS_Fuel_Cost_ALL_Carriers.csv
+│   └── BTS_Operating_Income_ALL_Carriers.csv
 │
-├── collected_data/                  # Storage directory preserving original raw downloads
-│   └── ...
+├── Excel/                                 # Excel models and data processing sheets
+│   ├── BTS_Data.xlsx
+│   ├── Oil_Qtr.xlsx
+│   └── Processed Data/                    # Cleaned/processed datasets for analysis
+│       ├── BTS_data_processed.xlsx
+│       ├── Oil_Qtr.xlsx
+│       └── covid_19_clean_Final.xlsx
 │
-├── excel/                           # Excel Power Pivot models and sheet dashboards
-├── sql/                             # Relational schemas, DDL keys, and index scripts
-├── python/                          # Automated data transformation and charting scripts
-├── tableau/                         # Tableau relationship worksheets and workbook files
-└── powerbi/                         # Power BI data models, DAX measures, and report pages
-
+└── Raw Data/                              # Unprocessed raw global variable data
+    ├── covid_19_clean_complete.csv
+    └── crude-oil-price.csv
 ```
 
 ---
@@ -103,9 +101,10 @@ skies-under-pressure/
 
 ## How to Navigate This Project
 
-1. **Source Data:** Review `data/raw/` to inspect original files.
-2. **Aligned Metrics:** Review `data/processed/` to see how time fields were standardly formatted into quarterly periods.
-3. **Tool Workbooks:** Open the respective folder (`excel/`, `sql/`, `python/`, etc.) to run scripts or explore specific analytical workbooks.
+1. **Source Data**: Review [Raw Data/](file:///F:/Engineering%202nd%20year/Extracurriculars/1.%20DEPI/Final%20Project/Raw%20Data) to inspect raw external datasets.
+2. **Raw Collected Data**: Review [Collected BTS data before processing/](file:///F:/Engineering%202nd%20year/Extracurriculars/1.%20DEPI/Final%20Project/Collected%20BTS%20data%20before%20processing) to inspect raw aviation datasets.
+3. **Processed Data**: Review [Excel/Processed Data/](file:///F:/Engineering%202nd%20year/Extracurriculars/1.%20DEPI/Final%20Project/Excel/Processed%20Data) to see cleaned and aligned quarterly datasets.
+4. **Excel Workbooks**: Open [Excel/](file:///F:/Engineering%202nd%20year/Extracurriculars/1.%20DEPI/Final%20Project/Excel) to explore the Power Pivot data models and dashboard sheets.
 
 ---
 
