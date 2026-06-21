@@ -1,0 +1,1394 @@
+OP_PROFIT_LOSS,UNIQUE_CARRIER,UNIQUE_CARRIER_NAME,REGION,YEAR,QUARTER
+-4146599.97,AA,American Airlines Inc.,D,2020,3
+-4029704.61,AA,American Airlines Inc.,D,2020,2
+-2908378,DL,Delta Air Lines Inc.,D,2020,2
+-2628872,WN,Southwest Airlines Co.,D,2020,3
+-2375917.28,AA,American Airlines Inc.,D,2021,1
+-2216779,WN,Southwest Airlines Co.,D,2020,2
+-2198532.83,UA,United Air Lines Inc.,D,2020,2
+-2127672.91,UA,United Air Lines Inc.,D,2020,3
+-2102709.99,AA,American Airlines Inc.,D,2020,1
+-2054835.6,UA,United Air Lines Inc.,D,2021,1
+-2015723,DL,Delta Air Lines Inc.,D,2020,3
+-2003556.51,AA,American Airlines Inc.,D,2020,4
+-1974123,DL,Delta Air Lines Inc.,D,2021,1
+-1688246.82,UA,United Air Lines Inc.,D,2020,4
+-1496688,DL,Delta Air Lines Inc.,D,2020,4
+-1143922,WN,Southwest Airlines Co.,D,2020,4
+-993014,WN,Southwest Airlines Co.,D,2021,1
+-943486,AS,Alaska Airlines Inc.,D,2020,3
+-908657.28,AA,American Airlines Inc.,D,2022,1
+-888563.09,UA,United Air Lines Inc.,D,2022,1
+-856832.27,AA,American Airlines Inc.,L,2021,1
+-686961.55,B6,JetBlue Airways,D,2020,2
+-685817.92,UA,United Air Lines Inc.,D,2021,2
+-642735,AS,Alaska Airlines Inc.,D,2020,2
+-604790,AA,American Airlines Inc.,D,2011,4
+-590014.78,B6,JetBlue Airways,D,2020,3
+-589042.69,UA,United Air Lines Inc.,D,2020,1
+-587273,AS,Alaska Airlines Inc.,D,2020,4
+-554060,AS,Alaska Airlines Inc.,D,2021,1
+-536851.74,UA,United Air Lines Inc.,P,2020,2
+-518970.94,UA,United Air Lines Inc.,L,2021,1
+-497580,DL,Delta Air Lines Inc.,D,2022,1
+-490364.49,B6,JetBlue Airways,D,2020,4
+-459002.16,B6,JetBlue Airways,D,2021,1
+-449084.75,UA,United Air Lines Inc.,A,2020,3
+-438265.22,AA,American Airlines Inc.,A,2022,1
+-410253.17,AA,American Airlines Inc.,D,2021,2
+-395724,DL,Delta Air Lines Inc.,D,2021,2
+-389400.9,UA,United Air Lines Inc.,A,2020,4
+-386601,DL,Delta Air Lines Inc.,D,2020,1
+-385244.36,AA,American Airlines Inc.,A,2020,3
+-381423.16,AA,American Airlines Inc.,D,2021,4
+-373557,WN,Southwest Airlines Co.,D,2022,4
+-369229.07,AA,American Airlines Inc.,A,2021,2
+-355568,AA,American Airlines Inc.,D,2009,4
+-344064.43,UA,United Air Lines Inc.,A,2021,1
+-339593.66,UA,United Air Lines Inc.,D,2021,4
+-334565.52,UA,United Air Lines Inc.,A,2020,2
+-334120,AA,American Airlines Inc.,D,2011,1
+-332025.96,NK,Spirit Air Lines,D,2020,2
+-329283.98,UA,United Air Lines Inc.,D,2012,4
+-326933,DL,Delta Air Lines Inc.,A,2020,2
+-321505.13,UA,United Air Lines Inc.,P,2020,3
+-321400.71,AA,American Airlines Inc.,A,2021,3
+-311845.84,UA,United Air Lines Inc.,D,2014,1
+-306299.98,AA,American Airlines Inc.,A,2022,2
+-304606.82,UA,United Air Lines Inc.,L,2020,4
+-304085.1,AA,American Airlines Inc.,A,2020,1
+-294743.38,B6,JetBlue Airways,D,2022,1
+-290930.71,AA,American Airlines Inc.,L,2022,1
+-290611.39,UA,United Air Lines Inc.,L,2021,2
+-289992,DL,Delta Air Lines Inc.,L,2021,1
+-288207,DL,Delta Air Lines Inc.,D,2014,4
+-283434.22,UA,United Air Lines Inc.,L,2022,1
+-272246.35,UA,United Air Lines Inc.,P,2021,1
+-267513.28,NK,Spirit Air Lines,D,2022,4
+-254138.46,AA,American Airlines Inc.,A,2021,4
+-249327.96,AA,American Airlines Inc.,L,2020,4
+-249135,AA,American Airlines Inc.,D,2010,1
+-248331.44,NK,Spirit Air Lines,D,2021,1
+-246605.37,UA,United Air Lines Inc.,D,2011,4
+-241310,AS,Alaska Airlines Inc.,D,2022,1
+-240986.02,AA,American Airlines Inc.,L,2020,3
+-239530,AA,American Airlines Inc.,D,2009,3
+-238927.53,AA,American Airlines Inc.,A,2020,2
+-238126.06,NK,Spirit Air Lines,D,2020,3
+-236419,AS,Alaska Airlines Inc.,D,2020,1
+-231833,DL,Delta Air Lines Inc.,A,2009,1
+-229041,DL,Delta Air Lines Inc.,L,2014,4
+-228388.77,HA,Hawaiian Airlines Inc.,D,2020,3
+-226709,DL,Delta Air Lines Inc.,P,2020,2
+-223383,DL,Delta Air Lines Inc.,A,2011,1
+-223081.77,HA,Hawaiian Airlines Inc.,D,2020,2
+-222557,AA,American Airlines Inc.,D,2009,1
+-220417.8,UA,United Air Lines Inc.,D,2012,1
+-210264.14,UA,United Air Lines Inc.,L,2020,3
+-208037.54,AA,American Airlines Inc.,A,2022,4
+-204706.55,UA,United Air Lines Inc.,A,2021,2
+-204675.93,UA,United Air Lines Inc.,P,2020,4
+-203287.59,F9,Frontier Airlines Inc.,D,2021,1
+-199409.37,HA,Hawaiian Airlines Inc.,D,2021,1
+-188723.72,UA,United Air Lines Inc.,P,2020,1
+-182057.84,G4,Allegiant Air,D,2020,2
+-180805.17,NK,Spirit Air Lines,D,2022,1
+-179163.18,AA,American Airlines Inc.,L,2020,2
+-178119.96,HA,Hawaiian Airlines Inc.,D,2020,4
+-177991,AA,American Airlines Inc.,A,2011,4
+-175770.56,AA,American Airlines Inc.,L,2021,2
+-175349.72,F9,Frontier Airlines Inc.,D,2020,4
+-172456.35,AA,American Airlines Inc.,P,2020,3
+-170898,UA,United Air Lines Inc.,D,2013,1
+-169515.46,F9,Frontier Airlines Inc.,D,2020,3
+-168353.77,B6,JetBlue Airways,D,2021,2
+-167696.65,UA,United Air Lines Inc.,P,2021,2
+-167434,AA,American Airlines Inc.,A,2011,2
+-161533,AA,American Airlines Inc.,D,2012,3
+-161404.88,UA,United Air Lines Inc.,A,2022,1
+-160386,AA,American Airlines Inc.,D,2009,2
+-158359,DL,Delta Air Lines Inc.,A,2012,2
+-158198,DL,Delta Air Lines Inc.,A,2021,1
+-157436,AA,American Airlines Inc.,D,2012,1
+-156492,DL,Delta Air Lines Inc.,A,2009,2
+-156223.37,B6,JetBlue Airways,D,2020,1
+-155971.44,UA,United Air Lines Inc.,D,2012,3
+-155571.14,UA,United Air Lines Inc.,L,2020,2
+-152773,DL,Delta Air Lines Inc.,A,2020,3
+-148487.89,AA,American Airlines Inc.,A,2020,4
+-145830,WN,Southwest Airlines Co.,D,2022,1
+-144735.62,NK,Spirit Air Lines,D,2020,4
+-140271,DL,Delta Air Lines Inc.,P,2014,4
+-138239,DL,Delta Air Lines Inc.,P,2012,2
+-137161.05,AA,American Airlines Inc.,A,2021,1
+-135608.01,UA,United Air Lines Inc.,A,2012,1
+-134184,UA,United Air Lines Inc.,D,2009,1
+-133056,DL,Delta Air Lines Inc.,A,2012,1
+-129453.58,AA,American Airlines Inc.,P,2018,4
+-129329.33,HA,Hawaiian Airlines Inc.,D,2022,1
+-128484.54,AA,American Airlines Inc.,P,2018,1
+-126213,WN,Southwest Airlines Co.,D,2021,2
+-122291.71,B6,JetBlue Airways,L,2021,1
+-121142,AA,American Airlines Inc.,A,2011,3
+-119548.51,AA,American Airlines Inc.,P,2017,4
+-118206.44,AA,American Airlines Inc.,P,2019,4
+-114842,DL,Delta Air Lines Inc.,A,2014,4
+-114807.95,UA,United Air Lines Inc.,L,2022,2
+-114475.71,AA,American Airlines Inc.,L,2021,4
+-114295,DL,Delta Air Lines Inc.,A,2020,4
+-114002.19,AA,American Airlines Inc.,P,2020,1
+-113566.33,F9,Frontier Airlines Inc.,D,2020,1
+-113499.15,G4,Allegiant Air,D,2020,3
+-112969,DL,Delta Air Lines Inc.,A,2009,4
+-110350,AA,American Airlines Inc.,P,2011,2
+-109630,AA,American Airlines Inc.,A,2010,4
+-108357.65,F9,Frontier Airlines Inc.,D,2022,1
+-108148.62,UA,United Air Lines Inc.,A,2020,1
+-106383,WN,Southwest Airlines Co.,D,2020,1
+-102208.35,UA,United Air Lines Inc.,P,2017,1
+-101165,AA,American Airlines Inc.,P,2011,3
+-100574.57,AA,American Airlines Inc.,P,2017,1
+-98725,DL,Delta Air Lines Inc.,A,2010,1
+-97120,DL,Delta Air Lines Inc.,A,2011,2
+-95576,AA,American Airlines Inc.,A,2009,1
+-95238.61,B6,JetBlue Airways,L,2020,3
+-93340.74,AA,American Airlines Inc.,P,2019,2
+-92599,DL,Delta Air Lines Inc.,L,2011,1
+-90556.51,UA,United Air Lines Inc.,L,2021,4
+-89835.61,AA,American Airlines Inc.,P,2019,3
+-89518.95,AA,American Airlines Inc.,A,2019,1
+-89238.14,AA,American Airlines Inc.,A,2011,1
+-89159.23,AA,American Airlines Inc.,P,2018,3
+-88580.78,AA,American Airlines Inc.,P,2018,2
+-87288.14,UA,United Air Lines Inc.,A,2012,4
+-86810,B6,JetBlue Airways,D,2021,4
+-85764.05,UA,United Air Lines Inc.,L,2020,1
+-85324.78,HA,Hawaiian Airlines Inc.,D,2021,4
+-85064,DL,Delta Air Lines Inc.,L,2022,1
+-84928,DL,Delta Air Lines Inc.,L,2020,4
+-83894.23,AA,American Airlines Inc.,A,2019,4
+-80715.9,HA,Hawaiian Airlines Inc.,D,2020,1
+-80572.1,F9,Frontier Airlines Inc.,D,2020,2
+-80411,AA,American Airlines Inc.,A,2012,1
+-79815,AA,American Airlines Inc.,P,2011,4
+-79370,DL,Delta Air Lines Inc.,A,2022,1
+-79254.49,AA,American Airlines Inc.,P,2016,4
+-79097.15,AA,American Airlines Inc.,P,2019,1
+-78662.88,UA,United Air Lines Inc.,P,2019,4
+-78649.43,UA,United Air Lines Inc.,L,2021,3
+-77918,AA,American Airlines Inc.,A,2010,1
+-77823.04,AA,American Airlines Inc.,A,2017,4
+-75868.63,AA,American Airlines Inc.,A,2018,1
+-75846.76,UA,United Air Lines Inc.,D,2011,1
+-75375,DL,Delta Air Lines Inc.,A,2009,3
+-74846.23,B6,JetBlue Airways,L,2022,1
+-74731.03,G4,Allegiant Air,D,2021,1
+-74556,DL,Delta Air Lines Inc.,P,2020,3
+-74316,AA,American Airlines Inc.,P,2013,1
+-73216,AA,American Airlines Inc.,P,2013,4
+-72689.8,HA,Hawaiian Airlines Inc.,D,2011,2
+-72598,DL,Delta Air Lines Inc.,P,2021,1
+-72352.68,AA,American Airlines Inc.,A,2016,4
+-70364,AA,American Airlines Inc.,P,2014,4
+-70022.9,AA,American Airlines Inc.,P,2017,2
+-69665.56,AA,American Airlines Inc.,P,2021,1
+-68968,AA,American Airlines Inc.,A,2009,4
+-68101.88,F9,Frontier Airlines Inc.,D,2011,1
+-63538.75,F9,Frontier Airlines Inc.,D,2021,4
+-62884.48,NK,Spirit Air Lines,D,2021,3
+-62606,DL,Delta Air Lines Inc.,L,2012,2
+-62381.25,AA,American Airlines Inc.,A,2022,3
+-62092,AA,American Airlines Inc.,D,2012,4
+-61758,AA,American Airlines Inc.,P,2012,1
+-61715.98,UA,United Air Lines Inc.,A,2021,3
+-61230.31,F9,Frontier Airlines Inc.,D,2021,2
+-60649.35,AA,American Airlines Inc.,P,2021,2
+-60311.64,UA,United Air Lines Inc.,P,2018,1
+-59666,DL,Delta Air Lines Inc.,L,2014,1
+-59457,AS,Alaska Airlines Inc.,L,2020,4
+-59306,DL,Delta Air Lines Inc.,A,2021,2
+-59137,DL,Delta Air Lines Inc.,L,2010,1
+-58989.57,B6,JetBlue Airways,L,2022,2
+-58275.24,B6,JetBlue Airways,D,2021,3
+-57551.76,HA,Hawaiian Airlines Inc.,D,2021,2
+-57322.67,AA,American Airlines Inc.,P,2022,1
+-57170,AS,Alaska Airlines Inc.,L,2021,1
+-56882,UA,United Air Lines Inc.,A,2013,1
+-55905.35,AA,American Airlines Inc.,P,2017,3
+-55482,DL,Delta Air Lines Inc.,L,2020,2
+-54105.62,B6,JetBlue Airways,D,2022,2
+-53903.21,UA,United Air Lines Inc.,P,2016,1
+-53828,DL,Delta Air Lines Inc.,L,2013,4
+-52482.74,NK,Spirit Air Lines,D,2020,1
+-52455,AA,American Airlines Inc.,P,2012,4
+-52440.33,NK,Spirit Air Lines,D,2021,4
+-52378.35,AA,American Airlines Inc.,D,2021,3
+-50963,DL,Delta Air Lines Inc.,L,2009,1
+-50237,DL,Delta Air Lines Inc.,A,2010,4
+-49950,WN,Southwest Airlines Co.,D,2009,1
+-49767,AA,American Airlines Inc.,P,2013,2
+-49333,DL,Delta Air Lines Inc.,L,2020,3
+-48563,DL,Delta Air Lines Inc.,L,2014,3
+-48083.49,UA,United Air Lines Inc.,P,2012,4
+-47769.85,F9,Frontier Airlines Inc.,D,2011,2
+-47627,AA,American Airlines Inc.,P,2013,3
+-47526,AA,American Airlines Inc.,D,2013,1
+-46325.8,AA,American Airlines Inc.,A,2018,4
+-44766,AA,American Airlines Inc.,A,2012,4
+-43488,AA,American Airlines Inc.,A,2009,2
+-43457.93,AA,American Airlines Inc.,A,2017,1
+-42828,DL,Delta Air Lines Inc.,L,2021,2
+-42620,DL,Delta Air Lines Inc.,L,2011,2
+-42618,DL,Delta Air Lines Inc.,D,2009,1
+-42079,AS,Alaska Airlines Inc.,L,2020,3
+-41833.59,UA,United Air Lines Inc.,P,2022,1
+-41423,UA,United Air Lines Inc.,D,2010,4
+-41418.75,AA,American Airlines Inc.,P,2022,4
+-40996.85,B6,JetBlue Airways,L,2021,2
+-40966,DL,Delta Air Lines Inc.,P,2020,4
+-40965.13,B6,JetBlue Airways,D,2014,1
+-39307,DL,Delta Air Lines Inc.,P,2011,2
+-39292.71,F9,Frontier Airlines Inc.,D,2013,1
+-38909,AA,American Airlines Inc.,P,2014,1
+-38858,AA,American Airlines Inc.,P,2012,2
+-38666.75,NK,Spirit Air Lines,D,2022,2
+-38442,UA,United Air Lines Inc.,D,2009,4
+-38216.18,NK,Spirit Air Lines,L,2022,4
+-37290.77,AA,American Airlines Inc.,P,2020,4
+-36855.21,HA,Hawaiian Airlines Inc.,D,2022,4
+-36700,DL,Delta Air Lines Inc.,P,2021,2
+-36424,UA,United Air Lines Inc.,D,2010,1
+-36354.31,F9,Frontier Airlines Inc.,L,2022,1
+-36222.85,HA,Hawaiian Airlines Inc.,P,2013,4
+-35842,DL,Delta Air Lines Inc.,L,2012,1
+-35693.01,NK,Spirit Air Lines,D,2018,1
+-35290,DL,Delta Air Lines Inc.,L,2009,2
+-34590.66,B6,JetBlue Airways,L,2021,4
+-33863,AS,Alaska Airlines Inc.,D,2021,2
+-33660,AA,American Airlines Inc.,L,2009,2
+-32257,AS,Alaska Airlines Inc.,L,2010,1
+-32194.41,AA,American Airlines Inc.,P,2021,3
+-31952.35,NK,Spirit Air Lines,L,2021,1
+-31851,AS,Alaska Airlines Inc.,L,2022,1
+-31602,AA,American Airlines Inc.,P,2011,1
+-31525.1,F9,Frontier Airlines Inc.,D,2018,4
+-31513.05,NK,Spirit Air Lines,D,2022,3
+-31244,AA,American Airlines Inc.,P,2014,2
+-30662.87,NK,Spirit Air Lines,L,2022,1
+-29566.13,HA,Hawaiian Airlines Inc.,P,2014,1
+-29362,WN,Southwest Airlines Co.,L,2020,3
+-29039,DL,Delta Air Lines Inc.,L,2009,4
+-28911.22,AA,American Airlines Inc.,P,2021,4
+-28882,AA,American Airlines Inc.,P,2009,4
+-28806,DL,Delta Air Lines Inc.,L,2014,2
+-28628,WN,Southwest Airlines Co.,D,2021,3
+-28459.23,AA,American Airlines Inc.,P,2022,2
+-28410.63,B6,JetBlue Airways,D,2022,3
+-28195.67,G4,Allegiant Air,D,2020,4
+-27787.39,F9,Frontier Airlines Inc.,D,2021,3
+-27389.18,AA,American Airlines Inc.,P,2016,3
+-27356,AA,American Airlines Inc.,P,2010,1
+-27312,AA,American Airlines Inc.,A,2013,1
+-27084.03,B6,JetBlue Airways,L,2020,2
+-26474.02,UA,United Air Lines Inc.,P,2018,4
+-26333.16,F9,Frontier Airlines Inc.,D,2012,1
+-26156,AA,American Airlines Inc.,L,2010,2
+-25788,DL,Delta Air Lines Inc.,P,2011,1
+-25392,UA,United Air Lines Inc.,P,2013,1
+-25382,DL,Delta Air Lines Inc.,L,2015,4
+-24764.12,HA,Hawaiian Airlines Inc.,P,2020,4
+-24548,WN,Southwest Airlines Co.,L,2020,4
+-24428.39,UA,United Air Lines Inc.,P,2016,4
+-24137,WN,Southwest Airlines Co.,L,2021,1
+-23933.55,HA,Hawaiian Airlines Inc.,P,2014,2
+-23410,AS,Alaska Airlines Inc.,L,2020,2
+-22775,DL,Delta Air Lines Inc.,L,2013,2
+-22458,AA,American Airlines Inc.,P,2014,3
+-22100,DL,Delta Air Lines Inc.,P,2022,1
+-21874,AA,American Airlines Inc.,P,2009,2
+-21594.31,F9,Frontier Airlines Inc.,L,2021,4
+-21590.09,HA,Hawaiian Airlines Inc.,P,2020,3
+-21381.31,HA,Hawaiian Airlines Inc.,P,2013,2
+-21288.55,F9,Frontier Airlines Inc.,D,2010,1
+-21229,AA,American Airlines Inc.,P,2012,3
+-20933.94,AA,American Airlines Inc.,L,2021,3
+-20930,AA,American Airlines Inc.,P,2010,4
+-20710.02,F9,Frontier Airlines Inc.,D,2011,4
+-20673.94,HA,Hawaiian Airlines Inc.,P,2022,3
+-20484,AS,Alaska Airlines Inc.,L,2020,1
+-20284,AA,American Airlines Inc.,P,2009,3
+-20283.31,F9,Frontier Airlines Inc.,D,2010,4
+-20058.96,NK,Spirit Air Lines,D,2021,2
+-19590.39,HA,Hawaiian Airlines Inc.,P,2021,1
+-18740.35,HA,Hawaiian Airlines Inc.,P,2021,3
+-18429.5,HA,Hawaiian Airlines Inc.,P,2013,1
+-18418.7,F9,Frontier Airlines Inc.,L,2022,2
+-18001,AA,American Airlines Inc.,D,2011,3
+-17888.67,NK,Spirit Air Lines,L,2020,4
+-17522,DL,Delta Air Lines Inc.,L,2010,2
+-17157.28,HA,Hawaiian Airlines Inc.,P,2018,1
+-17046.24,HA,Hawaiian Airlines Inc.,P,2017,1
+-16681.15,UA,United Air Lines Inc.,P,2017,4
+-16417.83,HA,Hawaiian Airlines Inc.,P,2022,1
+-15815.72,HA,Hawaiian Airlines Inc.,D,2022,2
+-15602,DL,Delta Air Lines Inc.,P,2009,2
+-15437,DL,Delta Air Lines Inc.,P,2009,3
+-15038.89,AA,American Airlines Inc.,L,2020,1
+-14605.53,HA,Hawaiian Airlines Inc.,D,2021,3
+-14307,UA,United Air Lines Inc.,L,2009,3
+-14120,AA,American Airlines Inc.,A,2009,3
+-13926.49,UA,United Air Lines Inc.,A,2014,1
+-13621.52,HA,Hawaiian Airlines Inc.,P,2016,4
+-13119.2,F9,Frontier Airlines Inc.,L,2021,1
+-12771.51,HA,Hawaiian Airlines Inc.,P,2016,2
+-12432.27,F9,Frontier Airlines Inc.,D,2009,4
+-12280,AA,American Airlines Inc.,P,2009,1
+-12125,UA,United Air Lines Inc.,L,2009,1
+-12006.36,NK,Spirit Air Lines,L,2020,3
+-11984,WN,Southwest Airlines Co.,L,2022,4
+-11921,UA,United Air Lines Inc.,L,2009,2
+-11906.47,UA,United Air Lines Inc.,P,2014,1
+-11836.1,UA,United Air Lines Inc.,P,2017,2
+-11670,DL,Delta Air Lines Inc.,P,2009,1
+-11499.5,HA,Hawaiian Airlines Inc.,D,2011,1
+-11447.48,HA,Hawaiian Airlines Inc.,P,2022,2
+-11342.5,AA,American Airlines Inc.,P,2020,2
+-10933.71,UA,United Air Lines Inc.,L,2016,2
+-10273.08,UA,United Air Lines Inc.,P,2021,4
+-10268.85,NK,Spirit Air Lines,L,2020,2
+-10110.98,UA,United Air Lines Inc.,L,2018,1
+-9831,UA,United Air Lines Inc.,P,2009,3
+-9495.78,HA,Hawaiian Airlines Inc.,P,2021,2
+-9479.71,NK,Spirit Air Lines,L,2021,3
+-9109.35,NK,Spirit Air Lines,L,2021,4
+-8649,AS,Alaska Airlines Inc.,L,2021,2
+-8197.42,F9,Frontier Airlines Inc.,L,2020,4
+-7959.47,HA,Hawaiian Airlines Inc.,P,2009,3
+-7894,DL,Delta Air Lines Inc.,L,2009,3
+-7890,AS,Alaska Airlines Inc.,L,2021,4
+-7709.48,UA,United Air Lines Inc.,L,2017,1
+-7624,UA,United Air Lines Inc.,L,2010,4
+-7018.78,UA,United Air Lines Inc.,P,2016,2
+-6826.96,HA,Hawaiian Airlines Inc.,P,2017,4
+-6712,UA,United Air Lines Inc.,L,2013,1
+-6663.55,NK,Spirit Air Lines,L,2022,2
+-6410.36,HA,Hawaiian Airlines Inc.,P,2016,1
+-6297,AS,Alaska Airlines Inc.,L,2022,4
+-5921.88,HA,Hawaiian Airlines Inc.,P,2009,2
+-5861.94,HA,Hawaiian Airlines Inc.,P,2009,1
+-5721.64,HA,Hawaiian Airlines Inc.,P,2013,3
+-5597,AS,Alaska Airlines Inc.,L,2018,1
+-5564.17,UA,United Air Lines Inc.,L,2011,1
+-5509.24,NK,Spirit Air Lines,L,2020,1
+-5094,WN,Southwest Airlines Co.,L,2022,1
+-4899,UA,United Air Lines Inc.,P,2009,1
+-4876.15,NK,Spirit Air Lines,L,2022,3
+-4768,AS,Alaska Airlines Inc.,L,2012,1
+-4619.96,HA,Hawaiian Airlines Inc.,P,2018,2
+-4538.98,F9,Frontier Airlines Inc.,L,2017,1
+-4317.93,HA,Hawaiian Airlines Inc.,P,2010,1
+-4185,AS,Alaska Airlines Inc.,L,2019,1
+-4178,AS,Alaska Airlines Inc.,L,2011,1
+-4115,WN,Southwest Airlines Co.,L,2021,2
+-4030,AS,Alaska Airlines Inc.,L,2009,2
+-3717,DL,Delta Air Lines Inc.,L,2010,4
+-3609.75,F9,Frontier Airlines Inc.,L,2012,3
+-3370,AS,Alaska Airlines Inc.,L,2022,2
+-3143,WN,Southwest Airlines Co.,L,2020,1
+-3103.74,NK,Spirit Air Lines,L,2018,1
+-3033.86,UA,United Air Lines Inc.,L,2013,2
+-3016.06,UA,United Air Lines Inc.,L,2014,1
+-2898.06,F9,Frontier Airlines Inc.,L,2021,2
+-2854.89,F9,Frontier Airlines Inc.,D,2011,3
+-2785.76,F9,Frontier Airlines Inc.,L,2018,3
+-2677,AS,Alaska Airlines Inc.,L,2009,4
+-2419,DL,Delta Air Lines Inc.,L,2015,1
+-2365.74,F9,Frontier Airlines Inc.,L,2020,3
+-2358,UA,United Air Lines Inc.,L,2010,1
+-2303.31,NK,Spirit Air Lines,L,2021,2
+-2054.62,HA,Hawaiian Airlines Inc.,P,2015,2
+-1959.25,UA,United Air Lines Inc.,L,2012,1
+-1925.33,AA,American Airlines Inc.,P,2022,3
+-1808.72,F9,Frontier Airlines Inc.,L,2016,1
+-1749,NK,Spirit Air Lines,D,2010,2
+-1321.88,F9,Frontier Airlines Inc.,L,2018,4
+-1172,AS,Alaska Airlines Inc.,L,2011,4
+-1154.41,F9,Frontier Airlines Inc.,L,2021,3
+-1104.18,F9,Frontier Airlines Inc.,L,2018,2
+-965,WN,Southwest Airlines Co.,L,2021,3
+-937.54,F9,Frontier Airlines Inc.,D,2012,4
+-885,AS,Alaska Airlines Inc.,L,2013,1
+-884,WN,Southwest Airlines Co.,L,2020,2
+-755,UA,United Air Lines Inc.,P,2019,1
+-623.69,F9,Frontier Airlines Inc.,D,2010,2
+-599.95,F9,Frontier Airlines Inc.,L,2010,1
+-588,UA,United Air Lines Inc.,L,2009,4
+-566,AS,Alaska Airlines Inc.,L,2012,4
+-423,NK,Spirit Air Lines,L,2010,2
+-261,AS,Alaska Airlines Inc.,L,2009,3
+-250.31,UA,United Air Lines Inc.,L,2018,2
+-249.13,F9,Frontier Airlines Inc.,L,2016,4
+-157.1,F9,Frontier Airlines Inc.,L,2009,4
+-125.9,F9,Frontier Airlines Inc.,L,2011,4
+-121.51,B6,JetBlue Airways,A,2021,4
+-25,AS,Alaska Airlines Inc.,L,2018,4
+19.4,F9,Frontier Airlines Inc.,L,2020,2
+66.03,HA,Hawaiian Airlines Inc.,P,2009,4
+124.51,B6,JetBlue Airways,D,2011,1
+414.23,B6,JetBlue Airways,A,2022,1
+430,AS,Alaska Airlines Inc.,L,2022,3
+456.99,F9,Frontier Airlines Inc.,L,2010,2
+496.92,F9,Frontier Airlines Inc.,L,2010,3
+499,WN,Southwest Airlines Co.,L,2012,3
+508,AS,Alaska Airlines Inc.,L,2013,4
+537.5,F9,Frontier Airlines Inc.,L,2016,2
+575.76,F9,Frontier Airlines Inc.,L,2017,2
+623.23,HA,Hawaiian Airlines Inc.,P,2020,2
+630.48,F9,Frontier Airlines Inc.,L,2013,4
+778.32,HA,Hawaiian Airlines Inc.,P,2019,1
+864,WN,Southwest Airlines Co.,L,2013,1
+873,WN,Southwest Airlines Co.,L,2012,4
+890.16,B6,JetBlue Airways,A,2021,3
+925,AS,Alaska Airlines Inc.,L,2010,2
+1036.27,F9,Frontier Airlines Inc.,L,2009,3
+1077.08,F9,Frontier Airlines Inc.,L,2022,4
+1125.59,F9,Frontier Airlines Inc.,L,2016,3
+1136,UA,United Air Lines Inc.,P,2009,2
+1438.77,B6,JetBlue Airways,L,2020,4
+1530.16,F9,Frontier Airlines Inc.,L,2022,3
+1667,DL,Delta Air Lines Inc.,P,2012,1
+1724,AS,Alaska Airlines Inc.,L,2011,2
+1816.29,F9,Frontier Airlines Inc.,L,2015,4
+1840.97,F9,Frontier Airlines Inc.,D,2017,1
+1981,DL,Delta Air Lines Inc.,P,2021,4
+2095,DL,Delta Air Lines Inc.,L,2013,3
+2247,AS,Alaska Airlines Inc.,L,2009,1
+2264.29,HA,Hawaiian Airlines Inc.,P,2010,4
+2387,DL,Delta Air Lines Inc.,L,2011,3
+2472.7,F9,Frontier Airlines Inc.,L,2009,2
+2479.72,F9,Frontier Airlines Inc.,L,2018,1
+2482.75,F9,Frontier Airlines Inc.,D,2013,2
+2583,AS,Alaska Airlines Inc.,L,2014,1
+2610.66,HA,Hawaiian Airlines Inc.,P,2010,2
+2852.8,F9,Frontier Airlines Inc.,L,2014,4
+3026.17,HA,Hawaiian Airlines Inc.,P,2015,1
+3070.17,F9,Frontier Airlines Inc.,L,2013,3
+3080,WN,Southwest Airlines Co.,L,2014,1
+3210.16,F9,Frontier Airlines Inc.,L,2013,2
+3298,AS,Alaska Airlines Inc.,L,2021,3
+3314.95,F9,Frontier Airlines Inc.,L,2014,3
+3539,NK,Spirit Air Lines,L,2009,4
+3620.56,HA,Hawaiian Airlines Inc.,P,2015,4
+3656.05,HA,Hawaiian Airlines Inc.,P,2011,2
+3774.75,F9,Frontier Airlines Inc.,L,2012,4
+3927.7,NK,Spirit Air Lines,L,2012,4
+4011,WN,Southwest Airlines Co.,L,2012,2
+4061.87,HA,Hawaiian Airlines Inc.,P,2017,2
+4203,WN,Southwest Airlines Co.,L,2013,4
+4307.13,NK,Spirit Air Lines,L,2010,4
+4321.17,B6,JetBlue Airways,L,2009,2
+4353.15,F9,Frontier Airlines Inc.,L,2010,4
+4364.64,F9,Frontier Airlines Inc.,D,2013,4
+4564,AS,Alaska Airlines Inc.,D,2009,1
+4633.61,NK,Spirit Air Lines,L,2017,1
+4704,NK,Spirit Air Lines,L,2010,1
+4742.41,F9,Frontier Airlines Inc.,L,2012,2
+4787,NK,Spirit Air Lines,L,2010,3
+4794,AS,Alaska Airlines Inc.,L,2012,2
+4835,WN,Southwest Airlines Co.,L,2013,3
+4850.2,HA,Hawaiian Airlines Inc.,P,2011,4
+4907.84,F9,Frontier Airlines Inc.,L,2014,2
+5115.75,HA,Hawaiian Airlines Inc.,P,2012,4
+5127.24,NK,Spirit Air Lines,L,2011,1
+5132,AS,Alaska Airlines Inc.,L,2015,4
+5171,DL,Delta Air Lines Inc.,P,2009,4
+5206,AA,American Airlines Inc.,P,2010,2
+5286.26,F9,Frontier Airlines Inc.,L,2011,3
+5289.27,NK,Spirit Air Lines,L,2016,4
+5304,WN,Southwest Airlines Co.,L,2013,2
+5361.36,NK,Spirit Air Lines,L,2011,4
+5438.19,NK,Spirit Air Lines,L,2012,1
+5460,AS,Alaska Airlines Inc.,L,2013,2
+5542.27,F9,Frontier Airlines Inc.,L,2017,4
+5551,AS,Alaska Airlines Inc.,L,2017,4
+5580,AS,Alaska Airlines Inc.,L,2019,4
+5582.72,F9,Frontier Airlines Inc.,L,2009,1
+5649,WN,Southwest Airlines Co.,L,2021,4
+5680,NK,Spirit Air Lines,L,2009,3
+5683.26,HA,Hawaiian Airlines Inc.,D,2012,2
+5789.05,B6,JetBlue Airways,A,2022,2
+5812.67,NK,Spirit Air Lines,L,2011,2
+5931,AS,Alaska Airlines Inc.,L,2013,3
+6047.04,HA,Hawaiian Airlines Inc.,D,2013,1
+6106,NK,Spirit Air Lines,L,2009,1
+6109.28,NK,Spirit Air Lines,L,2013,1
+6170.76,F9,Frontier Airlines Inc.,D,2014,1
+6291.74,F9,Frontier Airlines Inc.,L,2012,1
+6299,AS,Alaska Airlines Inc.,L,2010,3
+6306,AS,Alaska Airlines Inc.,L,2011,3
+6415,NK,Spirit Air Lines,L,2014,1
+6440,WN,Southwest Airlines Co.,L,2014,3
+6463.25,HA,Hawaiian Airlines Inc.,D,2012,4
+6556,AS,Alaska Airlines Inc.,L,2017,1
+6574.21,NK,Spirit Air Lines,L,2017,4
+6806.04,NK,Spirit Air Lines,L,2013,4
+6852,DL,Delta Air Lines Inc.,L,2011,4
+6906.6,HA,Hawaiian Airlines Inc.,P,2010,3
+6964.8,HA,Hawaiian Airlines Inc.,D,2012,1
+6970,AS,Alaska Airlines Inc.,L,2012,3
+6979,WN,Southwest Airlines Co.,L,2014,4
+7098,AS,Alaska Airlines Inc.,L,2014,4
+7207.53,HA,Hawaiian Airlines Inc.,P,2012,1
+7237,DL,Delta Air Lines Inc.,L,2010,3
+7278.23,NK,Spirit Air Lines,L,2012,3
+7384,AS,Alaska Airlines Inc.,L,2018,3
+7437,UA,United Air Lines Inc.,L,2010,2
+7443.17,G4,Allegiant Air,D,2022,3
+7595,NK,Spirit Air Lines,L,2009,2
+7629,AS,Alaska Airlines Inc.,L,2018,2
+7663.4,NK,Spirit Air Lines,L,2012,2
+7703.65,NK,Spirit Air Lines,L,2017,3
+7708.22,NK,Spirit Air Lines,L,2011,3
+7738.79,B6,JetBlue Airways,L,2009,1
+7881,AS,Alaska Airlines Inc.,L,2014,2
+7901,AS,Alaska Airlines Inc.,L,2019,3
+7919.64,HA,Hawaiian Airlines Inc.,P,2011,1
+8010.86,NK,Spirit Air Lines,L,2013,2
+8052.12,F9,Frontier Airlines Inc.,L,2015,3
+8088,DL,Delta Air Lines Inc.,P,2020,1
+8097.78,NK,Spirit Air Lines,L,2014,4
+8128,DL,Delta Air Lines Inc.,P,2021,3
+8157.22,F9,Frontier Airlines Inc.,L,2017,3
+8456,AS,Alaska Airlines Inc.,L,2014,3
+8610.45,NK,Spirit Air Lines,L,2016,1
+8769.08,B6,JetBlue Airways,D,2013,1
+8867,AS,Alaska Airlines Inc.,L,2019,2
+9119.65,UA,United Air Lines Inc.,L,2012,4
+9247.06,HA,Hawaiian Airlines Inc.,P,2019,2
+9345,AS,Alaska Airlines Inc.,L,2015,1
+9635.81,F9,Frontier Airlines Inc.,L,2019,4
+9880,AA,American Airlines Inc.,P,2010,3
+9924,WN,Southwest Airlines Co.,L,2014,2
+9987.96,NK,Spirit Air Lines,L,2015,4
+10221,AS,Alaska Airlines Inc.,L,2016,4
+10291,AA,American Airlines Inc.,A,2012,2
+10378.86,NK,Spirit Air Lines,L,2015,1
+10481.57,UA,United Air Lines Inc.,L,2011,2
+10536,WN,Southwest Airlines Co.,L,2015,1
+10536.53,NK,Spirit Air Lines,L,2019,1
+10620.28,NK,Spirit Air Lines,L,2014,3
+10635.07,NK,Spirit Air Lines,L,2018,2
+10728.79,F9,Frontier Airlines Inc.,D,2012,2
+10733.51,UA,United Air Lines Inc.,L,2018,4
+10758.39,NK,Spirit Air Lines,L,2013,3
+10825.33,G4,Allegiant Air,D,2022,1
+10944.59,G4,Allegiant Air,D,2011,3
+10947,AS,Alaska Airlines Inc.,L,2010,4
+11175.9,F9,Frontier Airlines Inc.,L,2011,1
+11222.92,NK,Spirit Air Lines,L,2016,3
+11283.42,HA,Hawaiian Airlines Inc.,D,2010,1
+11330.65,NK,Spirit Air Lines,L,2016,2
+11415.31,NK,Spirit Air Lines,L,2017,2
+11458.7,F9,Frontier Airlines Inc.,L,2014,1
+11525.2,B6,JetBlue Airways,L,2009,3
+11625.16,F9,Frontier Airlines Inc.,L,2011,2
+11666.54,HA,Hawaiian Airlines Inc.,P,2019,4
+11673,AS,Alaska Airlines Inc.,L,2015,3
+11864.54,NK,Spirit Air Lines,L,2015,2
+12031.1,G4,Allegiant Air,D,2014,4
+12083,AA,American Airlines Inc.,A,2014,1
+12196.72,NK,Spirit Air Lines,L,2014,2
+12317.52,F9,Frontier Airlines Inc.,L,2013,1
+12349.91,UA,United Air Lines Inc.,P,2014,4
+12481.01,UA,United Air Lines Inc.,D,2021,3
+12570,WN,Southwest Airlines Co.,L,2016,3
+12574.84,F9,Frontier Airlines Inc.,L,2015,2
+12651,AS,Alaska Airlines Inc.,L,2015,2
+12940.46,F9,Frontier Airlines Inc.,L,2019,3
+12960.89,NK,Spirit Air Lines,L,2019,4
+13047,DL,Delta Air Lines Inc.,A,2011,4
+13270.56,F9,Frontier Airlines Inc.,L,2015,1
+13356,AS,Alaska Airlines Inc.,L,2016,3
+13405,AS,Alaska Airlines Inc.,L,2016,1
+13419.86,B6,JetBlue Airways,D,2010,1
+13641.79,NK,Spirit Air Lines,L,2018,3
+13861.56,F9,Frontier Airlines Inc.,L,2019,2
+13884,WN,Southwest Airlines Co.,L,2017,1
+13964.37,NK,Spirit Air Lines,L,2019,3
+14055.49,F9,Frontier Airlines Inc.,L,2019,1
+14177.08,G4,Allegiant Air,D,2011,2
+14312,WN,Southwest Airlines Co.,L,2022,3
+14482,G4,Allegiant Air,D,2010,3
+14530.18,F9,Frontier Airlines Inc.,L,2020,1
+14727,AA,American Airlines Inc.,A,2012,3
+15072,AS,Alaska Airlines Inc.,L,2017,3
+15103.21,NK,Spirit Air Lines,L,2018,4
+15163,G4,Allegiant Air,D,2009,4
+15309,WN,Southwest Airlines Co.,L,2016,4
+15345,AS,Alaska Airlines Inc.,L,2016,2
+15373,UA,United Air Lines Inc.,A,2009,1
+15564.68,NK,Spirit Air Lines,L,2015,3
+15601.03,HA,Hawaiian Airlines Inc.,P,2021,4
+15654.6,B6,JetBlue Airways,D,2018,3
+15671.78,G4,Allegiant Air,D,2011,4
+15805,WN,Southwest Airlines Co.,L,2019,1
+15839,UA,United Air Lines Inc.,L,2010,3
+15998.22,B6,JetBlue Airways,L,2009,4
+16007,WN,Southwest Airlines Co.,L,2015,2
+16125.26,UA,United Air Lines Inc.,P,2013,4
+16235,WN,Southwest Airlines Co.,L,2015,3
+16311.79,B6,JetBlue Airways,D,2022,4
+16335,WN,Southwest Airlines Co.,L,2018,1
+16512.17,F9,Frontier Airlines Inc.,D,2019,1
+16567,NK,Spirit Air Lines,D,2009,4
+16574.38,F9,Frontier Airlines Inc.,D,2009,1
+16810,WN,Southwest Airlines Co.,L,2015,4
+17029.53,UA,United Air Lines Inc.,L,2011,4
+17068.88,F9,Frontier Airlines Inc.,D,2010,3
+17112.78,HA,Hawaiian Airlines Inc.,D,2009,4
+17310.77,G4,Allegiant Air,D,2010,4
+17312,WN,Southwest Airlines Co.,L,2017,4
+17347,WN,Southwest Airlines Co.,L,2019,4
+17486.54,HA,Hawaiian Airlines Inc.,P,2014,4
+17668.04,NK,Spirit Air Lines,D,2010,4
+17799,NK,Spirit Air Lines,D,2010,3
+17949,AS,Alaska Airlines Inc.,L,2017,2
+18013.56,HA,Hawaiian Airlines Inc.,P,2015,3
+18096.64,AA,American Airlines Inc.,L,2022,2
+18124.26,G4,Allegiant Air,D,2018,3
+18299,G4,Allegiant Air,D,2009,3
+18317.3,HA,Hawaiian Airlines Inc.,P,2014,3
+18406,WN,Southwest Airlines Co.,L,2016,1
+18460.69,B6,JetBlue Airways,A,2022,3
+18575.98,HA,Hawaiian Airlines Inc.,P,2022,4
+19109.86,UA,United Air Lines Inc.,A,2011,1
+19297.04,B6,JetBlue Airways,A,2022,4
+19421,NK,Spirit Air Lines,D,2010,1
+19423,WN,Southwest Airlines Co.,L,2019,3
+19508.01,B6,JetBlue Airways,L,2019,1
+19610,AS,Alaska Airlines Inc.,D,2018,1
+19833.76,HA,Hawaiian Airlines Inc.,P,2016,3
+19836.54,NK,Spirit Air Lines,L,2019,2
+20030,WN,Southwest Airlines Co.,L,2018,3
+20127.64,G4,Allegiant Air,D,2021,3
+20185.93,G4,Allegiant Air,D,2017,4
+20258,NK,Spirit Air Lines,D,2009,3
+20434,WN,Southwest Airlines Co.,L,2017,3
+20497,WN,Southwest Airlines Co.,L,2018,4
+20701.13,G4,Allegiant Air,D,2012,4
+20762.21,HA,Hawaiian Airlines Inc.,D,2010,4
+21081.94,B6,JetBlue Airways,L,2010,2
+21451.12,HA,Hawaiian Airlines Inc.,P,2018,3
+21716.94,NK,Spirit Air Lines,D,2011,1
+22010.07,HA,Hawaiian Airlines Inc.,P,2011,3
+22034.92,HA,Hawaiian Airlines Inc.,P,2020,1
+22177,WN,Southwest Airlines Co.,D,2009,3
+22237,DL,Delta Air Lines Inc.,L,2020,1
+22299.5,HA,Hawaiian Airlines Inc.,D,2010,2
+22312,G4,Allegiant Air,D,2010,2
+22409.33,B6,JetBlue Airways,L,2012,4
+22427.45,G4,Allegiant Air,D,2012,3
+22454,DL,Delta Air Lines Inc.,L,2013,1
+22519,AA,American Airlines Inc.,L,2009,4
+23020.99,B6,JetBlue Airways,D,2012,4
+23378.73,UA,United Air Lines Inc.,L,2012,2
+23610.76,G4,Allegiant Air,D,2011,1
+23807.35,F9,Frontier Airlines Inc.,D,2009,2
+24072.59,B6,JetBlue Airways,D,2010,4
+24355.42,HA,Hawaiian Airlines Inc.,D,2022,3
+24535.16,G4,Allegiant Air,D,2013,3
+24578,NK,Spirit Air Lines,D,2009,1
+24627,WN,Southwest Airlines Co.,L,2016,2
+24818.11,HA,Hawaiian Airlines Inc.,P,2012,2
+25009.95,F9,Frontier Airlines Inc.,D,2017,4
+25276.82,UA,United Air Lines Inc.,L,2017,4
+25345.55,B6,JetBlue Airways,L,2020,1
+25425.28,UA,United Air Lines Inc.,L,2016,1
+25486.68,G4,Allegiant Air,D,2014,3
+25749,WN,Southwest Airlines Co.,L,2018,2
+26200.47,B6,JetBlue Airways,L,2019,2
+26940.89,G4,Allegiant Air,D,2013,4
+27086,NK,Spirit Air Lines,D,2009,2
+27362.45,B6,JetBlue Airways,L,2013,3
+27881,WN,Southwest Airlines Co.,L,2019,2
+28004.81,NK,Spirit Air Lines,D,2012,4
+28037,AA,American Airlines Inc.,L,2009,3
+28156.19,B6,JetBlue Airways,L,2010,1
+28190,WN,Southwest Airlines Co.,D,2012,1
+28268,AA,American Airlines Inc.,A,2014,4
+28325,AS,Alaska Airlines Inc.,D,2009,4
+28567.11,G4,Allegiant Air,D,2022,2
+28606.21,UA,United Air Lines Inc.,L,2011,3
+29025,AA,American Airlines Inc.,A,2013,4
+29044,DL,Delta Air Lines Inc.,P,2022,2
+29145.92,NK,Spirit Air Lines,D,2011,2
+29288.31,G4,Allegiant Air,D,2012,1
+29844.92,F9,Frontier Airlines Inc.,D,2022,2
+30018.6,F9,Frontier Airlines Inc.,D,2009,3
+30081.59,HA,Hawaiian Airlines Inc.,P,2017,3
+30183.05,UA,United Air Lines Inc.,P,2011,4
+30232,DL,Delta Air Lines Inc.,A,2020,1
+30249,WN,Southwest Airlines Co.,L,2017,2
+30818.85,F9,Frontier Airlines Inc.,D,2018,1
+30855,DL,Delta Air Lines Inc.,L,2015,3
+30855.73,HA,Hawaiian Airlines Inc.,D,2011,4
+31020.39,HA,Hawaiian Airlines Inc.,P,2019,3
+31348,DL,Delta Air Lines Inc.,P,2010,1
+31809.68,NK,Spirit Air Lines,D,2012,1
+31956,DL,Delta Air Lines Inc.,L,2012,4
+32400.76,B6,JetBlue Airways,L,2019,4
+32412.92,HA,Hawaiian Airlines Inc.,D,2018,4
+32422.89,HA,Hawaiian Airlines Inc.,D,2009,3
+32423,AA,American Airlines Inc.,L,2010,1
+32508,AS,Alaska Airlines Inc.,D,2019,1
+32508.04,UA,United Air Lines Inc.,P,2021,3
+32662.45,NK,Spirit Air Lines,D,2011,4
+32688,G4,Allegiant Air,D,2010,1
+33237.6,UA,United Air Lines Inc.,A,2021,4
+33687.33,HA,Hawaiian Airlines Inc.,D,2010,3
+33849,G4,Allegiant Air,D,2009,2
+34060,UA,United Air Lines Inc.,P,2019,3
+34220,AA,American Airlines Inc.,D,2012,2
+34246.3,G4,Allegiant Air,D,2012,2
+34456.89,B6,JetBlue Airways,D,2013,2
+34573,DL,Delta Air Lines Inc.,P,2010,4
+34733.53,F9,Frontier Airlines Inc.,D,2012,3
+35082.52,G4,Allegiant Air,D,2017,3
+35142.28,B6,JetBlue Airways,D,2012,1
+35322,UA,United Air Lines Inc.,P,2009,4
+35389,AS,Alaska Airlines Inc.,D,2009,2
+35424.6,G4,Allegiant Air,D,2013,2
+35731.45,F9,Frontier Airlines Inc.,D,2013,3
+36056,DL,Delta Air Lines Inc.,A,2011,3
+36176.32,F9,Frontier Airlines Inc.,D,2014,4
+36204.17,B6,JetBlue Airways,L,2010,4
+36290.25,UA,United Air Lines Inc.,P,2014,2
+36439,G4,Allegiant Air,D,2021,4
+36847.94,NK,Spirit Air Lines,D,2011,3
+37130.47,F9,Frontier Airlines Inc.,D,2015,1
+37595.42,B6,JetBlue Airways,D,2011,2
+37984,AA,American Airlines Inc.,A,2010,2
+37986.47,F9,Frontier Airlines Inc.,D,2015,4
+38139.52,HA,Hawaiian Airlines Inc.,D,2012,3
+38291.4,HA,Hawaiian Airlines Inc.,P,2012,3
+38464.54,HA,Hawaiian Airlines Inc.,D,2009,2
+38573.07,F9,Frontier Airlines Inc.,D,2018,3
+38652.26,UA,United Air Lines Inc.,L,2018,3
+38659.28,G4,Allegiant Air,D,2020,1
+38667.7,B6,JetBlue Airways,L,2012,2
+39716.58,HA,Hawaiian Airlines Inc.,D,2011,3
+39822,DL,Delta Air Lines Inc.,L,2016,4
+39949.72,UA,United Air Lines Inc.,L,2015,4
+40579,WN,Southwest Airlines Co.,L,2022,2
+41115.52,B6,JetBlue Airways,D,2011,4
+41202.88,HA,Hawaiian Airlines Inc.,D,2014,1
+41209,G4,Allegiant Air,D,2009,1
+41449.94,F9,Frontier Airlines Inc.,D,2022,3
+41552.59,B6,JetBlue Airways,D,2011,3
+41574.9,HA,Hawaiian Airlines Inc.,P,2018,4
+42402.5,NK,Spirit Air Lines,D,2012,3
+42820.69,B6,JetBlue Airways,L,2011,4
+42918.58,HA,Hawaiian Airlines Inc.,D,2009,1
+43226,DL,Delta Air Lines Inc.,L,2015,2
+43559.68,NK,Spirit Air Lines,D,2013,1
+43845.46,F9,Frontier Airlines Inc.,D,2022,4
+44295,AA,American Airlines Inc.,A,2010,3
+44643.44,B6,JetBlue Airways,D,2012,3
+44674.56,G4,Allegiant Air,D,2013,1
+44727.22,B6,JetBlue Airways,L,2018,4
+44776.46,UA,United Air Lines Inc.,L,2022,3
+44779.73,B6,JetBlue Airways,L,2011,1
+45072,DL,Delta Air Lines Inc.,D,2009,4
+45754.81,AA,American Airlines Inc.,A,2015,4
+46212.52,B6,JetBlue Airways,L,2012,1
+47469,NK,Spirit Air Lines,D,2012,2
+47486.47,B6,JetBlue Airways,D,2009,4
+48274,DL,Delta Air Lines Inc.,P,2011,4
+48345,DL,Delta Air Lines Inc.,D,2009,2
+48382,AA,American Airlines Inc.,D,2013,4
+48492,UA,United Air Lines Inc.,A,2009,3
+48541.39,UA,United Air Lines Inc.,P,2017,3
+48625.62,UA,United Air Lines Inc.,L,2019,1
+48881.06,F9,Frontier Airlines Inc.,D,2016,4
+49115.65,B6,JetBlue Airways,L,2011,2
+49360.91,B6,JetBlue Airways,D,2013,4
+49773,AS,Alaska Airlines Inc.,D,2012,1
+50068.9,B6,JetBlue Airways,L,2013,1
+50178,DL,Delta Air Lines Inc.,L,2021,4
+50213.23,G4,Allegiant Air,D,2014,2
+50234,WN,Southwest Airlines Co.,D,2012,3
+50451.57,G4,Allegiant Air,D,2014,1
+50637,AS,Alaska Airlines Inc.,D,2011,1
+52391.27,UA,United Air Lines Inc.,L,2013,3
+52396,DL,Delta Air Lines Inc.,P,2022,4
+52975.23,F9,Frontier Airlines Inc.,D,2014,2
+53538.24,NK,Spirit Air Lines,D,2014,1
+53632,DL,Delta Air Lines Inc.,L,2017,4
+54391,UA,United Air Lines Inc.,A,2010,1
+54475.95,UA,United Air Lines Inc.,A,2013,4
+54478,WN,Southwest Airlines Co.,D,2010,1
+54732.32,B6,JetBlue Airways,D,2009,3
+54771.67,NK,Spirit Air Lines,D,2017,1
+54862,DL,Delta Air Lines Inc.,L,2022,2
+55396.26,B6,JetBlue Airways,L,2018,2
+55649.44,B6,JetBlue Airways,D,2018,1
+56005.06,HA,Hawaiian Airlines Inc.,D,2018,1
+56081.64,HA,Hawaiian Airlines Inc.,D,2019,1
+56249.48,UA,United Air Lines Inc.,L,2012,3
+56928.8,UA,United Air Lines Inc.,P,2019,2
+57304.41,B6,JetBlue Airways,L,2014,2
+57690.99,B6,JetBlue Airways,L,2017,4
+57779.21,B6,JetBlue Airways,L,2021,3
+57817.67,F9,Frontier Airlines Inc.,D,2019,4
+57824.78,B6,JetBlue Airways,L,2016,2
+58746.3,NK,Spirit Air Lines,D,2013,2
+58801.59,B6,JetBlue Airways,L,2013,2
+59004,AA,American Airlines Inc.,L,2011,2
+59004.82,HA,Hawaiian Airlines Inc.,D,2019,4
+59073.36,G4,Allegiant Air,D,2018,4
+59598,UA,United Air Lines Inc.,A,2010,4
+59745.15,B6,JetBlue Airways,L,2010,3
+59762.75,B6,JetBlue Airways,D,2009,2
+59962.09,HA,Hawaiian Airlines Inc.,D,2014,4
+60009.62,AA,American Airlines Inc.,A,2019,3
+60100.55,UA,United Air Lines Inc.,P,2018,2
+60503,DL,Delta Air Lines Inc.,P,2011,3
+60780,DL,Delta Air Lines Inc.,L,2017,1
+60966.3,HA,Hawaiian Airlines Inc.,D,2013,2
+60987,DL,Delta Air Lines Inc.,P,2016,4
+61088.65,AA,American Airlines Inc.,A,2015,1
+61254.38,NK,Spirit Air Lines,D,2013,4
+61378.06,B6,JetBlue Airways,L,2013,4
+61424.1,B6,JetBlue Airways,L,2017,1
+61671.33,B6,JetBlue Airways,L,2014,4
+61987.81,UA,United Air Lines Inc.,L,2017,2
+62540.06,G4,Allegiant Air,D,2018,2
+63012.65,UA,United Air Lines Inc.,L,2016,4
+63105.75,UA,United Air Lines Inc.,P,2015,4
+63277.16,G4,Allegiant Air,D,2016,4
+63312,AA,American Airlines Inc.,L,2010,3
+63757,AA,American Airlines Inc.,L,2010,4
+63787.86,B6,JetBlue Airways,D,2019,1
+63909.96,G4,Allegiant Air,D,2019,3
+63987.8,F9,Frontier Airlines Inc.,D,2016,1
+64193.83,UA,United Air Lines Inc.,P,2013,2
+64420.3,B6,JetBlue Airways,D,2009,1
+64718.13,B6,JetBlue Airways,L,2022,4
+64737,DL,Delta Air Lines Inc.,P,2017,4
+64775,AS,Alaska Airlines Inc.,D,2021,4
+65170,AA,American Airlines Inc.,L,2011,4
+65177.97,UA,United Air Lines Inc.,A,2011,4
+66051.24,G4,Allegiant Air,D,2017,1
+66396,DL,Delta Air Lines Inc.,L,2021,3
+66509.99,UA,United Air Lines Inc.,A,2022,2
+66693,DL,Delta Air Lines Inc.,A,2021,4
+66808.79,B6,JetBlue Airways,L,2011,3
+68325.02,B6,JetBlue Airways,L,2012,3
+68988.06,HA,Hawaiian Airlines Inc.,D,2015,1
+69018.2,AA,American Airlines Inc.,A,2016,1
+69323,WN,Southwest Airlines Co.,D,2013,1
+69353.82,UA,United Air Lines Inc.,L,2015,2
+70042,DL,Delta Air Lines Inc.,L,2022,3
+70207,UA,United Air Lines Inc.,A,2009,2
+70257,AS,Alaska Airlines Inc.,D,2010,1
+70557.96,HA,Hawaiian Airlines Inc.,D,2013,4
+71105.72,UA,United Air Lines Inc.,A,2017,1
+71345,DL,Delta Air Lines Inc.,A,2010,2
+71859.29,G4,Allegiant Air,D,2016,3
+71917.72,UA,United Air Lines Inc.,P,2011,1
+72287.42,B6,JetBlue Airways,L,2014,3
+72791,DL,Delta Air Lines Inc.,L,2016,1
+72859,UA,United Air Lines Inc.,P,2010,4
+73212.94,G4,Allegiant Air,D,2015,3
+73549,AS,Alaska Airlines Inc.,D,2011,4
+73641,DL,Delta Air Lines Inc.,D,2013,1
+73672.82,B6,JetBlue Airways,L,2018,1
+73704.31,B6,JetBlue Airways,D,2010,2
+73857,DL,Delta Air Lines Inc.,P,2018,1
+74004.98,AA,American Airlines Inc.,P,2015,4
+74027,DL,Delta Air Lines Inc.,P,2018,4
+74933.75,B6,JetBlue Airways,L,2016,4
+76094.83,G4,Allegiant Air,D,2018,1
+76178.03,B6,JetBlue Airways,L,2015,2
+76581.92,UA,United Air Lines Inc.,L,2014,2
+76730.36,AA,American Airlines Inc.,L,2017,1
+76865.04,G4,Allegiant Air,D,2017,2
+76995,DL,Delta Air Lines Inc.,L,2018,4
+77267.86,NK,Spirit Air Lines,D,2019,1
+78012.39,HA,Hawaiian Airlines Inc.,D,2014,2
+78145.35,F9,Frontier Airlines Inc.,D,2015,2
+78894,UA,United Air Lines Inc.,P,2010,1
+78933.93,UA,United Air Lines Inc.,P,2015,1
+79187,AS,Alaska Airlines Inc.,D,2010,4
+80021.5,NK,Spirit Air Lines,D,2016,4
+80027,DL,Delta Air Lines Inc.,L,2018,1
+80031,AS,Alaska Airlines Inc.,D,2022,4
+80454.48,G4,Allegiant Air,D,2021,2
+81089,DL,Delta Air Lines Inc.,P,2019,4
+81279.16,B6,JetBlue Airways,D,2012,2
+81315.9,UA,United Air Lines Inc.,L,2019,2
+81389.3,HA,Hawaiian Airlines Inc.,D,2013,3
+81877.53,NK,Spirit Air Lines,D,2014,4
+82298.92,UA,United Air Lines Inc.,L,2013,4
+82365,DL,Delta Air Lines Inc.,P,2017,1
+82800.22,AA,American Airlines Inc.,A,2018,2
+83013.02,UA,United Air Lines Inc.,L,2014,3
+83197.58,B6,JetBlue Airways,D,2014,2
+83358,AS,Alaska Airlines Inc.,D,2013,1
+83448.65,F9,Frontier Airlines Inc.,D,2016,2
+83467,DL,Delta Air Lines Inc.,P,2022,3
+83698,DL,Delta Air Lines Inc.,P,2019,1
+83858.88,HA,Hawaiian Airlines Inc.,D,2019,2
+84376.36,B6,JetBlue Airways,L,2014,1
+84556.7,G4,Allegiant Air,D,2019,4
+84617.44,UA,United Air Lines Inc.,D,2013,4
+84734.21,NK,Spirit Air Lines,D,2017,4
+84754.3,F9,Frontier Airlines Inc.,D,2018,2
+85040.74,G4,Allegiant Air,D,2019,1
+85352,UA,United Air Lines Inc.,A,2009,4
+86180.95,B6,JetBlue Airways,D,2017,1
+86791.17,AA,American Airlines Inc.,A,2017,2
+86927.21,F9,Frontier Airlines Inc.,D,2015,3
+87045.13,NK,Spirit Air Lines,D,2013,3
+87285.94,F9,Frontier Airlines Inc.,D,2019,2
+87359.69,HA,Hawaiian Airlines Inc.,D,2014,3
+87363.13,G4,Allegiant Air,D,2015,2
+87534.8,UA,United Air Lines Inc.,P,2022,2
+87845.58,B6,JetBlue Airways,L,2019,3
+87935.04,B6,JetBlue Airways,D,2010,3
+88033.66,UA,United Air Lines Inc.,A,2012,3
+88079.51,AA,American Airlines Inc.,L,2015,4
+88865.7,B6,JetBlue Airways,L,2015,4
+88913.29,HA,Hawaiian Airlines Inc.,D,2017,1
+88929,AS,Alaska Airlines Inc.,D,2012,4
+89001,DL,Delta Air Lines Inc.,P,2010,2
+89407.2,UA,United Air Lines Inc.,L,2016,3
+89571.04,NK,Spirit Air Lines,D,2014,3
+89627.12,AA,American Airlines Inc.,P,2015,1
+89998,AA,American Airlines Inc.,D,2010,4
+90484,WN,Southwest Airlines Co.,D,2012,4
+90521.85,AA,American Airlines Inc.,A,2019,2
+90651,AA,American Airlines Inc.,L,2014,4
+90751.53,UA,United Air Lines Inc.,P,2013,3
+90994.42,UA,United Air Lines Inc.,L,2017,3
+91042.82,B6,JetBlue Airways,D,2014,3
+91448.7,UA,United Air Lines Inc.,P,2012,1
+91974.11,G4,Allegiant Air,D,2015,4
+92338.53,F9,Frontier Airlines Inc.,D,2014,3
+92527.42,HA,Hawaiian Airlines Inc.,D,2019,3
+92688.95,NK,Spirit Air Lines,D,2016,1
+92700.07,G4,Allegiant Air,D,2022,4
+92721.71,UA,United Air Lines Inc.,A,2016,1
+92768.03,UA,United Air Lines Inc.,L,2015,3
+92947.42,NK,Spirit Air Lines,D,2014,2
+94430.88,HA,Hawaiian Airlines Inc.,D,2015,2
+94752.7,HA,Hawaiian Airlines Inc.,D,2016,4
+94983,AA,American Airlines Inc.,L,2014,2
+95523.65,F9,Frontier Airlines Inc.,D,2017,3
+95844.68,UA,United Air Lines Inc.,L,2019,4
+96348.71,F9,Frontier Airlines Inc.,D,2019,3
+96399.76,NK,Spirit Air Lines,D,2017,3
+96558,AA,American Airlines Inc.,L,2014,3
+97699.59,G4,Allegiant Air,D,2016,2
+97886.08,NK,Spirit Air Lines,D,2018,2
+98239.25,HA,Hawaiian Airlines Inc.,D,2018,3
+98872.32,NK,Spirit Air Lines,D,2015,1
+98980.22,B6,JetBlue Airways,D,2014,4
+100146,DL,Delta Air Lines Inc.,L,2012,3
+100607.39,G4,Allegiant Air,D,2019,2
+100842.24,AA,American Airlines Inc.,L,2017,4
+101418.4,HA,Hawaiian Airlines Inc.,D,2018,2
+101744.93,HA,Hawaiian Airlines Inc.,D,2016,1
+102296,AA,American Airlines Inc.,D,2011,2
+102362.18,B6,JetBlue Airways,L,2017,2
+102576.94,G4,Allegiant Air,D,2015,1
+103518.2,AA,American Airlines Inc.,A,2016,2
+103762,DL,Delta Air Lines Inc.,L,2019,1
+103768,AA,American Airlines Inc.,L,2009,1
+104982,DL,Delta Air Lines Inc.,P,2017,2
+105132,DL,Delta Air Lines Inc.,L,2017,2
+105805,UA,United Air Lines Inc.,D,2009,3
+106881.74,HA,Hawaiian Airlines Inc.,D,2015,4
+106937,AS,Alaska Airlines Inc.,D,2018,4
+106976,DL,Delta Air Lines Inc.,A,2013,1
+107327.14,UA,United Air Lines Inc.,P,2011,2
+107579,DL,Delta Air Lines Inc.,L,2016,2
+107600,DL,Delta Air Lines Inc.,A,2021,3
+107748.83,UA,United Air Lines Inc.,L,2014,4
+107984.32,AA,American Airlines Inc.,L,2016,4
+108080,DL,Delta Air Lines Inc.,L,2016,3
+108552,DL,Delta Air Lines Inc.,P,2019,2
+108849.83,HA,Hawaiian Airlines Inc.,D,2017,4
+109381.64,UA,United Air Lines Inc.,L,2019,3
+109523.85,UA,United Air Lines Inc.,P,2012,2
+109544.43,F9,Frontier Airlines Inc.,D,2017,2
+109785.05,B6,JetBlue Airways,L,2015,1
+110297.64,UA,United Air Lines Inc.,L,2015,1
+110299,DL,Delta Air Lines Inc.,L,2018,2
+110348.96,NK,Spirit Air Lines,D,2015,4
+110450.29,NK,Spirit Air Lines,D,2015,2
+110504.26,NK,Spirit Air Lines,D,2016,2
+110717.49,NK,Spirit Air Lines,D,2019,3
+111374.26,B6,JetBlue Airways,L,2016,1
+111561.69,AA,American Airlines Inc.,P,2015,3
+111663.05,NK,Spirit Air Lines,D,2019,4
+112752,UA,United Air Lines Inc.,D,2009,2
+112921,DL,Delta Air Lines Inc.,L,2019,4
+113304.34,B6,JetBlue Airways,L,2018,3
+114098,WN,Southwest Airlines Co.,D,2011,1
+114279,DL,Delta Air Lines Inc.,L,2018,3
+114533.97,AA,American Airlines Inc.,L,2015,1
+115335,DL,Delta Air Lines Inc.,L,2017,3
+115350.03,AA,American Airlines Inc.,A,2016,3
+115497.38,G4,Allegiant Air,D,2016,1
+115754.38,B6,JetBlue Airways,D,2018,2
+116083,AA,American Airlines Inc.,L,2012,2
+117004.22,UA,United Air Lines Inc.,P,2015,2
+118490.14,AA,American Airlines Inc.,P,2015,2
+118669.94,AA,American Airlines Inc.,L,2017,2
+119550,DL,Delta Air Lines Inc.,P,2013,1
+119644,AA,American Airlines Inc.,A,2013,2
+120027.33,NK,Spirit Air Lines,D,2017,2
+120961.76,NK,Spirit Air Lines,D,2018,4
+121796,DL,Delta Air Lines Inc.,P,2012,4
+123099,WN,Southwest Airlines Co.,D,2009,2
+123345.14,UA,United Air Lines Inc.,L,2022,4
+123993.03,NK,Spirit Air Lines,D,2016,3
+124269,DL,Delta Air Lines Inc.,L,2022,4
+124283,DL,Delta Air Lines Inc.,P,2018,2
+124332.25,B6,JetBlue Airways,D,2013,3
+124402.3,F9,Frontier Airlines Inc.,D,2016,3
+124819,DL,Delta Air Lines Inc.,P,2013,2
+126496.77,AA,American Airlines Inc.,A,2017,3
+126917,DL,Delta Air Lines Inc.,P,2016,1
+128827.01,AA,American Airlines Inc.,L,2015,2
+129962,UA,United Air Lines Inc.,A,2010,2
+130126.88,UA,United Air Lines Inc.,P,2018,3
+130558.01,UA,United Air Lines Inc.,A,2011,2
+130595,AS,Alaska Airlines Inc.,D,2011,2
+130807,AS,Alaska Airlines Inc.,D,2013,4
+131219,DL,Delta Air Lines Inc.,A,2022,4
+131483.6,NK,Spirit Air Lines,D,2018,3
+131682.57,B6,JetBlue Airways,D,2017,4
+132419,DL,Delta Air Lines Inc.,P,2014,1
+132539,DL,Delta Air Lines Inc.,P,2013,4
+132837,UA,United Air Lines Inc.,A,2010,3
+133593,DL,Delta Air Lines Inc.,L,2019,3
+133817.36,B6,JetBlue Airways,D,2015,1
+134228.72,HA,Hawaiian Airlines Inc.,D,2016,2
+134634,AS,Alaska Airlines Inc.,D,2010,2
+135986,WN,Southwest Airlines Co.,D,2011,4
+137482.04,B6,JetBlue Airways,L,2016,3
+137692,DL,Delta Air Lines Inc.,D,2012,4
+138117.11,HA,Hawaiian Airlines Inc.,D,2015,3
+141654.29,NK,Spirit Air Lines,D,2015,3
+141935.12,B6,JetBlue Airways,L,2015,3
+142155,DL,Delta Air Lines Inc.,P,2019,3
+142492,AA,American Airlines Inc.,D,2010,2
+144101.82,NK,Spirit Air Lines,D,2019,2
+144261,AS,Alaska Airlines Inc.,D,2014,1
+144864,AS,Alaska Airlines Inc.,D,2009,3
+145306.61,HA,Hawaiian Airlines Inc.,D,2017,2
+145499.2,HA,Hawaiian Airlines Inc.,D,2017,3
+146483,DL,Delta Air Lines Inc.,L,2019,2
+146886.93,UA,United Air Lines Inc.,P,2011,3
+146907.76,UA,United Air Lines Inc.,D,2013,3
+148966.43,UA,United Air Lines Inc.,A,2018,1
+149150,DL,Delta Air Lines Inc.,P,2017,3
+150210.03,B6,JetBlue Airways,L,2022,3
+150422.58,AA,American Airlines Inc.,A,2018,3
+151091.16,B6,JetBlue Airways,D,2017,3
+151273.82,B6,JetBlue Airways,L,2017,3
+151481.55,UA,United Air Lines Inc.,A,2022,4
+153275,AA,American Airlines Inc.,L,2012,4
+154617,DL,Delta Air Lines Inc.,P,2014,2
+155354.96,B6,JetBlue Airways,D,2019,3
+157665,AA,American Airlines Inc.,L,2013,2
+157951.18,HA,Hawaiian Airlines Inc.,D,2016,3
+159063,UA,United Air Lines Inc.,P,2010,2
+159317,AS,Alaska Airlines Inc.,D,2022,2
+159864,DL,Delta Air Lines Inc.,A,2014,1
+162058,DL,Delta Air Lines Inc.,P,2018,3
+162900.73,UA,United Air Lines Inc.,A,2019,1
+163093,DL,Delta Air Lines Inc.,P,2010,3
+164900,DL,Delta Air Lines Inc.,A,2017,1
+165118,AA,American Airlines Inc.,A,2014,2
+165739,DL,Delta Air Lines Inc.,D,2009,3
+166716,WN,Southwest Airlines Co.,D,2009,4
+166732,DL,Delta Air Lines Inc.,P,2015,4
+168204.86,UA,United Air Lines Inc.,P,2022,3
+168715,DL,Delta Air Lines Inc.,P,2015,1
+170740.95,UA,United Air Lines Inc.,A,2018,4
+172388,DL,Delta Air Lines Inc.,A,2010,3
+172411.99,UA,United Air Lines Inc.,A,2014,4
+173033,AA,American Airlines Inc.,D,2010,3
+176191,DL,Delta Air Lines Inc.,A,2016,4
+176220.41,B6,JetBlue Airways,D,2018,4
+176731,UA,United Air Lines Inc.,P,2010,3
+176858,DL,Delta Air Lines Inc.,A,2012,4
+177630.32,AA,American Airlines Inc.,L,2016,3
+178851,AA,American Airlines Inc.,A,2013,3
+179881.72,UA,United Air Lines Inc.,A,2017,4
+179951.64,AA,American Airlines Inc.,A,2015,2
+181299,DL,Delta Air Lines Inc.,P,2016,2
+184009,AS,Alaska Airlines Inc.,D,2013,2
+185259,AS,Alaska Airlines Inc.,D,2010,3
+185395,AS,Alaska Airlines Inc.,D,2017,4
+186218,AS,Alaska Airlines Inc.,D,2012,2
+189167,WN,Southwest Airlines Co.,D,2021,4
+189250.13,UA,United Air Lines Inc.,A,2012,2
+189266,AA,American Airlines Inc.,L,2011,1
+189750,AS,Alaska Airlines Inc.,D,2022,3
+189839.28,UA,United Air Lines Inc.,P,2016,3
+192443.89,UA,United Air Lines Inc.,D,2011,2
+192652.89,UA,United Air Lines Inc.,A,2019,4
+193457.65,AA,American Airlines Inc.,L,2018,4
+194572,AA,American Airlines Inc.,L,2012,3
+194620,AA,American Airlines Inc.,A,2014,3
+194809.94,UA,United Air Lines Inc.,A,2011,3
+195176,WN,Southwest Airlines Co.,D,2011,2
+195481.59,B6,JetBlue Airways,D,2019,4
+196132,AA,American Airlines Inc.,L,2013,1
+198246.9,UA,United Air Lines Inc.,D,2018,1
+198532,AA,American Airlines Inc.,L,2012,1
+198639.8,UA,United Air Lines Inc.,P,2022,4
+202730,DL,Delta Air Lines Inc.,A,2018,1
+203215,DL,Delta Air Lines Inc.,P,2016,3
+203495,DL,Delta Air Lines Inc.,A,2016,1
+205501.3,AA,American Airlines Inc.,L,2022,3
+205782.62,B6,JetBlue Airways,D,2015,2
+205845,DL,Delta Air Lines Inc.,P,2014,3
+206482.67,UA,United Air Lines Inc.,P,2012,3
+206622.49,UA,United Air Lines Inc.,P,2014,3
+206813,WN,Southwest Airlines Co.,D,2011,3
+207458.5,UA,United Air Lines Inc.,D,2011,3
+208028.88,UA,United Air Lines Inc.,A,2016,2
+208062.9,B6,JetBlue Airways,D,2015,3
+208399.85,UA,United Air Lines Inc.,A,2015,1
+208686,AS,Alaska Airlines Inc.,D,2017,1
+210004,DL,Delta Air Lines Inc.,A,2013,4
+211467,DL,Delta Air Lines Inc.,A,2017,4
+212335,WN,Southwest Airlines Co.,D,2014,1
+213610,AS,Alaska Airlines Inc.,D,2011,3
+214960,DL,Delta Air Lines Inc.,A,2019,1
+215531,WN,Southwest Airlines Co.,D,2010,4
+216954.85,B6,JetBlue Airways,D,2016,3
+219790.35,B6,JetBlue Airways,D,2016,4
+220318.1,UA,United Air Lines Inc.,A,2013,3
+220832,AS,Alaska Airlines Inc.,D,2021,3
+221111,DL,Delta Air Lines Inc.,A,2015,1
+222280.99,UA,United Air Lines Inc.,A,2016,4
+223669.34,B6,JetBlue Airways,D,2019,2
+224570.47,UA,United Air Lines Inc.,A,2017,3
+224839.6,AA,American Airlines Inc.,L,2018,3
+226663.6,AA,American Airlines Inc.,L,2018,2
+228462,UA,United Air Lines Inc.,D,2010,2
+228805,AS,Alaska Airlines Inc.,D,2015,1
+228827.99,AA,American Airlines Inc.,L,2017,3
+230088,AS,Alaska Airlines Inc.,D,2012,3
+231466.93,AA,American Airlines Inc.,L,2019,1
+232637,AS,Alaska Airlines Inc.,D,2014,4
+233675,DL,Delta Air Lines Inc.,D,2010,1
+233933.59,B6,JetBlue Airways,D,2015,4
+237552.81,B6,JetBlue Airways,D,2016,1
+238578,AS,Alaska Airlines Inc.,D,2019,4
+240108,UA,United Air Lines Inc.,D,2010,3
+241696,DL,Delta Air Lines Inc.,P,2015,2
+242532.3,AA,American Airlines Inc.,L,2015,3
+243206.11,UA,United Air Lines Inc.,P,2015,3
+244122.63,AA,American Airlines Inc.,L,2019,2
+249585,AS,Alaska Airlines Inc.,D,2014,2
+249811,AA,American Airlines Inc.,L,2011,3
+250506,AA,American Airlines Inc.,D,2013,2
+251656.5,B6,JetBlue Airways,D,2017,2
+252202.2,B6,JetBlue Airways,D,2016,2
+252914,AS,Alaska Airlines Inc.,D,2015,4
+253943.24,UA,United Air Lines Inc.,D,2012,2
+254131,DL,Delta Air Lines Inc.,A,2022,2
+254762,DL,Delta Air Lines Inc.,A,2018,4
+255546,AA,American Airlines Inc.,D,2013,3
+257195,AA,American Airlines Inc.,L,2014,1
+259162,AS,Alaska Airlines Inc.,D,2018,2
+262550,DL,Delta Air Lines Inc.,A,2019,4
+267339,DL,Delta Air Lines Inc.,D,2011,1
+269124.93,AA,American Airlines Inc.,A,2015,3
+270189,DL,Delta Air Lines Inc.,P,2015,3
+276525,AA,American Airlines Inc.,L,2013,4
+276587.2,AA,American Airlines Inc.,L,2019,3
+276652.42,UA,United Air Lines Inc.,A,2017,2
+277517,DL,Delta Air Lines Inc.,D,2021,4
+279394,DL,Delta Air Lines Inc.,A,2013,2
+282529.71,AA,American Airlines Inc.,D,2019,1
+285022.33,UA,United Air Lines Inc.,D,2019,1
+285442,AS,Alaska Airlines Inc.,D,2016,1
+288285,AS,Alaska Airlines Inc.,D,2016,4
+290004.58,UA,United Air Lines Inc.,A,2013,2
+292179,AS,Alaska Airlines Inc.,D,2018,3
+292319.58,AA,American Airlines Inc.,P,2016,2
+295821,AA,American Airlines Inc.,L,2013,3
+295980,AA,American Airlines Inc.,D,2014,4
+296308,DL,Delta Air Lines Inc.,P,2013,3
+298509.33,AA,American Airlines Inc.,L,2016,2
+305824,AS,Alaska Airlines Inc.,D,2014,3
+306697.45,AA,American Airlines Inc.,L,2019,4
+306731.02,AA,American Airlines Inc.,L,2016,1
+308067.99,AA,American Airlines Inc.,L,2018,1
+315086.06,UA,United Air Lines Inc.,A,2016,3
+315686.49,AA,American Airlines Inc.,P,2016,1
+317175.37,UA,United Air Lines Inc.,D,2017,1
+326118.82,UA,United Air Lines Inc.,A,2018,3
+333140.68,UA,United Air Lines Inc.,D,2014,4
+333324.29,UA,United Air Lines Inc.,A,2014,2
+334552.41,UA,United Air Lines Inc.,A,2018,2
+338135.69,UA,United Air Lines Inc.,A,2015,4
+338555.6,AA,American Airlines Inc.,L,2022,4
+343086.57,UA,United Air Lines Inc.,D,2015,1
+343457.44,AA,American Airlines Inc.,D,2018,1
+345905,DL,Delta Air Lines Inc.,A,2015,4
+347039,AA,American Airlines Inc.,D,2014,1
+348028.44,UA,United Air Lines Inc.,A,2019,3
+348793,AS,Alaska Airlines Inc.,D,2019,2
+349767,AS,Alaska Airlines Inc.,D,2015,2
+355056,WN,Southwest Airlines Co.,D,2010,3
+362769,WN,Southwest Airlines Co.,D,2010,2
+364778,DL,Delta Air Lines Inc.,P,2012,3
+370605,DL,Delta Air Lines Inc.,D,2021,3
+374519,DL,Delta Air Lines Inc.,A,2017,2
+376206,UA,United Air Lines Inc.,A,2014,3
+380836,WN,Southwest Airlines Co.,D,2022,3
+381403,WN,Southwest Airlines Co.,D,2013,4
+383279.83,AA,American Airlines Inc.,D,2018,3
+384892,WN,Southwest Airlines Co.,D,2013,3
+391289,DL,Delta Air Lines Inc.,A,2022,3
+399666,AS,Alaska Airlines Inc.,D,2019,3
+402418,AS,Alaska Airlines Inc.,D,2016,2
+405849,AS,Alaska Airlines Inc.,D,2017,3
+409288,AS,Alaska Airlines Inc.,D,2016,3
+409786,DL,Delta Air Lines Inc.,D,2010,4
+419913.48,UA,United Air Lines Inc.,D,2013,2
+420896,AS,Alaska Airlines Inc.,D,2015,3
+420931.37,UA,United Air Lines Inc.,A,2022,3
+423433.83,UA,United Air Lines Inc.,A,2015,2
+425318.01,UA,United Air Lines Inc.,A,2019,2
+427427,WN,Southwest Airlines Co.,D,2013,2
+428837,AA,American Airlines Inc.,D,2014,3
+430770,DL,Delta Air Lines Inc.,A,2017,3
+439287,DL,Delta Air Lines Inc.,D,2014,1
+443183,DL,Delta Air Lines Inc.,A,2018,2
+445170,DL,Delta Air Lines Inc.,A,2014,2
+445718,AS,Alaska Airlines Inc.,D,2017,2
+447835,AS,Alaska Airlines Inc.,D,2013,3
+455653,WN,Southwest Airlines Co.,D,2012,2
+458187,DL,Delta Air Lines Inc.,A,2016,3
+459876.62,UA,United Air Lines Inc.,D,2014,2
+464326,DL,Delta Air Lines Inc.,D,2012,3
+471293,DL,Delta Air Lines Inc.,A,2014,3
+474636,DL,Delta Air Lines Inc.,A,2019,2
+489134,WN,Southwest Airlines Co.,D,2019,1
+489262,AA,American Airlines Inc.,D,2014,2
+490975,DL,Delta Air Lines Inc.,A,2016,2
+494979.05,AA,American Airlines Inc.,D,2015,1
+498143.7,UA,United Air Lines Inc.,D,2018,4
+499003,DL,Delta Air Lines Inc.,A,2018,3
+509964,DL,Delta Air Lines Inc.,A,2019,3
+518994.25,UA,United Air Lines Inc.,D,2014,3
+528939.17,UA,United Air Lines Inc.,A,2015,3
+531800,DL,Delta Air Lines Inc.,A,2012,3
+540364.81,UA,United Air Lines Inc.,D,2017,4
+544480,DL,Delta Air Lines Inc.,A,2013,3
+548872,DL,Delta Air Lines Inc.,D,2012,1
+551728.03,AA,American Airlines Inc.,D,2018,4
+555876,DL,Delta Air Lines Inc.,D,2018,1
+562140,DL,Delta Air Lines Inc.,A,2015,2
+567539,DL,Delta Air Lines Inc.,D,2013,2
+580840,DL,Delta Air Lines Inc.,D,2013,4
+581527.82,AA,American Airlines Inc.,D,2019,3
+583308,DL,Delta Air Lines Inc.,A,2015,3
+585191.57,UA,United Air Lines Inc.,D,2016,1
+600095,WN,Southwest Airlines Co.,D,2018,1
+607774,WN,Southwest Airlines Co.,D,2014,3
+613312,WN,Southwest Airlines Co.,D,2014,4
+617061,DL,Delta Air Lines Inc.,D,2019,1
+631720.29,AA,American Airlines Inc.,D,2016,1
+640182.49,UA,United Air Lines Inc.,D,2015,4
+641417.93,AA,American Airlines Inc.,D,2019,4
+644137,WN,Southwest Airlines Co.,D,2017,1
+647386,WN,Southwest Airlines Co.,D,2019,4
+651868.67,UA,United Air Lines Inc.,D,2019,4
+671079.28,AA,American Airlines Inc.,D,2017,1
+681863,WN,Southwest Airlines Co.,D,2016,3
+696688,DL,Delta Air Lines Inc.,D,2012,2
+708614.14,UA,United Air Lines Inc.,D,2018,3
+728538.98,UA,United Air Lines Inc.,D,2017,3
+745318.97,UA,United Air Lines Inc.,D,2016,4
+750998,DL,Delta Air Lines Inc.,D,2011,4
+752340,DL,Delta Air Lines Inc.,D,2016,4
+755559,WN,Southwest Airlines Co.,D,2017,4
+759872,DL,Delta Air Lines Inc.,D,2017,1
+765449,WN,Southwest Airlines Co.,D,2014,2
+766446.41,UA,United Air Lines Inc.,D,2018,2
+767163,DL,Delta Air Lines Inc.,D,2011,3
+769791,WN,Southwest Airlines Co.,D,2015,1
+773112.72,AA,American Airlines Inc.,D,2017,4
+777737,DL,Delta Air Lines Inc.,D,2010,2
+777939,WN,Southwest Airlines Co.,D,2018,3
+778278.51,AA,American Airlines Inc.,D,2015,2
+779710,DL,Delta Air Lines Inc.,D,2018,4
+780724,DL,Delta Air Lines Inc.,D,2014,3
+793768.47,AA,American Airlines Inc.,D,2022,3
+799187,WN,Southwest Airlines Co.,D,2018,4
+800051,WN,Southwest Airlines Co.,D,2019,3
+813015,DL,Delta Air Lines Inc.,D,2011,2
+813669,WN,Southwest Airlines Co.,D,2017,3
+816500.5,AA,American Airlines Inc.,D,2018,2
+825043.9,UA,United Air Lines Inc.,D,2022,3
+830575,WN,Southwest Airlines Co.,D,2016,4
+835030.28,AA,American Airlines Inc.,D,2016,4
+835818.91,UA,United Air Lines Inc.,D,2015,2
+838683.52,UA,United Air Lines Inc.,D,2022,2
+853646,DL,Delta Air Lines Inc.,D,2013,3
+854935,DL,Delta Air Lines Inc.,D,2010,3
+855518.47,AA,American Airlines Inc.,D,2015,4
+868500,DL,Delta Air Lines Inc.,D,2017,4
+870316.24,UA,United Air Lines Inc.,D,2016,2
+885779.4,AA,American Airlines Inc.,D,2019,2
+888518,DL,Delta Air Lines Inc.,D,2018,3
+904397.02,UA,United Air Lines Inc.,D,2022,4
+908783.06,UA,United Air Lines Inc.,D,2019,2
+925356.54,AA,American Airlines Inc.,D,2017,3
+925408,WN,Southwest Airlines Co.,D,2016,1
+939208,DL,Delta Air Lines Inc.,D,2019,4
+940166,WN,Southwest Airlines Co.,D,2019,2
+945836,WN,Southwest Airlines Co.,D,2018,2
+982236.71,UA,United Air Lines Inc.,D,2019,3
+1009395,WN,Southwest Airlines Co.,D,2015,4
+1017021,DL,Delta Air Lines Inc.,D,2015,1
+1030351.74,UA,United Air Lines Inc.,D,2016,3
+1034677.91,UA,United Air Lines Inc.,D,2015,3
+1042929,DL,Delta Air Lines Inc.,D,2022,3
+1044685,DL,Delta Air Lines Inc.,D,2014,2
+1062926.3,AA,American Airlines Inc.,D,2016,2
+1064297,DL,Delta Air Lines Inc.,D,2018,2
+1069029,WN,Southwest Airlines Co.,D,2015,2
+1072958.02,UA,United Air Lines Inc.,D,2017,2
+1117581,WN,Southwest Airlines Co.,D,2022,2
+1141120,DL,Delta Air Lines Inc.,D,2016,1
+1152176,DL,Delta Air Lines Inc.,D,2017,3
+1166758.39,AA,American Airlines Inc.,D,2016,3
+1208665,WN,Southwest Airlines Co.,D,2015,3
+1209595,DL,Delta Air Lines Inc.,D,2016,3
+1212567,DL,Delta Air Lines Inc.,D,2022,4
+1219614,WN,Southwest Airlines Co.,D,2017,2
+1234402,DL,Delta Air Lines Inc.,D,2015,4
+1251327,WN,Southwest Airlines Co.,D,2016,2
+1277058,DL,Delta Air Lines Inc.,D,2019,3
+1290228.1,AA,American Airlines Inc.,D,2022,4
+1316658,DL,Delta Air Lines Inc.,D,2022,2
+1337974,DL,Delta Air Lines Inc.,D,2015,3
+1351099,DL,Delta Air Lines Inc.,D,2019,2
+1351147.77,AA,American Airlines Inc.,D,2022,2
+1379527.76,AA,American Airlines Inc.,D,2015,3
+1391511.51,AA,American Airlines Inc.,D,2017,2
+1451415,DL,Delta Air Lines Inc.,D,2017,2
+1643838,DL,Delta Air Lines Inc.,D,2016,2
+1649180,DL,Delta Air Lines Inc.,D,2015,2

@@ -1,0 +1,1681 @@
+YEAR,QUARTER,UNIQUE_CARRIER,CARRIER_NAME,TOTAL_COST
+2009,1,AA,American Airlines Inc.,359975009
+2009,1,AA,American Airlines Inc.,370354712
+2009,1,AA,American Airlines Inc.,412539451
+2009,1,AS,Alaska Airlines Inc.,33474308
+2009,1,AS,Alaska Airlines Inc.,36666810
+2009,1,AS,Alaska Airlines Inc.,39745220
+2009,1,B6,JetBlue Airways,68401136
+2009,1,B6,JetBlue Airways,71935691
+2009,1,B6,JetBlue Airways,74051341
+2009,1,DL,Delta Air Lines Inc.,418084647
+2009,1,DL,Delta Air Lines Inc.,427932326
+2009,1,DL,Delta Air Lines Inc.,433144640
+2009,1,F9,Frontier Airlines Inc.,15850179
+2009,1,F9,Frontier Airlines Inc.,17110437
+2009,1,F9,Frontier Airlines Inc.,19141063
+2009,1,G4,Allegiant Air,10780956
+2009,1,G4,Allegiant Air,10995963
+2009,1,G4,Allegiant Air,14157052
+2009,1,HA,Hawaiian Airlines Inc.,15202151
+2009,1,HA,Hawaiian Airlines Inc.,15254793
+2009,1,HA,Hawaiian Airlines Inc.,17268736
+2009,1,NK,Spirit Air Lines,11085000
+2009,1,NK,Spirit Air Lines,11800000
+2009,1,NK,Spirit Air Lines,13005000
+2009,1,UA,United Air Lines Inc.,220432464
+2009,1,UA,United Air Lines Inc.,232043219
+2009,1,UA,United Air Lines Inc.,264590598
+2009,1,WN,Southwest Airlines Co.,212631216
+2009,1,WN,Southwest Airlines Co.,213996909
+2009,1,WN,Southwest Airlines Co.,237558897
+2009,2,AA,American Airlines Inc.,373933199
+2009,2,AA,American Airlines Inc.,374191951
+2009,2,AA,American Airlines Inc.,415829624
+2009,2,AS,Alaska Airlines Inc.,37057514
+2009,2,AS,Alaska Airlines Inc.,38153908
+2009,2,AS,Alaska Airlines Inc.,47104530
+2009,2,B6,JetBlue Airways,70752353
+2009,2,B6,JetBlue Airways,71908146
+2009,2,B6,JetBlue Airways,84180105
+2009,2,DL,Delta Air Lines Inc.,385470902
+2009,2,DL,Delta Air Lines Inc.,389613223
+2009,2,DL,Delta Air Lines Inc.,397800827
+2009,2,F9,Frontier Airlines Inc.,17645096
+2009,2,F9,Frontier Airlines Inc.,19237064
+2009,2,F9,Frontier Airlines Inc.,23167093
+2009,2,G4,Allegiant Air,13479117
+2009,2,G4,Allegiant Air,13483369
+2009,2,G4,Allegiant Air,18186540
+2009,2,HA,Hawaiian Airlines Inc.,15654460
+2009,2,HA,Hawaiian Airlines Inc.,16939535
+2009,2,HA,Hawaiian Airlines Inc.,19471021
+2009,2,NK,Spirit Air Lines,11194000
+2009,2,NK,Spirit Air Lines,15728000
+2009,2,NK,Spirit Air Lines,15821000
+2009,2,UA,United Air Lines Inc.,239201234
+2009,2,UA,United Air Lines Inc.,247268744
+2009,2,UA,United Air Lines Inc.,296237802
+2009,2,WN,Southwest Airlines Co.,217607981
+2009,2,WN,Southwest Airlines Co.,224140639
+2009,2,WN,Southwest Airlines Co.,249600486
+2009,3,AA,American Airlines Inc.,396104589
+2009,3,AA,American Airlines Inc.,432864177
+2009,3,AA,American Airlines Inc.,441400746
+2009,3,AS,Alaska Airlines Inc.,45190593
+2009,3,AS,Alaska Airlines Inc.,49616321
+2009,3,AS,Alaska Airlines Inc.,53198377
+2009,3,B6,JetBlue Airways,73094704
+2009,3,B6,JetBlue Airways,83250923
+2009,3,B6,JetBlue Airways,89257721
+2009,3,DL,Delta Air Lines Inc.,368717399
+2009,3,DL,Delta Air Lines Inc.,410730321
+2009,3,DL,Delta Air Lines Inc.,438400485
+2009,3,F9,Frontier Airlines Inc.,22508387
+2009,3,F9,Frontier Airlines Inc.,24238503
+2009,3,F9,Frontier Airlines Inc.,25391250
+2009,3,G4,Allegiant Air,12215367
+2009,3,G4,Allegiant Air,17244592
+2009,3,G4,Allegiant Air,18525496
+2009,3,HA,Hawaiian Airlines Inc.,20628021
+2009,3,HA,Hawaiian Airlines Inc.,22422244
+2009,3,HA,Hawaiian Airlines Inc.,22594549
+2009,3,NK,Spirit Air Lines,14606000
+2009,3,NK,Spirit Air Lines,17766000
+2009,3,NK,Spirit Air Lines,20829000
+2009,3,UA,United Air Lines Inc.,301216923
+2009,3,UA,United Air Lines Inc.,325796784
+2009,3,UA,United Air Lines Inc.,333746775
+2009,3,WN,Southwest Airlines Co.,243172159
+2009,3,WN,Southwest Airlines Co.,267680265
+2009,3,WN,Southwest Airlines Co.,275179999
+2009,4,AA,American Airlines Inc.,410275762
+2009,4,AA,American Airlines Inc.,416744816
+2009,4,AA,American Airlines Inc.,452879449
+2009,4,AS,Alaska Airlines Inc.,48361337
+2009,4,AS,Alaska Airlines Inc.,50286778
+2009,4,AS,Alaska Airlines Inc.,52227022
+2009,4,B6,JetBlue Airways,68197800
+2009,4,B6,JetBlue Airways,75189340
+2009,4,B6,JetBlue Airways,83647769
+2009,4,DL,Delta Air Lines Inc.,323224407
+2009,4,DL,Delta Air Lines Inc.,331343018
+2009,4,DL,Delta Air Lines Inc.,349678327
+2009,4,F9,Frontier Airlines Inc.,24316244
+2009,4,F9,Frontier Airlines Inc.,26511490
+2009,4,F9,Frontier Airlines Inc.,28476494
+2009,4,G4,Allegiant Air,14057846
+2009,4,G4,Allegiant Air,16928347
+2009,4,G4,Allegiant Air,18461580
+2009,4,HA,Hawaiian Airlines Inc.,21393501
+2009,4,HA,Hawaiian Airlines Inc.,21994753
+2009,4,HA,Hawaiian Airlines Inc.,24069729
+2009,4,NK,Spirit Air Lines,14426000
+2009,4,NK,Spirit Air Lines,14429000
+2009,4,NK,Spirit Air Lines,17092000
+2009,4,UA,United Air Lines Inc.,303503078
+2009,4,UA,United Air Lines Inc.,303592129
+2009,4,UA,United Air Lines Inc.,309439170
+2009,4,WN,Southwest Airlines Co.,248952037
+2009,4,WN,Southwest Airlines Co.,253123981
+2009,4,WN,Southwest Airlines Co.,256007577
+2010,1,AA,American Airlines Inc.,388449715
+2010,1,AA,American Airlines Inc.,454712175
+2010,1,AA,American Airlines Inc.,458806189
+2010,1,AS,Alaska Airlines Inc.,45056149
+2010,1,AS,Alaska Airlines Inc.,52610271
+2010,1,AS,Alaska Airlines Inc.,54455508
+2010,1,B6,JetBlue Airways,76004760
+2010,1,B6,JetBlue Airways,86281447
+2010,1,B6,JetBlue Airways,92207399
+2010,1,DL,Delta Air Lines Inc.,478692610
+2010,1,DL,Delta Air Lines Inc.,513535743
+2010,1,DL,Delta Air Lines Inc.,556132875
+2010,1,F9,Frontier Airlines Inc.,25842082
+2010,1,F9,Frontier Airlines Inc.,29501795
+2010,1,F9,Frontier Airlines Inc.,30931658
+2010,1,G4,Allegiant Air,18029803
+2010,1,G4,Allegiant Air,18075648
+2010,1,G4,Allegiant Air,25366901
+2010,1,HA,Hawaiian Airlines Inc.,20554618
+2010,1,HA,Hawaiian Airlines Inc.,22588733
+2010,1,HA,Hawaiian Airlines Inc.,23990332
+2010,1,NK,Spirit Air Lines,13573000
+2010,1,NK,Spirit Air Lines,19243000
+2010,1,NK,Spirit Air Lines,21040000
+2010,1,UA,United Air Lines Inc.,278634843
+2010,1,UA,United Air Lines Inc.,320169235
+2010,1,UA,United Air Lines Inc.,339915313
+2010,1,WN,Southwest Airlines Co.,233029287
+2010,1,WN,Southwest Airlines Co.,264484955
+2010,1,WN,Southwest Airlines Co.,285526589
+2010,2,AA,American Airlines Inc.,462016857
+2010,2,AA,American Airlines Inc.,468758063
+2010,2,AA,American Airlines Inc.,503434531
+2010,2,AS,Alaska Airlines Inc.,55913945
+2010,2,AS,Alaska Airlines Inc.,59182817
+2010,2,AS,Alaska Airlines Inc.,60489573
+2010,2,B6,JetBlue Airways,91767195
+2010,2,B6,JetBlue Airways,93445073
+2010,2,B6,JetBlue Airways,93652022
+2010,2,DL,Delta Air Lines Inc.,549864600
+2010,2,DL,Delta Air Lines Inc.,610697526
+2010,2,DL,Delta Air Lines Inc.,649214171
+2010,2,F9,Frontier Airlines Inc.,32598560
+2010,2,F9,Frontier Airlines Inc.,34513385
+2010,2,F9,Frontier Airlines Inc.,38916085
+2010,2,G4,Allegiant Air,21264283
+2010,2,G4,Allegiant Air,22541531
+2010,2,G4,Allegiant Air,22616067
+2010,2,HA,Hawaiian Airlines Inc.,24011471
+2010,2,HA,Hawaiian Airlines Inc.,25400301
+2010,2,HA,Hawaiian Airlines Inc.,25974907
+2010,2,NK,Spirit Air Lines,16306000
+2010,2,NK,Spirit Air Lines,19642000
+2010,2,NK,Spirit Air Lines,24747000
+2010,2,UA,United Air Lines Inc.,348193934
+2010,2,UA,United Air Lines Inc.,372662209
+2010,2,UA,United Air Lines Inc.,385441906
+2010,2,WN,Southwest Airlines Co.,286864925
+2010,2,WN,Southwest Airlines Co.,294844928
+2010,2,WN,Southwest Airlines Co.,311639909
+2010,3,AA,American Airlines Inc.,430701582
+2010,3,AA,American Airlines Inc.,470271142
+2010,3,AA,American Airlines Inc.,485638361
+2010,3,AS,Alaska Airlines Inc.,56800700
+2010,3,AS,Alaska Airlines Inc.,64452107
+2010,3,AS,Alaska Airlines Inc.,64630064
+2010,3,B6,JetBlue Airways,87652760
+2010,3,B6,JetBlue Airways,101498319
+2010,3,B6,JetBlue Airways,103016460
+2010,3,DL,Delta Air Lines Inc.,594968770
+2010,3,DL,Delta Air Lines Inc.,674897475
+2010,3,DL,Delta Air Lines Inc.,688747618
+2010,3,F9,Frontier Airlines Inc.,40409532
+2010,3,F9,Frontier Airlines Inc.,45267319
+2010,3,F9,Frontier Airlines Inc.,52977576
+2010,3,G4,Allegiant Air,16725168
+2010,3,G4,Allegiant Air,22759109
+2010,3,G4,Allegiant Air,26469576
+2010,3,HA,Hawaiian Airlines Inc.,24335078
+2010,3,HA,Hawaiian Airlines Inc.,27995613
+2010,3,HA,Hawaiian Airlines Inc.,28279994
+2010,3,NK,Spirit Air Lines,16203000
+2010,3,NK,Spirit Air Lines,21761000
+2010,3,NK,Spirit Air Lines,25601000
+2010,3,UA,United Air Lines Inc.,357424125
+2010,3,UA,United Air Lines Inc.,384787525
+2010,3,UA,United Air Lines Inc.,388623357
+2010,3,WN,Southwest Airlines Co.,278859942
+2010,3,WN,Southwest Airlines Co.,302773274
+2010,3,WN,Southwest Airlines Co.,302869939
+2010,4,AA,American Airlines Inc.,462522696
+2010,4,AA,American Airlines Inc.,473657488
+2010,4,AA,American Airlines Inc.,494827942
+2010,4,AS,Alaska Airlines Inc.,62512187
+2010,4,AS,Alaska Airlines Inc.,64460014
+2010,4,AS,Alaska Airlines Inc.,70859409
+2010,4,B6,JetBlue Airways,93931932
+2010,4,B6,JetBlue Airways,94965531
+2010,4,B6,JetBlue Airways,100954658
+2010,4,DL,Delta Air Lines Inc.,599261038
+2010,4,DL,Delta Air Lines Inc.,631484107
+2010,4,DL,Delta Air Lines Inc.,631603957
+2010,4,F9,Frontier Airlines Inc.,42719820
+2010,4,F9,Frontier Airlines Inc.,46308341
+2010,4,F9,Frontier Airlines Inc.,47402888
+2010,4,G4,Allegiant Air,18721644
+2010,4,G4,Allegiant Air,20902104
+2010,4,G4,Allegiant Air,24836153
+2010,4,HA,Hawaiian Airlines Inc.,26073954
+2010,4,HA,Hawaiian Airlines Inc.,27324274
+2010,4,HA,Hawaiian Airlines Inc.,32675462
+2010,4,NK,Spirit Air Lines,23004143
+2010,4,NK,Spirit Air Lines,23296000
+2010,4,NK,Spirit Air Lines,23746804
+2010,4,UA,United Air Lines Inc.,361188294
+2010,4,UA,United Air Lines Inc.,377703658
+2010,4,UA,United Air Lines Inc.,392370747
+2010,4,WN,Southwest Airlines Co.,291039058
+2010,4,WN,Southwest Airlines Co.,295283891
+2010,4,WN,Southwest Airlines Co.,313949487
+2011,1,AA,American Airlines Inc.,477088026
+2011,1,AA,American Airlines Inc.,524270778
+2011,1,AA,American Airlines Inc.,588494643
+2011,1,AS,Alaska Airlines Inc.,82777577
+2011,1,AS,Alaska Airlines Inc.,84522749
+2011,1,AS,Alaska Airlines Inc.,104669547
+2011,1,B6,JetBlue Airways,103529879
+2011,1,B6,JetBlue Airways,108490251
+2011,1,B6,JetBlue Airways,140770492
+2011,1,DL,Delta Air Lines Inc.,646794364
+2011,1,DL,Delta Air Lines Inc.,662845978
+2011,1,DL,Delta Air Lines Inc.,783920862
+2011,1,F9,Frontier Airlines Inc.,49208930
+2011,1,F9,Frontier Airlines Inc.,49450679
+2011,1,F9,Frontier Airlines Inc.,58704741
+2011,1,G4,Allegiant Air,24418574
+2011,1,G4,Allegiant Air,24545110
+2011,1,G4,Allegiant Air,37196287
+2011,1,HA,Hawaiian Airlines Inc.,32514989
+2011,1,HA,Hawaiian Airlines Inc.,33620128
+2011,1,HA,Hawaiian Airlines Inc.,39315578
+2011,1,NK,Spirit Air Lines,23177223
+2011,1,NK,Spirit Air Lines,23177223
+2011,1,NK,Spirit Air Lines,24012303
+2011,1,UA,United Air Lines Inc.,371932693
+2011,1,UA,United Air Lines Inc.,395338401
+2011,1,UA,United Air Lines Inc.,491631679
+2011,1,WN,Southwest Airlines Co.,286356751
+2011,1,WN,Southwest Airlines Co.,311677042
+2011,1,WN,Southwest Airlines Co.,389176197
+2011,2,AA,American Airlines Inc.,618293408
+2011,2,AA,American Airlines Inc.,625154053
+2011,2,AA,American Airlines Inc.,652047050
+2011,2,AS,Alaska Airlines Inc.,105857073
+2011,2,AS,Alaska Airlines Inc.,107024884
+2011,2,AS,Alaska Airlines Inc.,108259411
+2011,2,B6,JetBlue Airways,145205547
+2011,2,B6,JetBlue Airways,145786857
+2011,2,B6,JetBlue Airways,148554712
+2011,2,DL,Delta Air Lines Inc.,824085334
+2011,2,DL,Delta Air Lines Inc.,867781525
+2011,2,DL,Delta Air Lines Inc.,882006522
+2011,2,F9,Frontier Airlines Inc.,59861553
+2011,2,F9,Frontier Airlines Inc.,62138002
+2011,2,F9,Frontier Airlines Inc.,65348364
+2011,2,G4,Allegiant Air,27913802
+2011,2,G4,Allegiant Air,32483028
+2011,2,G4,Allegiant Air,33053042
+2011,2,HA,Hawaiian Airlines Inc.,41936050
+2011,2,HA,Hawaiian Airlines Inc.,42961550
+2011,2,HA,Hawaiian Airlines Inc.,46029319
+2011,2,NK,Spirit Air Lines,35030227
+2011,2,NK,Spirit Air Lines,35539017
+2011,2,NK,Spirit Air Lines,36752768
+2011,2,UA,United Air Lines Inc.,509464489
+2011,2,UA,United Air Lines Inc.,513769446
+2011,2,UA,United Air Lines Inc.,536360942
+2011,2,WN,Southwest Airlines Co.,405815527
+2011,2,WN,Southwest Airlines Co.,422911657
+2011,2,WN,Southwest Airlines Co.,429599000
+2011,3,AA,American Airlines Inc.,633595479
+2011,3,AA,American Airlines Inc.,647574448
+2011,3,AA,American Airlines Inc.,665613138
+2011,3,AS,Alaska Airlines Inc.,96124507
+2011,3,AS,Alaska Airlines Inc.,106337809
+2011,3,AS,Alaska Airlines Inc.,109057318
+2011,3,B6,JetBlue Airways,136201374
+2011,3,B6,JetBlue Airways,154581955
+2011,3,B6,JetBlue Airways,162978403
+2011,3,DL,Delta Air Lines Inc.,770036027
+2011,3,DL,Delta Air Lines Inc.,894197720
+2011,3,DL,Delta Air Lines Inc.,936893344
+2011,3,F9,Frontier Airlines Inc.,41589041
+2011,3,F9,Frontier Airlines Inc.,47499673
+2011,3,F9,Frontier Airlines Inc.,48667510
+2011,3,G4,Allegiant Air,23380299
+2011,3,G4,Allegiant Air,29041507
+2011,3,G4,Allegiant Air,37628137
+2011,3,HA,Hawaiian Airlines Inc.,41182767
+2011,3,HA,Hawaiian Airlines Inc.,45075337
+2011,3,HA,Hawaiian Airlines Inc.,45530291
+2011,3,NK,Spirit Air Lines,31510314
+2011,3,NK,Spirit Air Lines,35784710
+2011,3,NK,Spirit Air Lines,37689419
+2011,3,UA,United Air Lines Inc.,488503300
+2011,3,UA,United Air Lines Inc.,545299352
+2011,3,UA,United Air Lines Inc.,556607355
+2011,3,WN,Southwest Airlines Co.,406142066
+2011,3,WN,Southwest Airlines Co.,416264926
+2011,3,WN,Southwest Airlines Co.,418921347
+2011,4,AA,American Airlines Inc.,560526521
+2011,4,AA,American Airlines Inc.,561721373
+2011,4,AA,American Airlines Inc.,598698428
+2011,4,AS,Alaska Airlines Inc.,95757518
+2011,4,AS,Alaska Airlines Inc.,99131348
+2011,4,AS,Alaska Airlines Inc.,99384809
+2011,4,B6,JetBlue Airways,132518706
+2011,4,B6,JetBlue Airways,138263994
+2011,4,B6,JetBlue Airways,146723914
+2011,4,DL,Delta Air Lines Inc.,655726062
+2011,4,DL,Delta Air Lines Inc.,703536896
+2011,4,DL,Delta Air Lines Inc.,762368423
+2011,4,F9,Frontier Airlines Inc.,40983550
+2011,4,F9,Frontier Airlines Inc.,41298887
+2011,4,F9,Frontier Airlines Inc.,41910022
+2011,4,G4,Allegiant Air,25948589
+2011,4,G4,Allegiant Air,28941882
+2011,4,G4,Allegiant Air,31824919
+2011,4,HA,Hawaiian Airlines Inc.,41462945
+2011,4,HA,Hawaiian Airlines Inc.,42967213
+2011,4,HA,Hawaiian Airlines Inc.,44074276
+2011,4,NK,Spirit Air Lines,27652332
+2011,4,NK,Spirit Air Lines,32731906
+2011,4,NK,Spirit Air Lines,34564990
+2011,4,UA,United Air Lines Inc.,433384260
+2011,4,UA,United Air Lines Inc.,461457113
+2011,4,UA,United Air Lines Inc.,483834078
+2011,4,WN,Southwest Airlines Co.,380697765
+2011,4,WN,Southwest Airlines Co.,393631966
+2011,4,WN,Southwest Airlines Co.,401977009
+2012,1,AA,American Airlines Inc.,590655504
+2012,1,AA,American Airlines Inc.,601818028
+2012,1,AA,American Airlines Inc.,672613189
+2012,1,AS,Alaska Airlines Inc.,97538101
+2012,1,AS,Alaska Airlines Inc.,98752232
+2012,1,AS,Alaska Airlines Inc.,115412140
+2012,1,B6,JetBlue Airways,136235990
+2012,1,B6,JetBlue Airways,137009077
+2012,1,B6,JetBlue Airways,159675895
+2012,1,DL,Delta Air Lines Inc.,719404667
+2012,1,DL,Delta Air Lines Inc.,746745421
+2012,1,DL,Delta Air Lines Inc.,858238163
+2012,1,F9,Frontier Airlines Inc.,40060843
+2012,1,F9,Frontier Airlines Inc.,41379859
+2012,1,F9,Frontier Airlines Inc.,46816783
+2012,1,G4,Allegiant Air,28959824
+2012,1,G4,Allegiant Air,32224622
+2012,1,G4,Allegiant Air,47129695
+2012,1,HA,Hawaiian Airlines Inc.,42174913
+2012,1,HA,Hawaiian Airlines Inc.,44338455
+2012,1,HA,Hawaiian Airlines Inc.,49671963
+2012,1,NK,Spirit Air Lines,32735968
+2012,1,NK,Spirit Air Lines,33612181
+2012,1,NK,Spirit Air Lines,42376540
+2012,1,UA,United Air Lines Inc.,782532463
+2012,1,UA,United Air Lines Inc.,798837142
+2012,1,UA,United Air Lines Inc.,933220245
+2012,1,WN,Southwest Airlines Co.,376708594
+2012,1,WN,Southwest Airlines Co.,379849454
+2012,1,WN,Southwest Airlines Co.,424925097
+2012,2,AA,American Airlines Inc.,596457479
+2012,2,AA,American Airlines Inc.,644782762
+2012,2,AA,American Airlines Inc.,661863896
+2012,2,AS,Alaska Airlines Inc.,103137377
+2012,2,AS,Alaska Airlines Inc.,109544676
+2012,2,AS,Alaska Airlines Inc.,110628335
+2012,2,B6,JetBlue Airways,143483378
+2012,2,B6,JetBlue Airways,149110338
+2012,2,B6,JetBlue Airways,157717721
+2012,2,DL,Delta Air Lines Inc.,852128242
+2012,2,DL,Delta Air Lines Inc.,891445741
+2012,2,DL,Delta Air Lines Inc.,946712416
+2012,2,F9,Frontier Airlines Inc.,42311807
+2012,2,F9,Frontier Airlines Inc.,43326466
+2012,2,F9,Frontier Airlines Inc.,44090049
+2012,2,G4,Allegiant Air,30700491
+2012,2,G4,Allegiant Air,31233556
+2012,2,G4,Allegiant Air,38148554
+2012,2,HA,Hawaiian Airlines Inc.,47934638
+2012,2,HA,Hawaiian Airlines Inc.,48127733
+2012,2,HA,Hawaiian Airlines Inc.,49940086
+2012,2,NK,Spirit Air Lines,35823360
+2012,2,NK,Spirit Air Lines,41254164
+2012,2,NK,Spirit Air Lines,43155922
+2012,2,UA,United Air Lines Inc.,855369144
+2012,2,UA,United Air Lines Inc.,889559342
+2012,2,UA,United Air Lines Inc.,914374867
+2012,2,WN,Southwest Airlines Co.,489076997
+2012,2,WN,Southwest Airlines Co.,511678060
+2012,2,WN,Southwest Airlines Co.,518598656
+2012,3,AA,American Airlines Inc.,620273745
+2012,3,AA,American Airlines Inc.,627683350
+2012,3,AA,American Airlines Inc.,634533970
+2012,3,AS,Alaska Airlines Inc.,106650019
+2012,3,AS,Alaska Airlines Inc.,108108872
+2012,3,AS,Alaska Airlines Inc.,114822298
+2012,3,B6,JetBlue Airways,148578358
+2012,3,B6,JetBlue Airways,161014566
+2012,3,B6,JetBlue Airways,171096786
+2012,3,DL,Delta Air Lines Inc.,759404602
+2012,3,DL,Delta Air Lines Inc.,921945979
+2012,3,DL,Delta Air Lines Inc.,941029597
+2012,3,F9,Frontier Airlines Inc.,40663296
+2012,3,F9,Frontier Airlines Inc.,45677458
+2012,3,F9,Frontier Airlines Inc.,46883054
+2012,3,G4,Allegiant Air,27024047
+2012,3,G4,Allegiant Air,33396792
+2012,3,G4,Allegiant Air,35692519
+2012,3,HA,Hawaiian Airlines Inc.,50896057
+2012,3,HA,Hawaiian Airlines Inc.,54737997
+2012,3,HA,Hawaiian Airlines Inc.,55151644
+2012,3,NK,Spirit Air Lines,39449460
+2012,3,NK,Spirit Air Lines,40281033
+2012,3,NK,Spirit Air Lines,42256865
+2012,3,UA,United Air Lines Inc.,863481608
+2012,3,UA,United Air Lines Inc.,868453153
+2012,3,UA,United Air Lines Inc.,908788163
+2012,3,WN,Southwest Airlines Co.,475851591
+2012,3,WN,Southwest Airlines Co.,498996797
+2012,3,WN,Southwest Airlines Co.,499958210
+2012,4,AA,American Airlines Inc.,594147813
+2012,4,AA,American Airlines Inc.,628600531
+2012,4,AA,American Airlines Inc.,635105509
+2012,4,AS,Alaska Airlines Inc.,105407601
+2012,4,AS,Alaska Airlines Inc.,108235816
+2012,4,AS,Alaska Airlines Inc.,109692886
+2012,4,B6,JetBlue Airways,140509161
+2012,4,B6,JetBlue Airways,145231383
+2012,4,B6,JetBlue Airways,156533830
+2012,4,DL,Delta Air Lines Inc.,740087122
+2012,4,DL,Delta Air Lines Inc.,782248025
+2012,4,DL,Delta Air Lines Inc.,864108715
+2012,4,F9,Frontier Airlines Inc.,36354347
+2012,4,F9,Frontier Airlines Inc.,38293254
+2012,4,F9,Frontier Airlines Inc.,39874649
+2012,4,G4,Allegiant Air,29920312
+2012,4,G4,Allegiant Air,32225212
+2012,4,G4,Allegiant Air,34709386
+2012,4,HA,Hawaiian Airlines Inc.,55436956
+2012,4,HA,Hawaiian Airlines Inc.,57097987
+2012,4,HA,Hawaiian Airlines Inc.,58015133
+2012,4,NK,Spirit Air Lines,38925361
+2012,4,NK,Spirit Air Lines,39796888
+2012,4,NK,Spirit Air Lines,42066155
+2012,4,UA,United Air Lines Inc.,757525169
+2012,4,UA,United Air Lines Inc.,791441194
+2012,4,UA,United Air Lines Inc.,852963259
+2012,4,WN,Southwest Airlines Co.,457439659
+2012,4,WN,Southwest Airlines Co.,480761155
+2012,4,WN,Southwest Airlines Co.,513649576
+2013,1,AA,American Airlines Inc.,590299651
+2013,1,AA,American Airlines Inc.,635437258
+2013,1,AA,American Airlines Inc.,654172333
+2013,1,AS,Alaska Airlines Inc.,104312659
+2013,1,AS,Alaska Airlines Inc.,109201594
+2013,1,AS,Alaska Airlines Inc.,115780346
+2013,1,B6,JetBlue Airways,144927525
+2013,1,B6,JetBlue Airways,155594506
+2013,1,B6,JetBlue Airways,166876356
+2013,1,DL,Delta Air Lines Inc.,699449638
+2013,1,DL,Delta Air Lines Inc.,759670066
+2013,1,DL,Delta Air Lines Inc.,853995528
+2013,1,F9,Frontier Airlines Inc.,35408730
+2013,1,F9,Frontier Airlines Inc.,37033371
+2013,1,F9,Frontier Airlines Inc.,37119320
+2013,1,G4,Allegiant Air,31170267
+2013,1,G4,Allegiant Air,33531597
+2013,1,G4,Allegiant Air,45203408
+2013,1,HA,Hawaiian Airlines Inc.,53237806
+2013,1,HA,Hawaiian Airlines Inc.,55792428
+2013,1,HA,Hawaiian Airlines Inc.,60803536
+2013,1,NK,Spirit Air Lines,41563525
+2013,1,NK,Spirit Air Lines,41991357
+2013,1,NK,Spirit Air Lines,48110328
+2013,1,UA,United Air Lines Inc.,737774963
+2013,1,UA,United Air Lines Inc.,789358416
+2013,1,UA,United Air Lines Inc.,854589487
+2013,1,WN,Southwest Airlines Co.,441687164
+2013,1,WN,Southwest Airlines Co.,445780850
+2013,1,WN,Southwest Airlines Co.,517957173
+2013,2,AA,American Airlines Inc.,601287642
+2013,2,AA,American Airlines Inc.,606567564
+2013,2,AA,American Airlines Inc.,617258502
+2013,2,AS,Alaska Airlines Inc.,103480772
+2013,2,AS,Alaska Airlines Inc.,107406085
+2013,2,AS,Alaska Airlines Inc.,109109823
+2013,2,B6,JetBlue Airways,149271138
+2013,2,B6,JetBlue Airways,157260179
+2013,2,B6,JetBlue Airways,158421650
+2013,2,DL,Delta Air Lines Inc.,792397737
+2013,2,DL,Delta Air Lines Inc.,801966528
+2013,2,DL,Delta Air Lines Inc.,876541863
+2013,2,F9,Frontier Airlines Inc.,34124815
+2013,2,F9,Frontier Airlines Inc.,34202198
+2013,2,F9,Frontier Airlines Inc.,36068692
+2013,2,G4,Allegiant Air,29861052
+2013,2,G4,Allegiant Air,33076334
+2013,2,G4,Allegiant Air,35528336
+2013,2,HA,Hawaiian Airlines Inc.,54417635
+2013,2,HA,Hawaiian Airlines Inc.,54802888
+2013,2,HA,Hawaiian Airlines Inc.,55301692
+2013,2,NK,Spirit Air Lines,44384813
+2013,2,NK,Spirit Air Lines,44505773
+2013,2,NK,Spirit Air Lines,46361748
+2013,2,UA,United Air Lines Inc.,787152648
+2013,2,UA,United Air Lines Inc.,788648855
+2013,2,UA,United Air Lines Inc.,804102435
+2013,2,WN,Southwest Airlines Co.,464101809
+2013,2,WN,Southwest Airlines Co.,468011089
+2013,2,WN,Southwest Airlines Co.,481047303
+2013,3,AA,American Airlines Inc.,604074436
+2013,3,AA,American Airlines Inc.,628251208
+2013,3,AA,American Airlines Inc.,662343409
+2013,3,AS,Alaska Airlines Inc.,105567240
+2013,3,AS,Alaska Airlines Inc.,118181937
+2013,3,AS,Alaska Airlines Inc.,119947968
+2013,3,B6,JetBlue Airways,145534014
+2013,3,B6,JetBlue Airways,175877509
+2013,3,B6,JetBlue Airways,179456726
+2013,3,DL,Delta Air Lines Inc.,773212002
+2013,3,DL,Delta Air Lines Inc.,895892170
+2013,3,DL,Delta Air Lines Inc.,907796355
+2013,3,F9,Frontier Airlines Inc.,35741367
+2013,3,F9,Frontier Airlines Inc.,38803413
+2013,3,F9,Frontier Airlines Inc.,38891434
+2013,3,G4,Allegiant Air,22727914
+2013,3,G4,Allegiant Air,29638907
+2013,3,G4,Allegiant Air,38920338
+2013,3,HA,Hawaiian Airlines Inc.,57068829
+2013,3,HA,Hawaiian Airlines Inc.,59507506
+2013,3,HA,Hawaiian Airlines Inc.,60260685
+2013,3,NK,Spirit Air Lines,46982672
+2013,3,NK,Spirit Air Lines,48894363
+2013,3,NK,Spirit Air Lines,49108900
+2013,3,UA,United Air Lines Inc.,805554578
+2013,3,UA,United Air Lines Inc.,859889814
+2013,3,UA,United Air Lines Inc.,876950965
+2013,3,WN,Southwest Airlines Co.,436324202
+2013,3,WN,Southwest Airlines Co.,468986368
+2013,3,WN,Southwest Airlines Co.,489198438
+2013,4,AA,American Airlines Inc.,569587553
+2013,4,AA,American Airlines Inc.,617588683
+2013,4,AA,American Airlines Inc.,627736547
+2013,4,AS,Alaska Airlines Inc.,103299216
+2013,4,AS,Alaska Airlines Inc.,103682480
+2013,4,AS,Alaska Airlines Inc.,111597005
+2013,4,B6,JetBlue Airways,145918708
+2013,4,B6,JetBlue Airways,147226860
+2013,4,B6,JetBlue Airways,172684310
+2013,4,DL,Delta Air Lines Inc.,739827001
+2013,4,DL,Delta Air Lines Inc.,781123986
+2013,4,DL,Delta Air Lines Inc.,792986986
+2013,4,F9,Frontier Airlines Inc.,34081490
+2013,4,F9,Frontier Airlines Inc.,34458047
+2013,4,F9,Frontier Airlines Inc.,37801574
+2013,4,G4,Allegiant Air,25242456
+2013,4,G4,Allegiant Air,29954421
+2013,4,G4,Allegiant Air,37107617
+2013,4,HA,Hawaiian Airlines Inc.,54658752
+2013,4,HA,Hawaiian Airlines Inc.,56636366
+2013,4,HA,Hawaiian Airlines Inc.,58494045
+2013,4,NK,Spirit Air Lines,43855040
+2013,4,NK,Spirit Air Lines,45765538
+2013,4,NK,Spirit Air Lines,50222533
+2013,4,UA,United Air Lines Inc.,735758070
+2013,4,UA,United Air Lines Inc.,774059146
+2013,4,UA,United Air Lines Inc.,805727280
+2013,4,WN,Southwest Airlines Co.,418983683
+2013,4,WN,Southwest Airlines Co.,445566144
+2013,4,WN,Southwest Airlines Co.,449341732
+2014,1,AA,American Airlines Inc.,551540007
+2014,1,AA,American Airlines Inc.,633882032
+2014,1,AA,American Airlines Inc.,635543959
+2014,1,AS,Alaska Airlines Inc.,98284051
+2014,1,AS,Alaska Airlines Inc.,108387159
+2014,1,AS,Alaska Airlines Inc.,111391459
+2014,1,B6,JetBlue Airways,144052358
+2014,1,B6,JetBlue Airways,150456389
+2014,1,B6,JetBlue Airways,169340947
+2014,1,DL,Delta Air Lines Inc.,646807774
+2014,1,DL,Delta Air Lines Inc.,725140403
+2014,1,DL,Delta Air Lines Inc.,819250282
+2014,1,F9,Frontier Airlines Inc.,33517397
+2014,1,F9,Frontier Airlines Inc.,35164040
+2014,1,F9,Frontier Airlines Inc.,42020373
+2014,1,G4,Allegiant Air,32718329
+2014,1,G4,Allegiant Air,33249128
+2014,1,G4,Allegiant Air,44149820
+2014,1,HA,Hawaiian Airlines Inc.,51399811
+2014,1,HA,Hawaiian Airlines Inc.,56278142
+2014,1,HA,Hawaiian Airlines Inc.,58655359
+2014,1,NK,Spirit Air Lines,45844843
+2014,1,NK,Spirit Air Lines,50724028
+2014,1,NK,Spirit Air Lines,51902823
+2014,1,UA,United Air Lines Inc.,684623544
+2014,1,UA,United Air Lines Inc.,750409845
+2014,1,UA,United Air Lines Inc.,818899533
+2014,1,WN,Southwest Airlines Co.,384425204
+2014,1,WN,Southwest Airlines Co.,400589830
+2014,1,WN,Southwest Airlines Co.,476221011
+2014,2,AA,American Airlines Inc.,600458967
+2014,2,AA,American Airlines Inc.,611071738
+2014,2,AA,American Airlines Inc.,636985126
+2014,2,AS,Alaska Airlines Inc.,106722803
+2014,2,AS,Alaska Airlines Inc.,112403044
+2014,2,AS,Alaska Airlines Inc.,118792607
+2014,2,B6,JetBlue Airways,164151969
+2014,2,B6,JetBlue Airways,165148439
+2014,2,B6,JetBlue Airways,167956907
+2014,2,DL,Delta Air Lines Inc.,761034705
+2014,2,DL,Delta Air Lines Inc.,812362254
+2014,2,DL,Delta Air Lines Inc.,862304639
+2014,2,F9,Frontier Airlines Inc.,38691117
+2014,2,F9,Frontier Airlines Inc.,44032114
+2014,2,F9,Frontier Airlines Inc.,47052790
+2014,2,G4,Allegiant Air,32476301
+2014,2,G4,Allegiant Air,33509847
+2014,2,G4,Allegiant Air,39724407
+2014,2,HA,Hawaiian Airlines Inc.,53019270
+2014,2,HA,Hawaiian Airlines Inc.,57831022
+2014,2,HA,Hawaiian Airlines Inc.,58152053
+2014,2,NK,Spirit Air Lines,49678483
+2014,2,NK,Spirit Air Lines,52570922
+2014,2,NK,Spirit Air Lines,52602684
+2014,2,UA,United Air Lines Inc.,764983067
+2014,2,UA,United Air Lines Inc.,829488086
+2014,2,UA,United Air Lines Inc.,846760249
+2014,2,WN,Southwest Airlines Co.,450033426
+2014,2,WN,Southwest Airlines Co.,457296262
+2014,2,WN,Southwest Airlines Co.,464335924
+2014,3,AA,American Airlines Inc.,559901268
+2014,3,AA,American Airlines Inc.,620134995
+2014,3,AA,American Airlines Inc.,660121278
+2014,3,AS,Alaska Airlines Inc.,104041662
+2014,3,AS,Alaska Airlines Inc.,122425446
+2014,3,AS,Alaska Airlines Inc.,123894303
+2014,3,B6,JetBlue Airways,148438064
+2014,3,B6,JetBlue Airways,183941715
+2014,3,B6,JetBlue Airways,185661349
+2014,3,DL,Delta Air Lines Inc.,788162073
+2014,3,DL,Delta Air Lines Inc.,899398564
+2014,3,DL,Delta Air Lines Inc.,917927138
+2014,3,F9,Frontier Airlines Inc.,44014663
+2014,3,F9,Frontier Airlines Inc.,47924109
+2014,3,F9,Frontier Airlines Inc.,49693666
+2014,3,G4,Allegiant Air,23626371
+2014,3,G4,Allegiant Air,32753913
+2014,3,G4,Allegiant Air,40220785
+2014,3,HA,Hawaiian Airlines Inc.,53785476
+2014,3,HA,Hawaiian Airlines Inc.,60655514
+2014,3,HA,Hawaiian Airlines Inc.,61466068
+2014,3,NK,Spirit Air Lines,50063393
+2014,3,NK,Spirit Air Lines,54171960
+2014,3,NK,Spirit Air Lines,67341863
+2014,3,UA,United Air Lines Inc.,730907298
+2014,3,UA,United Air Lines Inc.,845947954
+2014,3,UA,United Air Lines Inc.,874045639
+2014,3,WN,Southwest Airlines Co.,404510280
+2014,3,WN,Southwest Airlines Co.,444702657
+2014,3,WN,Southwest Airlines Co.,485667604
+2014,4,AA,American Airlines Inc.,455909078
+2014,4,AA,American Airlines Inc.,482203233
+2014,4,AA,American Airlines Inc.,544022595
+2014,4,AS,Alaska Airlines Inc.,85764324
+2014,4,AS,Alaska Airlines Inc.,93416522
+2014,4,AS,Alaska Airlines Inc.,97605866
+2014,4,B6,JetBlue Airways,142058759
+2014,4,B6,JetBlue Airways,145652930
+2014,4,B6,JetBlue Airways,148063090
+2014,4,DL,Delta Air Lines Inc.,656222391
+2014,4,DL,Delta Air Lines Inc.,684354539
+2014,4,DL,Delta Air Lines Inc.,748749697
+2014,4,F9,Frontier Airlines Inc.,34677165
+2014,4,F9,Frontier Airlines Inc.,38565126
+2014,4,F9,Frontier Airlines Inc.,41662497
+2014,4,G4,Allegiant Air,26866022
+2014,4,G4,Allegiant Air,26954411
+2014,4,G4,Allegiant Air,27968723
+2014,4,HA,Hawaiian Airlines Inc.,46458735
+2014,4,HA,Hawaiian Airlines Inc.,47641545
+2014,4,HA,Hawaiian Airlines Inc.,51523438
+2014,4,NK,Spirit Air Lines,44027428
+2014,4,NK,Spirit Air Lines,46836251
+2014,4,NK,Spirit Air Lines,47034106
+2014,4,UA,United Air Lines Inc.,574820597
+2014,4,UA,United Air Lines Inc.,604871787
+2014,4,UA,United Air Lines Inc.,716363425
+2014,4,WN,Southwest Airlines Co.,350892224
+2014,4,WN,Southwest Airlines Co.,367236988
+2014,4,WN,Southwest Airlines Co.,396034507
+2015,1,AA,American Airlines Inc.,309871178
+2015,1,AA,American Airlines Inc.,351121741
+2015,1,AA,American Airlines Inc.,370033171
+2015,1,AS,Alaska Airlines Inc.,61030688
+2015,1,AS,Alaska Airlines Inc.,67948243
+2015,1,AS,Alaska Airlines Inc.,75381419
+2015,1,B6,JetBlue Airways,101212197
+2015,1,B6,JetBlue Airways,110873045
+2015,1,B6,JetBlue Airways,122733998
+2015,1,DL,Delta Air Lines Inc.,644186514
+2015,1,DL,Delta Air Lines Inc.,747258081
+2015,1,DL,Delta Air Lines Inc.,1032522756
+2015,1,F9,Frontier Airlines Inc.,25197719
+2015,1,F9,Frontier Airlines Inc.,27869255
+2015,1,F9,Frontier Airlines Inc.,30723371
+2015,1,G4,Allegiant Air,20000259
+2015,1,G4,Allegiant Air,21141186
+2015,1,G4,Allegiant Air,29624417
+2015,1,HA,Hawaiian Airlines Inc.,31857916
+2015,1,HA,Hawaiian Airlines Inc.,36759074
+2015,1,HA,Hawaiian Airlines Inc.,38346304
+2015,1,NK,Spirit Air Lines,28831121
+2015,1,NK,Spirit Air Lines,38303790
+2015,1,NK,Spirit Air Lines,45290362
+2015,1,UA,United Air Lines Inc.,381679345
+2015,1,UA,United Air Lines Inc.,448829702
+2015,1,UA,United Air Lines Inc.,494298972
+2015,1,WN,Southwest Airlines Co.,248082083
+2015,1,WN,Southwest Airlines Co.,279129033
+2015,1,WN,Southwest Airlines Co.,306618486
+2015,2,AA,American Airlines Inc.,352802765
+2015,2,AA,American Airlines Inc.,397241638
+2015,2,AA,American Airlines Inc.,399212661
+2015,2,AS,Alaska Airlines Inc.,70494201
+2015,2,AS,Alaska Airlines Inc.,81707294
+2015,2,AS,Alaska Airlines Inc.,82267732
+2015,2,B6,JetBlue Airways,115638233
+2015,2,B6,JetBlue Airways,127249027
+2015,2,B6,JetBlue Airways,128457811
+2015,2,DL,Delta Air Lines Inc.,688094075
+2015,2,DL,Delta Air Lines Inc.,726936793
+2015,2,DL,Delta Air Lines Inc.,762448424
+2015,2,F9,Frontier Airlines Inc.,29015210
+2015,2,F9,Frontier Airlines Inc.,31449921
+2015,2,F9,Frontier Airlines Inc.,35043475
+2015,2,G4,Allegiant Air,23788422
+2015,2,G4,Allegiant Air,26089990
+2015,2,G4,Allegiant Air,30189211
+2015,2,HA,Hawaiian Airlines Inc.,31763253
+2015,2,HA,Hawaiian Airlines Inc.,37837919
+2015,2,HA,Hawaiian Airlines Inc.,38268114
+2015,2,NK,Spirit Air Lines,36494638
+2015,2,NK,Spirit Air Lines,43090936
+2015,2,NK,Spirit Air Lines,47928866
+2015,2,UA,United Air Lines Inc.,459085674
+2015,2,UA,United Air Lines Inc.,541121316
+2015,2,UA,United Air Lines Inc.,555256568
+2015,2,WN,Southwest Airlines Co.,294667617
+2015,2,WN,Southwest Airlines Co.,329765173
+2015,2,WN,Southwest Airlines Co.,333037370
+2015,3,AA,American Airlines Inc.,433374647
+2015,3,AA,American Airlines Inc.,518931892
+2015,3,AA,American Airlines Inc.,580459082
+2015,3,AS,Alaska Airlines Inc.,58647297
+2015,3,AS,Alaska Airlines Inc.,69336410
+2015,3,AS,Alaska Airlines Inc.,78346872
+2015,3,B6,JetBlue Airways,96471232
+2015,3,B6,JetBlue Airways,117255997
+2015,3,B6,JetBlue Airways,128507248
+2015,3,DL,Delta Air Lines Inc.,476767387
+2015,3,DL,Delta Air Lines Inc.,603720416
+2015,3,DL,Delta Air Lines Inc.,639035410
+2015,3,F9,Frontier Airlines Inc.,22545183
+2015,3,F9,Frontier Airlines Inc.,29042090
+2015,3,F9,Frontier Airlines Inc.,32571491
+2015,3,G4,Allegiant Air,14929816
+2015,3,G4,Allegiant Air,22762439
+2015,3,G4,Allegiant Air,31277339
+2015,3,HA,Hawaiian Airlines Inc.,29471462
+2015,3,HA,Hawaiian Airlines Inc.,34437307
+2015,3,HA,Hawaiian Airlines Inc.,37618693
+2015,3,NK,Spirit Air Lines,34217928
+2015,3,NK,Spirit Air Lines,39375326
+2015,3,NK,Spirit Air Lines,42299858
+2015,3,UA,United Air Lines Inc.,390817490
+2015,3,UA,United Air Lines Inc.,471661958
+2015,3,UA,United Air Lines Inc.,539559041
+2015,3,WN,Southwest Airlines Co.,261198086
+2015,3,WN,Southwest Airlines Co.,290411867
+2015,3,WN,Southwest Airlines Co.,337866884
+2015,4,AA,American Airlines Inc.,398593043
+2015,4,AA,American Airlines Inc.,401898942
+2015,4,AA,American Airlines Inc.,441559226
+2015,4,AS,Alaska Airlines Inc.,57540426
+2015,4,AS,Alaska Airlines Inc.,61325553
+2015,4,AS,Alaska Airlines Inc.,66193432
+2015,4,B6,JetBlue Airways,99007701
+2015,4,B6,JetBlue Airways,99040144
+2015,4,B6,JetBlue Airways,101329622
+2015,4,DL,Delta Air Lines Inc.,463784118
+2015,4,DL,Delta Air Lines Inc.,489906720
+2015,4,DL,Delta Air Lines Inc.,570389917
+2015,4,F9,Frontier Airlines Inc.,21934170
+2015,4,F9,Frontier Airlines Inc.,24008936
+2015,4,F9,Frontier Airlines Inc.,24363325
+2015,4,G4,Allegiant Air,20222240
+2015,4,G4,Allegiant Air,20632487
+2015,4,G4,Allegiant Air,20825127
+2015,4,HA,Hawaiian Airlines Inc.,27005664
+2015,4,HA,Hawaiian Airlines Inc.,27675745
+2015,4,HA,Hawaiian Airlines Inc.,29766076
+2015,4,NK,Spirit Air Lines,34077468
+2015,4,NK,Spirit Air Lines,35332577
+2015,4,NK,Spirit Air Lines,35805171
+2015,4,UA,United Air Lines Inc.,348242016
+2015,4,UA,United Air Lines Inc.,353805139
+2015,4,UA,United Air Lines Inc.,406517958
+2015,4,WN,Southwest Airlines Co.,239548811
+2015,4,WN,Southwest Airlines Co.,255917890
+2015,4,WN,Southwest Airlines Co.,258329294
+2016,1,AA,American Airlines Inc.,281410386
+2016,1,AA,American Airlines Inc.,317344085
+2016,1,AA,American Airlines Inc.,340587052
+2016,1,AS,Alaska Airlines Inc.,42171313
+2016,1,AS,Alaska Airlines Inc.,47152571
+2016,1,AS,Alaska Airlines Inc.,50345955
+2016,1,B6,JetBlue Airways,66340295
+2016,1,B6,JetBlue Airways,70537499
+2016,1,B6,JetBlue Airways,77936475
+2016,1,DL,Delta Air Lines Inc.,328807596
+2016,1,DL,Delta Air Lines Inc.,354719002
+2016,1,DL,Delta Air Lines Inc.,388472770
+2016,1,F9,Frontier Airlines Inc.,14937147
+2016,1,F9,Frontier Airlines Inc.,16445664
+2016,1,F9,Frontier Airlines Inc.,17655232
+2016,1,G4,Allegiant Air,15650180
+2016,1,G4,Allegiant Air,16053275
+2016,1,G4,Allegiant Air,22071234
+2016,1,HA,Hawaiian Airlines Inc.,20030171
+2016,1,HA,Hawaiian Airlines Inc.,23026945
+2016,1,HA,Hawaiian Airlines Inc.,23242004
+2016,1,NK,Spirit Air Lines,25893176
+2016,1,NK,Spirit Air Lines,29253557
+2016,1,NK,Spirit Air Lines,30833796
+2016,1,UA,United Air Lines Inc.,242219657
+2016,1,UA,United Air Lines Inc.,277726020
+2016,1,UA,United Air Lines Inc.,297964996
+2016,1,WN,Southwest Airlines Co.,253104358
+2016,1,WN,Southwest Airlines Co.,277711435
+2016,1,WN,Southwest Airlines Co.,283892879
+2016,2,AA,American Airlines Inc.,350930021
+2016,2,AA,American Airlines Inc.,407824957
+2016,2,AA,American Airlines Inc.,460306736
+2016,2,AS,Alaska Airlines Inc.,51784926
+2016,2,AS,Alaska Airlines Inc.,57737641
+2016,2,AS,Alaska Airlines Inc.,65645569
+2016,2,B6,JetBlue Airways,79388437
+2016,2,B6,JetBlue Airways,91789656
+2016,2,B6,JetBlue Airways,102954211
+2016,2,DL,Delta Air Lines Inc.,429540020
+2016,2,DL,Delta Air Lines Inc.,452129965
+2016,2,DL,Delta Air Lines Inc.,963444631
+2016,2,F9,Frontier Airlines Inc.,18771877
+2016,2,F9,Frontier Airlines Inc.,22422890
+2016,2,F9,Frontier Airlines Inc.,25542928
+2016,2,G4,Allegiant Air,18602361
+2016,2,G4,Allegiant Air,21056684
+2016,2,G4,Allegiant Air,28784055
+2016,2,HA,Hawaiian Airlines Inc.,23223634
+2016,2,HA,Hawaiian Airlines Inc.,26366779
+2016,2,HA,Hawaiian Airlines Inc.,30956710
+2016,2,NK,Spirit Air Lines,32468178
+2016,2,NK,Spirit Air Lines,39436237
+2016,2,NK,Spirit Air Lines,41287248
+2016,2,UA,United Air Lines Inc.,308674504
+2016,2,UA,United Air Lines Inc.,370830564
+2016,2,UA,United Air Lines Inc.,423352591
+2016,2,WN,Southwest Airlines Co.,262687589
+2016,2,WN,Southwest Airlines Co.,285523831
+2016,2,WN,Southwest Airlines Co.,310700426
+2016,3,AA,American Airlines Inc.,399447717
+2016,3,AA,American Airlines Inc.,437594283
+2016,3,AA,American Airlines Inc.,477298830
+2016,3,AS,Alaska Airlines Inc.,55382260
+2016,3,AS,Alaska Airlines Inc.,62376704
+2016,3,AS,Alaska Airlines Inc.,66198034
+2016,3,B6,JetBlue Airways,88900518
+2016,3,B6,JetBlue Airways,98482169
+2016,3,B6,JetBlue Airways,105712879
+2016,3,DL,Delta Air Lines Inc.,404304319
+2016,3,DL,Delta Air Lines Inc.,493229453
+2016,3,DL,Delta Air Lines Inc.,501635299
+2016,3,F9,Frontier Airlines Inc.,25322242
+2016,3,F9,Frontier Airlines Inc.,26119921
+2016,3,F9,Frontier Airlines Inc.,28858501
+2016,3,G4,Allegiant Air,18949260
+2016,3,G4,Allegiant Air,21647166
+2016,3,G4,Allegiant Air,29820427
+2016,3,HA,Hawaiian Airlines Inc.,28132584
+2016,3,HA,Hawaiian Airlines Inc.,30020870
+2016,3,HA,Hawaiian Airlines Inc.,32228181
+2016,3,NK,Spirit Air Lines,38433033
+2016,3,NK,Spirit Air Lines,40967959
+2016,3,NK,Spirit Air Lines,42442868
+2016,3,UA,United Air Lines Inc.,383255846
+2016,3,UA,United Air Lines Inc.,413360687
+2016,3,UA,United Air Lines Inc.,445707176
+2016,3,WN,Southwest Airlines Co.,283361784
+2016,3,WN,Southwest Airlines Co.,295793183
+2016,3,WN,Southwest Airlines Co.,319188062
+2016,4,AA,American Airlines Inc.,391678109
+2016,4,AA,American Airlines Inc.,422850406
+2016,4,AA,American Airlines Inc.,445275123
+2016,4,AS,Alaska Airlines Inc.,60371031
+2016,4,AS,Alaska Airlines Inc.,61002508
+2016,4,AS,Alaska Airlines Inc.,68085614
+2016,4,B6,JetBlue Airways,92460910
+2016,4,B6,JetBlue Airways,92797157
+2016,4,B6,JetBlue Airways,106084293
+2016,4,DL,Delta Air Lines Inc.,385905388
+2016,4,DL,Delta Air Lines Inc.,435331872
+2016,4,DL,Delta Air Lines Inc.,476736882
+2016,4,F9,Frontier Airlines Inc.,26067387
+2016,4,F9,Frontier Airlines Inc.,27707398
+2016,4,F9,Frontier Airlines Inc.,28228960
+2016,4,G4,Allegiant Air,22205282
+2016,4,G4,Allegiant Air,23346221
+2016,4,G4,Allegiant Air,27856572
+2016,4,HA,Hawaiian Airlines Inc.,28567162
+2016,4,HA,Hawaiian Airlines Inc.,30094184
+2016,4,HA,Hawaiian Airlines Inc.,33098981
+2016,4,NK,Spirit Air Lines,39655872
+2016,4,NK,Spirit Air Lines,41066618
+2016,4,NK,Spirit Air Lines,45812193
+2016,4,UA,United Air Lines Inc.,369816083
+2016,4,UA,United Air Lines Inc.,409684092
+2016,4,UA,United Air Lines Inc.,415049145
+2016,4,WN,Southwest Airlines Co.,298346362
+2016,4,WN,Southwest Airlines Co.,300044113
+2016,4,WN,Southwest Airlines Co.,312741891
+2017,1,AA,American Airlines Inc.,405710427
+2017,1,AA,American Airlines Inc.,440888323
+2017,1,AA,American Airlines Inc.,470399431
+2017,1,AS,Alaska Airlines Inc.,64013203
+2017,1,AS,Alaska Airlines Inc.,69840329
+2017,1,AS,Alaska Airlines Inc.,74943613
+2017,1,B6,JetBlue Airways,99556083
+2017,1,B6,JetBlue Airways,110137331
+2017,1,B6,JetBlue Airways,112926057
+2017,1,DL,Delta Air Lines Inc.,418711893
+2017,1,DL,Delta Air Lines Inc.,430704972
+2017,1,DL,Delta Air Lines Inc.,474280366
+2017,1,F9,Frontier Airlines Inc.,26047170
+2017,1,F9,Frontier Airlines Inc.,28765881
+2017,1,F9,Frontier Airlines Inc.,29538698
+2017,1,G4,Allegiant Air,25981537
+2017,1,G4,Allegiant Air,26151460
+2017,1,G4,Allegiant Air,32316022
+2017,1,HA,Hawaiian Airlines Inc.,30774106
+2017,1,HA,Hawaiian Airlines Inc.,33935069
+2017,1,HA,Hawaiian Airlines Inc.,34732170
+2017,1,NK,Spirit Air Lines,45333409
+2017,1,NK,Spirit Air Lines,46027342
+2017,1,NK,Spirit Air Lines,48421086
+2017,1,UA,United Air Lines Inc.,376303117
+2017,1,UA,United Air Lines Inc.,412500789
+2017,1,UA,United Air Lines Inc.,441695391
+2017,1,WN,Southwest Airlines Co.,269270544
+2017,1,WN,Southwest Airlines Co.,291146135
+2017,1,WN,Southwest Airlines Co.,319793282
+2017,2,AA,American Airlines Inc.,463057869
+2017,2,AA,American Airlines Inc.,467529063
+2017,2,AA,American Airlines Inc.,483472623
+2017,2,AS,Alaska Airlines Inc.,71112095
+2017,2,AS,Alaska Airlines Inc.,71267705
+2017,2,AS,Alaska Airlines Inc.,73280450
+2017,2,B6,JetBlue Airways,106336890
+2017,2,B6,JetBlue Airways,107305126
+2017,2,B6,JetBlue Airways,111403505
+2017,2,DL,Delta Air Lines Inc.,467695114
+2017,2,DL,Delta Air Lines Inc.,505968071
+2017,2,DL,Delta Air Lines Inc.,526504440
+2017,2,F9,Frontier Airlines Inc.,28618976
+2017,2,F9,Frontier Airlines Inc.,28633297
+2017,2,F9,Frontier Airlines Inc.,29205108
+2017,2,G4,Allegiant Air,26166845
+2017,2,G4,Allegiant Air,28584598
+2017,2,G4,Allegiant Air,30242275
+2017,2,HA,Hawaiian Airlines Inc.,32611536
+2017,2,HA,Hawaiian Airlines Inc.,32841417
+2017,2,HA,Hawaiian Airlines Inc.,33069900
+2017,2,NK,Spirit Air Lines,46221323
+2017,2,NK,Spirit Air Lines,47920280
+2017,2,NK,Spirit Air Lines,48152344
+2017,2,UA,United Air Lines Inc.,428188923
+2017,2,UA,United Air Lines Inc.,448315754
+2017,2,UA,United Air Lines Inc.,452298657
+2017,2,WN,Southwest Airlines Co.,308989857
+2017,2,WN,Southwest Airlines Co.,313718151
+2017,2,WN,Southwest Airlines Co.,320122768
+2017,3,AA,American Airlines Inc.,474298088
+2017,3,AA,American Airlines Inc.,492481518
+2017,3,AA,American Airlines Inc.,519928131
+2017,3,AS,Alaska Airlines Inc.,74880696
+2017,3,AS,Alaska Airlines Inc.,76698940
+2017,3,AS,Alaska Airlines Inc.,79457576
+2017,3,B6,JetBlue Airways,108032141
+2017,3,B6,JetBlue Airways,115031818
+2017,3,B6,JetBlue Airways,123839332
+2017,3,DL,Delta Air Lines Inc.,498229067
+2017,3,DL,Delta Air Lines Inc.,535785231
+2017,3,DL,Delta Air Lines Inc.,558943709
+2017,3,F9,Frontier Airlines Inc.,31189729
+2017,3,F9,Frontier Airlines Inc.,33609689
+2017,3,F9,Frontier Airlines Inc.,34497527
+2017,3,G4,Allegiant Air,21836029
+2017,3,G4,Allegiant Air,26759574
+2017,3,G4,Allegiant Air,31523539
+2017,3,HA,Hawaiian Airlines Inc.,33777714
+2017,3,HA,Hawaiian Airlines Inc.,35746649
+2017,3,HA,Hawaiian Airlines Inc.,35924511
+2017,3,NK,Spirit Air Lines,50680220
+2017,3,NK,Spirit Air Lines,50909978
+2017,3,NK,Spirit Air Lines,56709989
+2017,3,UA,United Air Lines Inc.,470835673
+2017,3,UA,United Air Lines Inc.,478835917
+2017,3,UA,United Air Lines Inc.,493460968
+2017,3,WN,Southwest Airlines Co.,303063218
+2017,3,WN,Southwest Airlines Co.,320098115
+2017,3,WN,Southwest Airlines Co.,327136102
+2017,4,AA,American Airlines Inc.,479414257
+2017,4,AA,American Airlines Inc.,523911775
+2017,4,AA,American Airlines Inc.,551494299
+2017,4,AS,Alaska Airlines Inc.,78038953
+2017,4,AS,Alaska Airlines Inc.,81797606
+2017,4,AS,Alaska Airlines Inc.,88948501
+2017,4,B6,JetBlue Airways,117338300
+2017,4,B6,JetBlue Airways,117915059
+2017,4,B6,JetBlue Airways,132928875
+2017,4,DL,Delta Air Lines Inc.,495375994
+2017,4,DL,Delta Air Lines Inc.,527198403
+2017,4,DL,Delta Air Lines Inc.,552229834
+2017,4,F9,Frontier Airlines Inc.,37093695
+2017,4,F9,Frontier Airlines Inc.,37427617
+2017,4,F9,Frontier Airlines Inc.,41295962
+2017,4,G4,Allegiant Air,29280166
+2017,4,G4,Allegiant Air,29388053
+2017,4,G4,Allegiant Air,33597781
+2017,4,HA,Hawaiian Airlines Inc.,37764424
+2017,4,HA,Hawaiian Airlines Inc.,38826574
+2017,4,HA,Hawaiian Airlines Inc.,42395918
+2017,4,NK,Spirit Air Lines,55850185
+2017,4,NK,Spirit Air Lines,57269753
+2017,4,NK,Spirit Air Lines,62085290
+2017,4,UA,United Air Lines Inc.,472662190
+2017,4,UA,United Air Lines Inc.,499141199
+2017,4,UA,United Air Lines Inc.,515408590
+2017,4,WN,Southwest Airlines Co.,321385705
+2017,4,WN,Southwest Airlines Co.,328019614
+2017,4,WN,Southwest Airlines Co.,329997258
+2018,1,AA,American Airlines Inc.,521982273
+2018,1,AA,American Airlines Inc.,560634926
+2018,1,AA,American Airlines Inc.,583760151
+2018,1,AS,Alaska Airlines Inc.,113227536
+2018,1,AS,Alaska Airlines Inc.,124660897
+2018,1,AS,Alaska Airlines Inc.,129431305
+2018,1,B6,JetBlue Airways,132609918
+2018,1,B6,JetBlue Airways,142022199
+2018,1,B6,JetBlue Airways,142221682
+2018,1,DL,Delta Air Lines Inc.,499657381
+2018,1,DL,Delta Air Lines Inc.,546581010
+2018,1,DL,Delta Air Lines Inc.,554695520
+2018,1,F9,Frontier Airlines Inc.,39360836
+2018,1,F9,Frontier Airlines Inc.,40488501
+2018,1,F9,Frontier Airlines Inc.,43579944
+2018,1,G4,Allegiant Air,31416534
+2018,1,G4,Allegiant Air,32619856
+2018,1,G4,Allegiant Air,41449948
+2018,1,HA,Hawaiian Airlines Inc.,39782894
+2018,1,HA,Hawaiian Airlines Inc.,44118790
+2018,1,HA,Hawaiian Airlines Inc.,44670796
+2018,1,NK,Spirit Air Lines,64842232
+2018,1,NK,Spirit Air Lines,69562682
+2018,1,NK,Spirit Air Lines,70240724
+2018,1,UA,United Air Lines Inc.,475312985
+2018,1,UA,United Air Lines Inc.,507943829
+2018,1,UA,United Air Lines Inc.,550417287
+2018,1,WN,Southwest Airlines Co.,295824553
+2018,1,WN,Southwest Airlines Co.,319693866
+2018,1,WN,Southwest Airlines Co.,351767819
+2018,2,AA,American Airlines Inc.,598772599
+2018,2,AA,American Airlines Inc.,688107672
+2018,2,AA,American Airlines Inc.,715573331
+2018,2,AS,Alaska Airlines Inc.,136203107
+2018,2,AS,Alaska Airlines Inc.,150860233
+2018,2,AS,Alaska Airlines Inc.,152302542
+2018,2,B6,JetBlue Airways,153254256
+2018,2,B6,JetBlue Airways,167870388
+2018,2,B6,JetBlue Airways,169993298
+2018,2,DL,Delta Air Lines Inc.,622668832
+2018,2,DL,Delta Air Lines Inc.,651070915
+2018,2,DL,Delta Air Lines Inc.,705862646
+2018,2,F9,Frontier Airlines Inc.,42491263
+2018,2,F9,Frontier Airlines Inc.,47480031
+2018,2,F9,Frontier Airlines Inc.,48951325
+2018,2,G4,Allegiant Air,37854201
+2018,2,G4,Allegiant Air,39261794
+2018,2,G4,Allegiant Air,45226365
+2018,2,HA,Hawaiian Airlines Inc.,45797104
+2018,2,HA,Hawaiian Airlines Inc.,50444640
+2018,2,HA,Hawaiian Airlines Inc.,51026183
+2018,2,NK,Spirit Air Lines,74289874
+2018,2,NK,Spirit Air Lines,84672314
+2018,2,NK,Spirit Air Lines,87217867
+2018,2,UA,United Air Lines Inc.,569304950
+2018,2,UA,United Air Lines Inc.,647499154
+2018,2,UA,United Air Lines Inc.,686849022
+2018,2,WN,Southwest Airlines Co.,354131759
+2018,2,WN,Southwest Airlines Co.,385763181
+2018,2,WN,Southwest Airlines Co.,403070327
+2018,3,AA,American Airlines Inc.,666494249
+2018,3,AA,American Airlines Inc.,724232724
+2018,3,AA,American Airlines Inc.,735726546
+2018,3,AS,Alaska Airlines Inc.,125556848
+2018,3,AS,Alaska Airlines Inc.,154113329
+2018,3,AS,Alaska Airlines Inc.,156998714
+2018,3,B6,JetBlue Airways,161329062
+2018,3,B6,JetBlue Airways,176609955
+2018,3,B6,JetBlue Airways,176866669
+2018,3,DL,Delta Air Lines Inc.,656019382
+2018,3,DL,Delta Air Lines Inc.,752331133
+2018,3,DL,Delta Air Lines Inc.,776004538
+2018,3,F9,Frontier Airlines Inc.,43220639
+2018,3,F9,Frontier Airlines Inc.,45981885
+2018,3,F9,Frontier Airlines Inc.,48868239
+2018,3,G4,Allegiant Air,27681519
+2018,3,G4,Allegiant Air,38055346
+2018,3,G4,Allegiant Air,47704103
+2018,3,HA,Hawaiian Airlines Inc.,51522119
+2018,3,HA,Hawaiian Airlines Inc.,52047100
+2018,3,HA,Hawaiian Airlines Inc.,53602750
+2018,3,NK,Spirit Air Lines,76016010
+2018,3,NK,Spirit Air Lines,91321528
+2018,3,NK,Spirit Air Lines,91480768
+2018,3,UA,United Air Lines Inc.,634502047
+2018,3,UA,United Air Lines Inc.,694423722
+2018,3,UA,United Air Lines Inc.,709820683
+2018,3,WN,Southwest Airlines Co.,352368431
+2018,3,WN,Southwest Airlines Co.,389813643
+2018,3,WN,Southwest Airlines Co.,409421954
+2018,4,AA,American Airlines Inc.,561707796
+2018,4,AA,American Airlines Inc.,598494164
+2018,4,AA,American Airlines Inc.,709266054
+2018,4,AS,Alaska Airlines Inc.,127340061
+2018,4,AS,Alaska Airlines Inc.,141954875
+2018,4,AS,Alaska Airlines Inc.,151392652
+2018,4,B6,JetBlue Airways,148470547
+2018,4,B6,JetBlue Airways,158355073
+2018,4,B6,JetBlue Airways,169632524
+2018,4,DL,Delta Air Lines Inc.,648932844
+2018,4,DL,Delta Air Lines Inc.,675360855
+2018,4,DL,Delta Air Lines Inc.,715587544
+2018,4,F9,Frontier Airlines Inc.,38653570
+2018,4,F9,Frontier Airlines Inc.,45355746
+2018,4,F9,Frontier Airlines Inc.,50060564
+2018,4,G4,Allegiant Air,30074947
+2018,4,G4,Allegiant Air,35896261
+2018,4,G4,Allegiant Air,37713494
+2018,4,HA,Hawaiian Airlines Inc.,43448273
+2018,4,HA,Hawaiian Airlines Inc.,47861575
+2018,4,HA,Hawaiian Airlines Inc.,53350657
+2018,4,NK,Spirit Air Lines,71860839
+2018,4,NK,Spirit Air Lines,78408771
+2018,4,NK,Spirit Air Lines,79410404
+2018,4,UA,United Air Lines Inc.,569473976
+2018,4,UA,United Air Lines Inc.,617440815
+2018,4,UA,United Air Lines Inc.,686746812
+2018,4,WN,Southwest Airlines Co.,357550908
+2018,4,WN,Southwest Airlines Co.,390252215
+2018,4,WN,Southwest Airlines Co.,392274611
+2019,1,AA,American Airlines Inc.,506989847
+2019,1,AA,American Airlines Inc.,527930266
+2019,1,AA,American Airlines Inc.,595793975
+2019,1,AS,Alaska Airlines Inc.,110417119
+2019,1,AS,Alaska Airlines Inc.,117295194
+2019,1,AS,Alaska Airlines Inc.,134629100
+2019,1,B6,JetBlue Airways,136980956
+2019,1,B6,JetBlue Airways,137193906
+2019,1,B6,JetBlue Airways,162930484
+2019,1,DL,Delta Air Lines Inc.,512424644
+2019,1,DL,Delta Air Lines Inc.,562392438
+2019,1,DL,Delta Air Lines Inc.,609257127
+2019,1,F9,Frontier Airlines Inc.,37663471
+2019,1,F9,Frontier Airlines Inc.,39458547
+2019,1,F9,Frontier Airlines Inc.,42894498
+2019,1,G4,Allegiant Air,25625440
+2019,1,G4,Allegiant Air,30327743
+2019,1,G4,Allegiant Air,43520144
+2019,1,HA,Hawaiian Airlines Inc.,37668430
+2019,1,HA,Hawaiian Airlines Inc.,39987014
+2019,1,HA,Hawaiian Airlines Inc.,43417084
+2019,1,NK,Spirit Air Lines,71242248
+2019,1,NK,Spirit Air Lines,71407508
+2019,1,NK,Spirit Air Lines,86986328
+2019,1,UA,United Air Lines Inc.,472939819
+2019,1,UA,United Air Lines Inc.,500710455
+2019,1,UA,United Air Lines Inc.,597728943
+2019,1,WN,Southwest Airlines Co.,293559548
+2019,1,WN,Southwest Airlines Co.,315731576
+2019,1,WN,Southwest Airlines Co.,359210576
+2019,2,AA,American Airlines Inc.,589969418
+2019,2,AA,American Airlines Inc.,636743732
+2019,2,AA,American Airlines Inc.,660653095
+2019,2,AS,Alaska Airlines Inc.,137208447
+2019,2,AS,Alaska Airlines Inc.,137655825
+2019,2,AS,Alaska Airlines Inc.,151473132
+2019,2,B6,JetBlue Airways,154413079
+2019,2,B6,JetBlue Airways,162565520
+2019,2,B6,JetBlue Airways,167296966
+2019,2,DL,Delta Air Lines Inc.,598624785
+2019,2,DL,Delta Air Lines Inc.,654812923
+2019,2,DL,Delta Air Lines Inc.,712864450
+2019,2,F9,Frontier Airlines Inc.,42763590
+2019,2,F9,Frontier Airlines Inc.,44641836
+2019,2,F9,Frontier Airlines Inc.,46689995
+2019,2,G4,Allegiant Air,38336963
+2019,2,G4,Allegiant Air,39038523
+2019,2,G4,Allegiant Air,42633730
+2019,2,HA,Hawaiian Airlines Inc.,42539408
+2019,2,HA,Hawaiian Airlines Inc.,44830079
+2019,2,HA,Hawaiian Airlines Inc.,48008106
+2019,2,NK,Spirit Air Lines,85020397
+2019,2,NK,Spirit Air Lines,85227413
+2019,2,NK,Spirit Air Lines,94757645
+2019,2,UA,United Air Lines Inc.,591706212
+2019,2,UA,United Air Lines Inc.,628169636
+2019,2,UA,United Air Lines Inc.,653718728
+2019,2,WN,Southwest Airlines Co.,348343487
+2019,2,WN,Southwest Airlines Co.,357969700
+2019,2,WN,Southwest Airlines Co.,378163574
+2019,3,AA,American Airlines Inc.,582240436
+2019,3,AA,American Airlines Inc.,646382308
+2019,3,AA,American Airlines Inc.,658527259
+2019,3,AS,Alaska Airlines Inc.,125986059
+2019,3,AS,Alaska Airlines Inc.,139348885
+2019,3,AS,Alaska Airlines Inc.,146809415
+2019,3,B6,JetBlue Airways,140202692
+2019,3,B6,JetBlue Airways,163627281
+2019,3,B6,JetBlue Airways,167225559
+2019,3,DL,Delta Air Lines Inc.,602353484
+2019,3,DL,Delta Air Lines Inc.,669235386
+2019,3,DL,Delta Air Lines Inc.,688490352
+2019,3,F9,Frontier Airlines Inc.,45457018
+2019,3,F9,Frontier Airlines Inc.,47369606
+2019,3,F9,Frontier Airlines Inc.,50399307
+2019,3,G4,Allegiant Air,22762069
+2019,3,G4,Allegiant Air,34765065
+2019,3,G4,Allegiant Air,47822962
+2019,3,HA,Hawaiian Airlines Inc.,43073780
+2019,3,HA,Hawaiian Airlines Inc.,45057213
+2019,3,HA,Hawaiian Airlines Inc.,45063837
+2019,3,NK,Spirit Air Lines,73426677
+2019,3,NK,Spirit Air Lines,88843977
+2019,3,NK,Spirit Air Lines,91576334
+2019,3,UA,United Air Lines Inc.,561519578
+2019,3,UA,United Air Lines Inc.,626433174
+2019,3,UA,United Air Lines Inc.,645067356
+2019,3,WN,Southwest Airlines Co.,319609214
+2019,3,WN,Southwest Airlines Co.,346816200
+2019,3,WN,Southwest Airlines Co.,368451237
+2019,4,AA,American Airlines Inc.,541957465
+2019,4,AA,American Airlines Inc.,590466091
+2019,4,AA,American Airlines Inc.,595409136
+2019,4,AS,Alaska Airlines Inc.,132086002
+2019,4,AS,Alaska Airlines Inc.,133067672
+2019,4,AS,Alaska Airlines Inc.,140403671
+2019,4,B6,JetBlue Airways,147500561
+2019,4,B6,JetBlue Airways,147708074
+2019,4,B6,JetBlue Airways,159546450
+2019,4,DL,Delta Air Lines Inc.,534860907
+2019,4,DL,Delta Air Lines Inc.,584470564
+2019,4,DL,Delta Air Lines Inc.,584944523
+2019,4,F9,Frontier Airlines Inc.,47574276
+2019,4,F9,Frontier Airlines Inc.,48742834
+2019,4,F9,Frontier Airlines Inc.,49864689
+2019,4,G4,Allegiant Air,32695081
+2019,4,G4,Allegiant Air,32944387
+2019,4,G4,Allegiant Air,38181190
+2019,4,HA,Hawaiian Airlines Inc.,41902816
+2019,4,HA,Hawaiian Airlines Inc.,43732171
+2019,4,HA,Hawaiian Airlines Inc.,46134474
+2019,4,NK,Spirit Air Lines,79877614
+2019,4,NK,Spirit Air Lines,80509044
+2019,4,NK,Spirit Air Lines,84602000
+2019,4,UA,United Air Lines Inc.,555536642
+2019,4,UA,United Air Lines Inc.,593926999
+2019,4,UA,United Air Lines Inc.,596508382
+2019,4,WN,Southwest Airlines Co.,341558294
+2019,4,WN,Southwest Airlines Co.,349391883
+2019,4,WN,Southwest Airlines Co.,364431875
+2020,1,AA,American Airlines Inc.,289546879
+2020,1,AA,American Airlines Inc.,455402357
+2020,1,AA,American Airlines Inc.,556711791
+2020,1,AS,Alaska Airlines Inc.,77392572
+2020,1,AS,Alaska Airlines Inc.,106484278
+2020,1,AS,Alaska Airlines Inc.,133024770
+2020,1,B6,JetBlue Airways,89374944
+2020,1,B6,JetBlue Airways,124068316
+2020,1,B6,JetBlue Airways,151790570
+2020,1,DL,Delta Air Lines Inc.,328034350
+2020,1,DL,Delta Air Lines Inc.,497041379
+2020,1,DL,Delta Air Lines Inc.,553189593
+2020,1,F9,Frontier Airlines Inc.,27887469
+2020,1,F9,Frontier Airlines Inc.,40016895
+2020,1,F9,Frontier Airlines Inc.,49540426
+2020,1,G4,Allegiant Air,25952659
+2020,1,G4,Allegiant Air,31200313
+2020,1,G4,Allegiant Air,32104867
+2020,1,HA,Hawaiian Airlines Inc.,25189490
+2020,1,HA,Hawaiian Airlines Inc.,37084647
+2020,1,HA,Hawaiian Airlines Inc.,46795957
+2020,1,NK,Spirit Air Lines,55908839
+2020,1,NK,Spirit Air Lines,71931837
+2020,1,NK,Spirit Air Lines,85367301
+2020,1,UA,United Air Lines Inc.,303694826
+2020,1,UA,United Air Lines Inc.,442810554
+2020,1,UA,United Air Lines Inc.,561002586
+2020,1,WN,Southwest Airlines Co.,220830400
+2020,1,WN,Southwest Airlines Co.,279923925
+2020,1,WN,Southwest Airlines Co.,326751238
+2020,2,AA,American Airlines Inc.,58997504
+2020,2,AA,American Airlines Inc.,61163312
+2020,2,AA,American Airlines Inc.,78700810
+2020,2,AS,Alaska Airlines Inc.,11097519
+2020,2,AS,Alaska Airlines Inc.,13731493
+2020,2,AS,Alaska Airlines Inc.,21213167
+2020,2,B6,JetBlue Airways,5211764
+2020,2,B6,JetBlue Airways,8564923
+2020,2,B6,JetBlue Airways,15418440
+2020,2,DL,Delta Air Lines Inc.,62121948
+2020,2,DL,Delta Air Lines Inc.,72752578
+2020,2,DL,Delta Air Lines Inc.,197938202
+2020,2,F9,Frontier Airlines Inc.,2048037
+2020,2,F9,Frontier Airlines Inc.,3395839
+2020,2,F9,Frontier Airlines Inc.,7322574
+2020,2,G4,Allegiant Air,1862842
+2020,2,G4,Allegiant Air,7147534
+2020,2,G4,Allegiant Air,17825156
+2020,2,HA,Hawaiian Airlines Inc.,1454144
+2020,2,HA,Hawaiian Airlines Inc.,2014053
+2020,2,HA,Hawaiian Airlines Inc.,3279036
+2020,2,NK,Spirit Air Lines,878753
+2020,2,NK,Spirit Air Lines,9224898
+2020,2,NK,Spirit Air Lines,9810140
+2020,2,UA,United Air Lines Inc.,53160118
+2020,2,UA,United Air Lines Inc.,53406730
+2020,2,UA,United Air Lines Inc.,60960285
+2020,2,WN,Southwest Airlines Co.,69933681
+2020,2,WN,Southwest Airlines Co.,83583534
+2020,2,WN,Southwest Airlines Co.,106584614
+2020,3,AA,American Airlines Inc.,134668192
+2020,3,AA,American Airlines Inc.,137596378
+2020,3,AA,American Airlines Inc.,147764885
+2020,3,AS,Alaska Airlines Inc.,28101868
+2020,3,AS,Alaska Airlines Inc.,32412973
+2020,3,AS,Alaska Airlines Inc.,37335083
+2020,3,B6,JetBlue Airways,27903498
+2020,3,B6,JetBlue Airways,33455113
+2020,3,B6,JetBlue Airways,39958028
+2020,3,DL,Delta Air Lines Inc.,110549406
+2020,3,DL,Delta Air Lines Inc.,145466274
+2020,3,DL,Delta Air Lines Inc.,154212501
+2020,3,F9,Frontier Airlines Inc.,12919068
+2020,3,F9,Frontier Airlines Inc.,14501660
+2020,3,F9,Frontier Airlines Inc.,14655944
+2020,3,G4,Allegiant Air,10951165
+2020,3,G4,Allegiant Air,18935310
+2020,3,G4,Allegiant Air,22852033
+2020,3,HA,Hawaiian Airlines Inc.,4378022
+2020,3,HA,Hawaiian Airlines Inc.,5194761
+2020,3,HA,Hawaiian Airlines Inc.,5286724
+2020,3,NK,Spirit Air Lines,22475343
+2020,3,NK,Spirit Air Lines,32125803
+2020,3,NK,Spirit Air Lines,39683432
+2020,3,UA,United Air Lines Inc.,100541201
+2020,3,UA,United Air Lines Inc.,120278407
+2020,3,UA,United Air Lines Inc.,130176092
+2020,3,WN,Southwest Airlines Co.,106402789
+2020,3,WN,Southwest Airlines Co.,130587961
+2020,3,WN,Southwest Airlines Co.,132255523
+2020,4,AA,American Airlines Inc.,144193614
+2020,4,AA,American Airlines Inc.,154076319
+2020,4,AA,American Airlines Inc.,188691967
+2020,4,AS,Alaska Airlines Inc.,37160773
+2020,4,AS,Alaska Airlines Inc.,42042008
+2020,4,AS,Alaska Airlines Inc.,50529678
+2020,4,B6,JetBlue Airways,34769230
+2020,4,B6,JetBlue Airways,42461537
+2020,4,B6,JetBlue Airways,56703285
+2020,4,DL,Delta Air Lines Inc.,157785209
+2020,4,DL,Delta Air Lines Inc.,167086598
+2020,4,DL,Delta Air Lines Inc.,284556644
+2020,4,F9,Frontier Airlines Inc.,14529212
+2020,4,F9,Frontier Airlines Inc.,15038238
+2020,4,F9,Frontier Airlines Inc.,17284515
+2020,4,G4,Allegiant Air,16390888
+2020,4,G4,Allegiant Air,16564228
+2020,4,G4,Allegiant Air,19814523
+2020,4,HA,Hawaiian Airlines Inc.,5298292
+2020,4,HA,Hawaiian Airlines Inc.,8048847
+2020,4,HA,Hawaiian Airlines Inc.,12563567
+2020,4,NK,Spirit Air Lines,26276717
+2020,4,NK,Spirit Air Lines,35896134
+2020,4,NK,Spirit Air Lines,41424285
+2020,4,UA,United Air Lines Inc.,138030517
+2020,4,UA,United Air Lines Inc.,156747706
+2020,4,UA,United Air Lines Inc.,192876693
+2020,4,WN,Southwest Airlines Co.,98929453
+2020,4,WN,Southwest Airlines Co.,121663611
+2020,4,WN,Southwest Airlines Co.,129739357
+2021,1,AA,American Airlines Inc.,206625441
+2021,1,AA,American Airlines Inc.,208972614
+2021,1,AA,American Airlines Inc.,303749155
+2021,1,AS,Alaska Airlines Inc.,51630932
+2021,1,AS,Alaska Airlines Inc.,54769497
+2021,1,AS,Alaska Airlines Inc.,76656025
+2021,1,B6,JetBlue Airways,50652720
+2021,1,B6,JetBlue Airways,56782800
+2021,1,B6,JetBlue Airways,85958553
+2021,1,DL,Delta Air Lines Inc.,218282592
+2021,1,DL,Delta Air Lines Inc.,247604695
+2021,1,DL,Delta Air Lines Inc.,423334828
+2021,1,F9,Frontier Airlines Inc.,17479290
+2021,1,F9,Frontier Airlines Inc.,19150509
+2021,1,F9,Frontier Airlines Inc.,34116874
+2021,1,G4,Allegiant Air,16762471
+2021,1,G4,Allegiant Air,24846560
+2021,1,G4,Allegiant Air,41132293
+2021,1,HA,Hawaiian Airlines Inc.,13607608
+2021,1,HA,Hawaiian Airlines Inc.,15268867
+2021,1,HA,Hawaiian Airlines Inc.,18153226
+2021,1,NK,Spirit Air Lines,39642429
+2021,1,NK,Spirit Air Lines,41231250
+2021,1,NK,Spirit Air Lines,62056809
+2021,1,UA,United Air Lines Inc.,178085435
+2021,1,UA,United Air Lines Inc.,184781849
+2021,1,UA,United Air Lines Inc.,251018504
+2021,1,WN,Southwest Airlines Co.,117896603
+2021,1,WN,Southwest Airlines Co.,128747636
+2021,1,WN,Southwest Airlines Co.,208449312
+2021,2,AA,American Airlines Inc.,325512712
+2021,2,AA,American Airlines Inc.,376552409
+2021,2,AA,American Airlines Inc.,446093180
+2021,2,AS,Alaska Airlines Inc.,82885152
+2021,2,AS,Alaska Airlines Inc.,93639262
+2021,2,AS,Alaska Airlines Inc.,101837211
+2021,2,B6,JetBlue Airways,86768253
+2021,2,B6,JetBlue Airways,113688894
+2021,2,B6,JetBlue Airways,134432664
+2021,2,DL,Delta Air Lines Inc.,305428054
+2021,2,DL,Delta Air Lines Inc.,546831280
+2021,2,DL,Delta Air Lines Inc.,546831280
+2021,2,F9,Frontier Airlines Inc.,35267772
+2021,2,F9,Frontier Airlines Inc.,40033450
+2021,2,F9,Frontier Airlines Inc.,47202805
+2021,2,G4,Allegiant Air,31335786
+2021,2,G4,Allegiant Air,31471202
+2021,2,G4,Allegiant Air,46836051
+2021,2,HA,Hawaiian Airlines Inc.,20672002
+2021,2,HA,Hawaiian Airlines Inc.,26376158
+2021,2,HA,Hawaiian Airlines Inc.,32146022
+2021,2,NK,Spirit Air Lines,60555363
+2021,2,NK,Spirit Air Lines,75125837
+2021,2,NK,Spirit Air Lines,79143439
+2021,2,UA,United Air Lines Inc.,255753295
+2021,2,UA,United Air Lines Inc.,292805029
+2021,2,UA,United Air Lines Inc.,355399792
+2021,2,WN,Southwest Airlines Co.,225324414
+2021,2,WN,Southwest Airlines Co.,249627137
+2021,2,WN,Southwest Airlines Co.,302034596
+2021,3,AA,American Airlines Inc.,440508443
+2021,3,AA,American Airlines Inc.,473965784
+2021,3,AA,American Airlines Inc.,497524948
+2021,3,AS,Alaska Airlines Inc.,105612864
+2021,3,AS,Alaska Airlines Inc.,112690985
+2021,3,AS,Alaska Airlines Inc.,115152650
+2021,3,B6,JetBlue Airways,137472167
+2021,3,B6,JetBlue Airways,151816326
+2021,3,B6,JetBlue Airways,153266178
+2021,3,DL,Delta Air Lines Inc.,382162162
+2021,3,DL,Delta Air Lines Inc.,452052866
+2021,3,DL,Delta Air Lines Inc.,454131759
+2021,3,F9,Frontier Airlines Inc.,43889226
+2021,3,F9,Frontier Airlines Inc.,50111785
+2021,3,F9,Frontier Airlines Inc.,54056581
+2021,3,G4,Allegiant Air,27717396
+2021,3,G4,Allegiant Air,37243170
+2021,3,G4,Allegiant Air,53418291
+2021,3,HA,Hawaiian Airlines Inc.,32490994
+2021,3,HA,Hawaiian Airlines Inc.,34662461
+2021,3,HA,Hawaiian Airlines Inc.,35391676
+2021,3,NK,Spirit Air Lines,79816264
+2021,3,NK,Spirit Air Lines,83309306
+2021,3,NK,Spirit Air Lines,96492045
+2021,3,UA,United Air Lines Inc.,410811913
+2021,3,UA,United Air Lines Inc.,423073360
+2021,3,UA,United Air Lines Inc.,437573173
+2021,3,WN,Southwest Airlines Co.,299094431
+2021,3,WN,Southwest Airlines Co.,322560094
+2021,3,WN,Southwest Airlines Co.,328471704
+2021,4,AA,American Airlines Inc.,519162264
+2021,4,AA,American Airlines Inc.,537431614
+2021,4,AA,American Airlines Inc.,558226403
+2021,4,AS,Alaska Airlines Inc.,119327354
+2021,4,AS,Alaska Airlines Inc.,123657752
+2021,4,AS,Alaska Airlines Inc.,128052758
+2021,4,B6,JetBlue Airways,149606198
+2021,4,B6,JetBlue Airways,151568262
+2021,4,B6,JetBlue Airways,160739181
+2021,4,DL,Delta Air Lines Inc.,361538692
+2021,4,DL,Delta Air Lines Inc.,469429681
+2021,4,DL,Delta Air Lines Inc.,496473706
+2021,4,F9,Frontier Airlines Inc.,54785642
+2021,4,F9,Frontier Airlines Inc.,56816974
+2021,4,F9,Frontier Airlines Inc.,58575586
+2021,4,G4,Allegiant Air,42253769
+2021,4,G4,Allegiant Air,42769757
+2021,4,G4,Allegiant Air,44638323
+2021,4,HA,Hawaiian Airlines Inc.,37785128
+2021,4,HA,Hawaiian Airlines Inc.,38620799
+2021,4,HA,Hawaiian Airlines Inc.,39625669
+2021,4,NK,Spirit Air Lines,95032997
+2021,4,NK,Spirit Air Lines,98767269
+2021,4,NK,Spirit Air Lines,102771686
+2021,4,UA,United Air Lines Inc.,476348957
+2021,4,UA,United Air Lines Inc.,507162319
+2021,4,UA,United Air Lines Inc.,527074335
+2021,4,WN,Southwest Airlines Co.,332300547
+2021,4,WN,Southwest Airlines Co.,334170376
+2021,4,WN,Southwest Airlines Co.,346706212
+2022,1,AA,American Airlines Inc.,547233237
+2022,1,AA,American Airlines Inc.,554507691
+2022,1,AA,American Airlines Inc.,786630302
+2022,1,AS,Alaska Airlines Inc.,120550760
+2022,1,AS,Alaska Airlines Inc.,128599048
+2022,1,AS,Alaska Airlines Inc.,187066635
+2022,1,B6,JetBlue Airways,149973681
+2022,1,B6,JetBlue Airways,176153544
+2022,1,B6,JetBlue Airways,244847019
+2022,1,DL,Delta Air Lines Inc.,521404212
+2022,1,DL,Delta Air Lines Inc.,555969316
+2022,1,DL,Delta Air Lines Inc.,724072271
+2022,1,F9,Frontier Airlines Inc.,55186447
+2022,1,F9,Frontier Airlines Inc.,57859746
+2022,1,F9,Frontier Airlines Inc.,83449735
+2022,1,G4,Allegiant Air,40130917
+2022,1,G4,Allegiant Air,47085300
+2022,1,G4,Allegiant Air,77157913
+2022,1,HA,Hawaiian Airlines Inc.,42060623
+2022,1,HA,Hawaiian Airlines Inc.,42523951
+2022,1,HA,Hawaiian Airlines Inc.,59454946
+2022,1,NK,Spirit Air Lines,103259517
+2022,1,NK,Spirit Air Lines,109923332
+2022,1,NK,Spirit Air Lines,155402010
+2022,1,UA,United Air Lines Inc.,504386213
+2022,1,UA,United Air Lines Inc.,518416150
+2022,1,UA,United Air Lines Inc.,741417455
+2022,1,WN,Southwest Airlines Co.,280310225
+2022,1,WN,Southwest Airlines Co.,288010811
+2022,1,WN,Southwest Airlines Co.,385014698
+2022,2,AA,American Airlines Inc.,917951014
+2022,2,AA,American Airlines Inc.,1062889659
+2022,2,AA,American Airlines Inc.,1118750998
+2022,2,AS,Alaska Airlines Inc.,223250927
+2022,2,AS,Alaska Airlines Inc.,245089646
+2022,2,AS,Alaska Airlines Inc.,250100103
+2022,2,B6,JetBlue Airways,289248017
+2022,2,B6,JetBlue Airways,296453468
+2022,2,B6,JetBlue Airways,324631919
+2022,2,DL,Delta Air Lines Inc.,757972336
+2022,2,DL,Delta Air Lines Inc.,934954149
+2022,2,DL,Delta Air Lines Inc.,1121677401
+2022,2,F9,Frontier Airlines Inc.,101578983
+2022,2,F9,Frontier Airlines Inc.,103845337
+2022,2,F9,Frontier Airlines Inc.,106546295
+2022,2,G4,Allegiant Air,81907388
+2022,2,G4,Allegiant Air,82171656
+2022,2,G4,Allegiant Air,93888043
+2022,2,HA,Hawaiian Airlines Inc.,65658855
+2022,2,HA,Hawaiian Airlines Inc.,71819373
+2022,2,HA,Hawaiian Airlines Inc.,79794033
+2022,2,NK,Spirit Air Lines,172449354
+2022,2,NK,Spirit Air Lines,184304162
+2022,2,NK,Spirit Air Lines,201879595
+2022,2,UA,United Air Lines Inc.,917446666
+2022,2,UA,United Air Lines Inc.,1093127694
+2022,2,UA,United Air Lines Inc.,1132450794
+2022,2,WN,Southwest Airlines Co.,466698345
+2022,2,WN,Southwest Airlines Co.,533791435
+2022,2,WN,Southwest Airlines Co.,562910530
+2022,3,AA,American Airlines Inc.,897225047
+2022,3,AA,American Airlines Inc.,1016517515
+2022,3,AA,American Airlines Inc.,1125220784
+2022,3,AS,Alaska Airlines Inc.,206757539
+2022,3,AS,Alaska Airlines Inc.,222222705
+2022,3,AS,Alaska Airlines Inc.,246438713
+2022,3,B6,JetBlue Airways,244106915
+2022,3,B6,JetBlue Airways,276045377
+2022,3,B6,JetBlue Airways,302248680
+2022,3,DL,Delta Air Lines Inc.,937297884
+2022,3,DL,Delta Air Lines Inc.,969187715
+2022,3,DL,Delta Air Lines Inc.,981019316
+2022,3,F9,Frontier Airlines Inc.,87930099
+2022,3,F9,Frontier Airlines Inc.,93257923
+2022,3,F9,Frontier Airlines Inc.,105017554
+2022,3,G4,Allegiant Air,48909248
+2022,3,G4,Allegiant Air,64121374
+2022,3,G4,Allegiant Air,94896444
+2022,3,HA,Hawaiian Airlines Inc.,67782604
+2022,3,HA,Hawaiian Airlines Inc.,71567903
+2022,3,HA,Hawaiian Airlines Inc.,79009182
+2022,3,NK,Spirit Air Lines,159838640
+2022,3,NK,Spirit Air Lines,168472840
+2022,3,NK,Spirit Air Lines,180184252
+2022,3,UA,United Air Lines Inc.,932912803
+2022,3,UA,United Air Lines Inc.,1047072592
+2022,3,UA,United Air Lines Inc.,1188316058
+2022,3,WN,Southwest Airlines Co.,537156815
+2022,3,WN,Southwest Airlines Co.,537558287
+2022,3,WN,Southwest Airlines Co.,589458134
+2022,4,AA,American Airlines Inc.,883487870
+2022,4,AA,American Airlines Inc.,891834342
+2022,4,AA,American Airlines Inc.,947749191
+2022,4,AS,Alaska Airlines Inc.,179070945
+2022,4,AS,Alaska Airlines Inc.,192403286
+2022,4,AS,Alaska Airlines Inc.,206375515
+2022,4,B6,JetBlue Airways,257334442
+2022,4,B6,JetBlue Airways,260975559
+2022,4,B6,JetBlue Airways,279221479
+2022,4,DL,Delta Air Lines Inc.,728107350
+2022,4,DL,Delta Air Lines Inc.,826914217
+2022,4,DL,Delta Air Lines Inc.,883582242
+2022,4,F9,Frontier Airlines Inc.,86121015
+2022,4,F9,Frontier Airlines Inc.,98141455
+2022,4,F9,Frontier Airlines Inc.,100822272
+2022,4,G4,Allegiant Air,58963253
+2022,4,G4,Allegiant Air,62443943
+2022,4,G4,Allegiant Air,63577899
+2022,4,HA,Hawaiian Airlines Inc.,66193768
+2022,4,HA,Hawaiian Airlines Inc.,67993314
+2022,4,HA,Hawaiian Airlines Inc.,71116717
+2022,4,NK,Spirit Air Lines,150500638
+2022,4,NK,Spirit Air Lines,168094151
+2022,4,NK,Spirit Air Lines,175660475
+2022,4,UA,United Air Lines Inc.,917695849
+2022,4,UA,United Air Lines Inc.,927374054
+2022,4,UA,United Air Lines Inc.,960920348
+2022,4,WN,Southwest Airlines Co.,458677473
+2022,4,WN,Southwest Airlines Co.,506090745
+2022,4,WN,Southwest Airlines Co.,549945567
