@@ -1,0 +1,13 @@
+# Excel temporary lock files
+~$*
+
+# Python compiled files and cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
