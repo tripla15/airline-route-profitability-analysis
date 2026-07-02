@@ -1,8 +1,7 @@
-,WTI_Oil_Price,COVID_Cases_M,Operating_Income_K,Operating_Margin_Pct,Load_Factor_Pct,Fuel_Cost_K,Net_Income_K
-WTI_Oil_Price,1.0,-0.299,0.075,0.256,0.389,0.228,0.034
-COVID_Cases_M,-0.299,1.0,-0.426,-0.729,-0.687,-0.137,-0.328
-Operating_Income_K,0.075,-0.426,1.0,0.557,0.55,0.404,0.734
-Operating_Margin_Pct,0.256,-0.729,0.557,1.0,0.865,0.12,0.388
-Load_Factor_Pct,0.389,-0.687,0.55,0.865,1.0,0.172,0.404
-Fuel_Cost_K,0.228,-0.137,0.404,0.12,0.172,1.0,0.267
-Net_Income_K,0.034,-0.328,0.734,0.388,0.404,0.267,1.0
+,Oil_Price_Qtr_Avg,Covid_US_Cases_Quarterly,operating_income,operating_margin_pct,load_factor,fuel_cost_k
+Oil_Price_Qtr_Avg,1.0,-0.299,0.075,0.256,0.389,0.228
+Covid_US_Cases_Quarterly,-0.299,1.0,-0.426,-0.729,-0.687,-0.137
+operating_income,0.075,-0.426,1.0,0.557,0.55,0.404
+operating_margin_pct,0.256,-0.729,0.557,1.0,0.865,0.12
+load_factor,0.389,-0.687,0.55,0.865,1.0,0.172
+fuel_cost_k,0.228,-0.137,0.404,0.12,0.172,1.0
