@@ -1,305 +1,532 @@
+"""
+Skies Under Pressure: Aviation Profitability vs. Global Macro-Shocks
+=======================================================================
+Python Standalone Analysis Pipeline
+Datasets: BTS Financials, WTI Crude Oil Prices, US COVID-19 Cases
+Airlines: 10 Core US Passenger Carriers, 2009-Q1 to 2022-Q4 (56 quarters)
+"""
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib.ticker as mticker
 import seaborn as sns
 import os
+import warnings
+warnings.filterwarnings('ignore')
 
-# Set style for publication-ready plots
-sns.set_theme(style="whitegrid")
+# ─────────────────────────────────────────────────────────────────────────────
+# CONFIGURATION
+# ─────────────────────────────────────────────────────────────────────────────
+
+EXCEL_PATH   = r"F:\Engineering 2nd year\Extracurriculars\1. DEPI\Final Project\Excel\Master_Tables_file.xlsx"
+OUTPUT_DIR   = r"F:\Engineering 2nd year\Extracurriculars\1. DEPI\Final Project\Python"
+PLOTS_DIR    = os.path.join(OUTPUT_DIR, "plots")
+os.makedirs(PLOTS_DIR, exist_ok=True)
+
+# Project color palette
+NAVY     = '#1F4E79'
+AMBER    = '#C17C00'
+CRIMSON  = '#B23A48'
+CHARCOAL = '#2F2F2F'
+BG       = '#F7F7F5'
+TEAL     = '#2A9D8F'
+GOLD     = '#E9C46A'
+SAGE     = '#6B9E78'
+
+# Global plot style
 plt.rcParams.update({
+    'figure.facecolor': BG,
+    'axes.facecolor': BG,
+    'axes.edgecolor': CHARCOAL,
+    'axes.labelcolor': CHARCOAL,
+    'text.color': CHARCOAL,
+    'xtick.color': CHARCOAL,
+    'ytick.color': CHARCOAL,
+    'font.family': 'DejaVu Sans',
     'font.size': 11,
     'axes.labelsize': 12,
     'axes.titlesize': 14,
-    'xtick.labelsize': 10,
-    'ytick.labelsize': 10,
-    'figure.titlesize': 16,
-    'figure.figsize': (10, 6)
+    'axes.titleweight': 'bold',
+    'figure.titlesize': 15,
+    'figure.titleweight': 'bold',
+    'legend.fontsize': 10,
+    'legend.framealpha': 0.85,
 })
 
-# Define project color palette
-NAVY = '#1f4e79'
-TEAL = '#2a9d8f'
-AMBER = '#c17c00'
-CRIMSON = '#b23a48'
-CHARCOAL = '#2f2f2f'
-BACKGROUND = '#f7f7f5'
+AIRLINE_COLORS = {
+    'American Airlines': '#003087',
+    'Delta Airlines':    '#E01933',
+    'United Airlines':   '#005DAA',
+    'Southwest Airlines':'#F9B612',
+    'Alaska Airlines':   '#00508F',
+    'JetBlue Airlines':  '#003876',
+    'Spirit Airlines':   '#FFD700',
+    'Frontier Airlines': '#00843D',
+    'Hawaiian Airlines': '#5C2D91',
+    'Allegiant Airlines':'#F04E23',
+}
 
-# Define directory paths
-excel_path = r"F:\Engineering 2nd year\Extracurriculars\1. DEPI\Final Project\Excel\Master_Tables_file.xlsx"
-output_dir = r"F:\Engineering 2nd year\Extracurriculars\1. DEPI\Final Project\python"
-plots_dir = os.path.join(output_dir, "plots")
+BUCKET_ORDER = ['Below_50', '50_to_80', '80_to_100', '100_Plus']
+BUCKET_LABELS = ['< $50/bbl', '$50–$80/bbl', '$80–$100/bbl', '> $100/bbl']
 
-print("Loading Excel sheets...")
-dim_time = pd.read_excel(excel_path, sheet_name="Dim_Time")
-fact_fin = pd.read_excel(excel_path, sheet_name="Fact_Financials_Master")
-oil_prices = pd.read_excel(excel_path, sheet_name="Oil_Prices_Avg_Qtr")
-covid_cases = pd.read_excel(excel_path, sheet_name="covid_19_clean_complete")
+# ─────────────────────────────────────────────────────────────────────────────
+# 1. DATA LOADING & MERGING
+# ─────────────────────────────────────────────────────────────────────────────
 
-# Clean and merge datasets
-print("Merging data...")
-merged = pd.merge(fact_fin, dim_time, on="Date_Key", how="left")
+print("=" * 60)
+print("  SKIES UNDER PRESSURE - PYTHON ANALYSIS PIPELINE")
+print("=" * 60)
+print("\n[1] Loading data from Excel...")
 
-# Join with oil (drop Oil_Bucket from oil_prices to avoid duplicates)
-oil_prices_clean = oil_prices.drop(columns=["Oil_Bucket"], errors="ignore")
-merged = pd.merge(merged, oil_prices_clean, on="Date_Key", how="left")
+dim_time    = pd.read_excel(EXCEL_PATH, sheet_name='Dim_Time')
+fact_fin    = pd.read_excel(EXCEL_PATH, sheet_name='Fact_Financials_Master')
+oil_prices  = pd.read_excel(EXCEL_PATH, sheet_name='Oil_Prices_Avg_Qtr')
+covid_cases = pd.read_excel(EXCEL_PATH, sheet_name='covid_19_clean_complete')
 
-# Join with COVID (fill missing with 0 for pre-COVID quarters)
-merged = pd.merge(merged, covid_cases, on="Date_Key", how="left")
-merged["Covid_US_Cases_Quarterly"] = merged["Covid_US_Cases_Quarterly"].fillna(0).astype(int)
+print(f"    Fact_Financials_Master : {fact_fin.shape[0]:,} rows × {fact_fin.shape[1]} cols")
+print(f"    Oil_Prices_Avg_Qtr     : {oil_prices.shape[0]:,} rows × {oil_prices.shape[1]} cols")
+print(f"    covid_19_clean_complete: {covid_cases.shape[0]:,} rows × {covid_cases.shape[1]} cols")
+print(f"    Dim_Time               : {dim_time.shape[0]:,} rows × {dim_time.shape[1]} cols")
 
-# Create helper columns
-merged["Operating_Margin"] = merged["operating_income"] / merged["operating_revenue"]
+# Merge everything on Date_Key
+print("\n[2] Merging datasets on Date_Key...")
+merged = fact_fin.copy()
+merged = merged.merge(dim_time, on='Date_Key', how='left')
+merged = merged.merge(
+    oil_prices.rename(columns={'Oil_Bucket': 'Oil_Bucket_Oil'}),
+    on='Date_Key', how='left'
+)
+merged = merged.merge(covid_cases, on='Date_Key', how='left')
+merged['Covid_US_Cases_Quarterly'] = merged['Covid_US_Cases_Quarterly'].fillna(0).astype(int)
 
-def get_period_group(qtr):
-    year = int(qtr.split('-')[0])
-    q = qtr.split('-')[1]
-    if year < 2020:
-        return "Pre_COVID"
-    elif year == 2020:
-        return "COVID_Shock"
-    elif year == 2021:
-        if q in ["Q1", "Q2"]:
-            return "COVID_Shock"
-        else:
-            return "Recovery"
-    else:  # year >= 2022
-        return "Recovery"
+# ─── UNIT CORRECTIONS ────────────────────────────────────────────────────────
+# operating_revenue, operating_income, net_income are in $thousands
+# load_factor is on 0–100 scale (percentage points, not decimal)
+# fuel_cost is in raw dollars → convert to thousands for consistency
+# ─────────────────────────────────────────────────────────────────────────────
+merged['fuel_cost_k']         = merged['fuel_cost'] / 1000          # → $thousands
+merged['load_factor_pct']     = merged['load_factor']               # 78.6 means 78.6%
+merged['load_factor_dec']     = merged['load_factor'] / 100         # 0.786 decimal
+merged['operating_margin_pct']= (merged['operating_income'] / merged['operating_revenue']) * 100
 
-merged["Period_Group"] = merged["Year_Quarter"].apply(get_period_group)
-
-# ----------------- BUSINESS QUESTIONS ANALYSIS -----------------
-
-print("Analyzing Business Questions...")
-
-# Q1: Operating Profit Margin Ranking
-q1_rank = merged.groupby("Airline_Name").agg(
-    total_revenue=("operating_revenue", "sum"),
-    total_operating_income=("operating_income", "sum"),
-    avg_load_factor=("load_factor", "mean")
-).reset_index()
-q1_rank["weighted_operating_margin"] = q1_rank["total_operating_income"] / q1_rank["total_revenue"]
-q1_rank = q1_rank.sort_values("weighted_operating_margin", ascending=False).reset_index(drop=True)
-
-# Q2: Oil Price Shock Correlation
-q2_corr = merged[["Oil_Price_Qtr_Avg", "operating_income", "Operating_Margin"]].corr().iloc[0]
-
-# Q3: COVID Operating Income Collapse
-q3_collapse = merged.groupby(["Airline_Name", "Period_Group"])["operating_income"].mean().unstack().reset_index()
-q3_collapse["COVID_Collapse_Value"] = q3_collapse["COVID_Shock"] - q3_collapse["Pre_COVID"]
-q3_collapse = q3_collapse.sort_values("COVID_Collapse_Value", ascending=True).reset_index(drop=True)
-
-# Q4: CARES Act Distortion Gap
-cares_data = merged[merged["CARES_FLAG"] == "CARES_Period"]
-q4_cares = cares_data.groupby("Airline_Name").agg(
-    avg_net_income=("net_income", "mean"),
-    avg_operating_income=("operating_income", "mean")
-).reset_index()
-q4_cares["Bailout_Distortion_Gap"] = q4_cares["avg_net_income"] - q4_cares["avg_operating_income"]
-q4_cares = q4_cares.sort_values("Bailout_Distortion_Gap", ascending=False).reset_index(drop=True)
-
-# Q5: COVID Recovery Speed (first positive quarter after 2020-Q2)
-post_shock_start = merged[merged["Date_Key"] >= 46]  # Date_Key 46 corresponds to 2020-Q2
-recovered_airlines = []
-for name, group in post_shock_start.groupby("Airline_Name"):
-    sorted_group = group.sort_values("Date_Key")
-    pos_quarters = sorted_group[sorted_group["operating_income"] > 0]
-    if not pos_quarters.empty:
-        first_pos_qtr = pos_quarters.iloc[0]["Year_Quarter"]
-        recovered_airlines.append({"Airline_Name": name, "First_Positive_Quarter": first_pos_qtr, "Recovery_Sort_Key": pos_quarters.iloc[0]["Date_Key"]})
+# Period grouping
+def period_group(qtr):
+    y, q = int(qtr[:4]), qtr[5:]
+    if y < 2020:
+        return 'Pre_COVID'
+    elif (y == 2020) or (y == 2021 and q in ('Q1', 'Q2')):
+        return 'COVID_Shock'
     else:
-        recovered_airlines.append({"Airline_Name": name, "First_Positive_Quarter": "Did not recover by 2022", "Recovery_Sort_Key": 999})
-q5_recovery = pd.DataFrame(recovered_airlines).sort_values("Recovery_Sort_Key").drop(columns=["Recovery_Sort_Key"]).reset_index(drop=True)
+        return 'Recovery'
 
-# Q6: Oil Price Loss Thresholds
-merged["Is_Loss_Quarter"] = np.where(merged["operating_income"] < 0, 1, 0)
-# Reorder Oil_Bucket to be logical
-bucket_order = ["Below_50", "50_to_80", "80_to_100", "100_Plus"]
-merged["Oil_Bucket"] = pd.Categorical(merged["Oil_Bucket"], categories=bucket_order, ordered=True)
-q6_oil_thresholds = merged.groupby("Oil_Bucket", observed=False).agg(
-    loss_quarter_count=("Is_Loss_Quarter", "sum"),
-    total_quarter_count=("Is_Loss_Quarter", "count"),
-    avg_operating_income=("operating_income", "mean")
+merged['Period_Group'] = merged['Year_Quarter'].apply(period_group)
+
+# Ordered categoricals
+merged['Oil_Bucket'] = pd.Categorical(merged['Oil_Bucket'], categories=BUCKET_ORDER, ordered=True)
+merged['Period_Group'] = pd.Categorical(merged['Period_Group'],
+                                         categories=['Pre_COVID', 'COVID_Shock', 'Recovery'],
+                                         ordered=True)
+
+print(f"    Master merged table: {merged.shape[0]:,} rows × {merged.shape[1]} cols")
+print(f"    Airlines: {sorted(merged['Airline_Name'].unique())}")
+print(f"    Quarters: {merged['Year_Quarter'].nunique()} (Date_Key 1–56)")
+
+# ─────────────────────────────────────────────────────────────────────────────
+# 2. STATISTICAL ANALYSIS SUITE
+# ─────────────────────────────────────────────────────────────────────────────
+
+print("\n[3] Running statistical analysis...")
+
+# ── 2a. Descriptive statistics per airline ───────────────────────────────────
+desc_by_airline = merged.groupby('Airline_Name').agg(
+    Quarters_Tracked        = ('Date_Key', 'count'),
+    Total_Revenue_M         = ('operating_revenue', lambda x: round(x.sum() / 1000, 1)),   # → $millions
+    Total_Op_Income_M       = ('operating_income', lambda x: round(x.sum() / 1000, 1)),
+    Total_Net_Income_M      = ('net_income', lambda x: round(x.sum() / 1000, 1)),
+    Avg_Quarterly_Revenue_K = ('operating_revenue', lambda x: round(x.mean(), 0)),
+    Avg_Quarterly_OpIncome_K= ('operating_income', lambda x: round(x.mean(), 0)),
+    Std_OpIncome_K          = ('operating_income', lambda x: round(x.std(), 0)),
+    Min_OpIncome_K          = ('operating_income', lambda x: round(x.min(), 0)),
+    Max_OpIncome_K          = ('operating_income', lambda x: round(x.max(), 0)),
+    Avg_Load_Factor_Pct     = ('load_factor_pct', lambda x: round(x.mean(), 2)),
+    Std_Load_Factor_Pct     = ('load_factor_pct', lambda x: round(x.std(), 2)),
+    Avg_Op_Margin_Pct       = ('operating_margin_pct', lambda x: round(x.mean(), 2)),
+    Weighted_Op_Margin_Pct  = ('operating_income', lambda x: round(
+                                    x.sum() / merged.loc[x.index, 'operating_revenue'].sum() * 100, 2)),
+    Loss_Quarters           = ('operating_income', lambda x: (x < 0).sum()),
+    Profit_Quarters         = ('operating_income', lambda x: (x >= 0).sum()),
 ).reset_index()
-q6_oil_thresholds["Loss_Probability"] = q6_oil_thresholds["loss_quarter_count"] / q6_oil_thresholds["total_quarter_count"]
+desc_by_airline['Loss_Rate_Pct'] = (desc_by_airline['Loss_Quarters'] / desc_by_airline['Quarters_Tracked'] * 100).round(1)
+desc_by_airline = desc_by_airline.sort_values('Weighted_Op_Margin_Pct', ascending=False).reset_index(drop=True)
+desc_by_airline.index += 1  # 1-based ranking
 
-# Q7: Load Factor vs Finance Recovery
-q7_load_finance = merged.groupby(["Airline_Name", "Period_Group"]).agg(
-    avg_load_factor=("load_factor", "mean"),
-    avg_operating_margin=("Operating_Margin", "mean")
-).unstack().reset_index()
+# ── 2b. Period comparison table ──────────────────────────────────────────────
+period_summary = merged.groupby(['Period_Group'], observed=True).agg(
+    Airline_Quarter_Obs     = ('Date_Key', 'count'),
+    Avg_Load_Factor_Pct     = ('load_factor_pct', lambda x: round(x.mean(), 2)),
+    Avg_Op_Margin_Pct       = ('operating_margin_pct', lambda x: round(x.mean(), 2)),
+    Avg_Op_Income_K         = ('operating_income', lambda x: round(x.mean(), 0)),
+    Avg_Revenue_K           = ('operating_revenue', lambda x: round(x.mean(), 0)),
+    Avg_WTI_Price           = ('Oil_Price_Qtr_Avg', lambda x: round(x.mean(), 2)),
+    Loss_Rate_Pct           = ('operating_income', lambda x: round((x < 0).mean() * 100, 1)),
+).reset_index()
 
-# Save analytical tables
-print("Saving tables...")
-q1_rank.to_csv(os.path.join(output_dir, "py_q1_margins_ranking.csv"), index=False)
-q3_collapse.to_csv(os.path.join(output_dir, "py_q3_covid_collapse.csv"), index=False)
-q4_cares.to_csv(os.path.join(output_dir, "py_q4_cares_distortion.csv"), index=False)
-q5_recovery.to_csv(os.path.join(output_dir, "py_q5_recovery_speed.csv"), index=False)
-q6_oil_thresholds.to_csv(os.path.join(output_dir, "py_q6_oil_loss_thresholds.csv"), index=False)
+# ── 2c. Pearson correlation matrix ───────────────────────────────────────────
+corr_cols = {
+    'WTI_Oil_Price'      : 'Oil_Price_Qtr_Avg',
+    'COVID_Cases_M'      : 'Covid_US_Cases_Quarterly',
+    'Operating_Income_K' : 'operating_income',
+    'Operating_Margin_Pct': 'operating_margin_pct',
+    'Load_Factor_Pct'    : 'load_factor_pct',
+    'Fuel_Cost_K'        : 'fuel_cost_k',
+    'Net_Income_K'       : 'net_income',
+}
+corr_df = merged[list(corr_cols.values())].copy()
+corr_df.columns = list(corr_cols.keys())
+corr_matrix = corr_df.corr(method='pearson').round(3)
 
-# ----------------- VISUALIZATIONS GENERATION -----------------
+# ── 2d. YoY revenue growth ───────────────────────────────────────────────────
+yearly = merged.groupby(['Airline_Name', merged['Year_Quarter'].str[:4].rename('Year')]).agg(
+    Annual_Revenue_K  = ('operating_revenue', 'sum'),
+    Annual_OpIncome_K = ('operating_income', 'sum'),
+).reset_index()
+yearly['Revenue_YoY_Pct'] = yearly.groupby('Airline_Name')['Annual_Revenue_K'].pct_change() * 100
+yearly['Revenue_YoY_Pct'] = yearly['Revenue_YoY_Pct'].round(1)
 
-print("Generating plots...")
+# ── 2e. Per-airline per-period breakdown ─────────────────────────────────────
+airline_period = merged.groupby(['Airline_Name', 'Period_Group'], observed=True).agg(
+    Avg_Load_Factor_Pct  = ('load_factor_pct', lambda x: round(x.mean(), 2)),
+    Avg_Op_Margin_Pct    = ('operating_margin_pct', lambda x: round(x.mean(), 2)),
+    Avg_Op_Income_K      = ('operating_income', lambda x: round(x.mean(), 0)),
+).unstack('Period_Group')
+airline_period.columns = ['_'.join(c) for c in airline_period.columns]
+airline_period = airline_period.reset_index()
 
-# Chart 1: Operating margins ranking
-plt.figure(figsize=(10, 6))
-sns.barplot(
-    data=q1_rank,
-    y="Airline_Name",
-    x="weighted_operating_margin",
-    color=TEAL,
-    edgecolor="black"
-)
-plt.axvline(0, color="red", linestyle="--", linewidth=1.2)
-plt.title("US Passenger Airlines: Weighted Operating Profit Margin (2009–2022)")
-plt.xlabel("Weighted Operating Profit Margin (Operating Income / Revenue)")
-plt.ylabel("Airline Name")
-for idx, row in q1_rank.iterrows():
-    plt.text(
-        row["weighted_operating_margin"] + (0.002 if row["weighted_operating_margin"] >= 0 else -0.015),
-        idx,
-        f"{row['weighted_operating_margin'] * 100:.2f}%",
-        va='center',
-        ha='left',
-        fontsize=9,
-        weight='bold'
-    )
+# Save all statistical tables
+print("\n[4] Saving statistical tables to CSV...")
+desc_by_airline.to_csv(os.path.join(OUTPUT_DIR, 'stat_01_descriptive_by_airline.csv'), index=False)
+period_summary.to_csv(os.path.join(OUTPUT_DIR, 'stat_02_period_comparison.csv'), index=False)
+corr_matrix.to_csv(os.path.join(OUTPUT_DIR, 'stat_03_correlation_matrix.csv'))
+airline_period.to_csv(os.path.join(OUTPUT_DIR, 'stat_04_airline_by_period.csv'), index=False)
+
+# Business question result tables
+q1 = desc_by_airline[['Airline_Name', 'Weighted_Op_Margin_Pct', 'Avg_Op_Margin_Pct',
+                        'Total_Op_Income_M', 'Total_Revenue_M', 'Loss_Rate_Pct']].copy()
+q1.columns = ['Airline', 'Weighted_Margin_%', 'Avg_Qtr_Margin_%',
+               'Total_OpIncome_$M', 'Total_Revenue_$M', 'Loss_Rate_%']
+q1.to_csv(os.path.join(OUTPUT_DIR, 'q1_margin_ranking.csv'), index=False)
+
+cares_data = merged[merged['CARES_FLAG'] == 'CARES_Period']
+q4 = cares_data.groupby('Airline_Name').agg(
+    Avg_Net_Income_K    = ('net_income', 'mean'),
+    Avg_Op_Income_K     = ('operating_income', 'mean'),
+).reset_index()
+q4['Bailout_Gap_K'] = q4['Avg_Net_Income_K'] - q4['Avg_Op_Income_K']
+q4 = q4.sort_values('Bailout_Gap_K', ascending=False).reset_index(drop=True)
+q4.to_csv(os.path.join(OUTPUT_DIR, 'q4_cares_distortion.csv'), index=False)
+
+q5_rows = []
+for name, grp in merged[merged['Date_Key'] >= 46].groupby('Airline_Name'):
+    pos = grp[grp['operating_income'] > 0].sort_values('Date_Key')
+    if not pos.empty:
+        q5_rows.append({'Airline_Name': name,
+                        'First_Profit_Quarter': pos.iloc[0]['Year_Quarter'],
+                        'Quarters_to_Recovery': pos.iloc[0]['Date_Key'] - 46})
+    else:
+        q5_rows.append({'Airline_Name': name,
+                        'First_Profit_Quarter': 'Not recovered by 2022-Q4',
+                        'Quarters_to_Recovery': None})
+q5 = pd.DataFrame(q5_rows).sort_values('Quarters_to_Recovery', na_position='last').reset_index(drop=True)
+q5.to_csv(os.path.join(OUTPUT_DIR, 'q5_recovery_speed.csv'), index=False)
+
+# ─────────────────────────────────────────────────────────────────────────────
+# 3. VISUALIZATIONS
+# ─────────────────────────────────────────────────────────────────────────────
+
+print("\n[5] Generating visualizations...")
+
+def save_fig(name):
+    path = os.path.join(PLOTS_DIR, name)
+    plt.savefig(path, dpi=150, bbox_inches='tight', facecolor=BG)
+    plt.close()
+    print(f"    Saved: {name}")
+
+# ── CHART 1: Weighted Operating Margin Ranking ───────────────────────────────
+fig, ax = plt.subplots(figsize=(11, 7))
+fig.patch.set_facecolor(BG)
+
+colors = [NAVY if v >= 0 else CRIMSON for v in desc_by_airline['Weighted_Op_Margin_Pct']]
+bars = ax.barh(desc_by_airline['Airline_Name'], desc_by_airline['Weighted_Op_Margin_Pct'],
+               color=colors, edgecolor='white', linewidth=0.6, height=0.65)
+ax.axvline(0, color=CHARCOAL, linewidth=1.2, linestyle='--', alpha=0.6)
+
+for bar, val in zip(bars, desc_by_airline['Weighted_Op_Margin_Pct']):
+    offset = 0.15 if val >= 0 else -0.15
+    ha = 'left' if val >= 0 else 'right'
+    ax.text(val + offset, bar.get_y() + bar.get_height()/2,
+            f'{val:.2f}%', va='center', ha=ha, fontsize=10, fontweight='bold', color=CHARCOAL)
+
+ax.set_xlabel('Weighted Operating Profit Margin  (Total Operating Income ÷ Total Revenue)', labelpad=10)
+ax.set_title('US Passenger Airlines: 14-Year Weighted Operating Profit Margin (2009–2022)', pad=15)
+ax.invert_yaxis()
+ax.set_facecolor(BG)
+ax.grid(axis='x', alpha=0.3, color=CHARCOAL)
+ax.spines[['top', 'right']].set_visible(False)
+fig.text(0.5, -0.02, 'Source: Bureau of Transportation Statistics (BTS) Form 41 Schedule P-12',
+         ha='center', fontsize=9, color='gray', style='italic')
 plt.tight_layout()
-plt.savefig(os.path.join(plots_dir, "01_operating_margins_ranking.png"), dpi=300)
-plt.close()
+save_fig('01_weighted_margin_ranking.png')
 
-# Chart 2: Oil Price loss thresholds
+# ── CHART 2: Oil Price Buckets vs Loss Probability (Dual Axis) ───────────────
+oil_analysis = merged.groupby('Oil_Bucket', observed=True).agg(
+    Loss_Probability = ('operating_income', lambda x: (x < 0).mean()),
+    Avg_Oil_Price    = ('Oil_Price_Qtr_Avg', 'mean'),
+    Avg_Op_Income_K  = ('operating_income', 'mean'),
+    Quarter_Count    = ('operating_income', 'count'),
+).reset_index()
+
 fig, ax1 = plt.subplots(figsize=(10, 6))
-ax2 = ax1.twinx()
-sns.barplot(
-    data=q6_oil_thresholds,
-    x="Oil_Bucket",
-    y="Loss_Probability",
-    color=AMBER,
-    edgecolor="black",
-    ax=ax1,
-    alpha=0.85
-)
-ax2.plot(
-    q6_oil_thresholds["Oil_Bucket"],
-    q6_oil_thresholds["avg_operating_income"] / 1e3,  # In Thousands
-    color=CRIMSON,
-    marker="o",
-    linewidth=2.5,
-    markersize=8
-)
-ax1.set_title("Airline Loss Probability & Average Profit by WTI Crude Oil Price Bucket")
-ax1.set_xlabel("WTI Crude Oil Price Bucket ($ per barrel)")
-ax1.set_ylabel("Loss Probability (Share of Quarters in Loss)", color=AMBER)
-ax2.set_ylabel("Average Operating Income ($ Thousands)", color=CRIMSON)
-ax1.tick_params(axis='y', labelcolor=AMBER)
-ax2.tick_params(axis='y', labelcolor=CRIMSON)
-ax1.yaxis.set_major_formatter(lambda x, pos: f"{x * 100:.0f}%")
-ax2.yaxis.set_major_formatter(lambda x, pos: f"{x / 1e3:.0f}k" if abs(x) >= 1e3 else f"{x:.0f}")
-ax2.axhline(0, color="gray", linestyle="--", linewidth=1)
-for idx, val in enumerate(q6_oil_thresholds["Loss_Probability"]):
-    ax1.text(idx, val - 0.05, f"{val * 100:.1f}%", ha='center', color='white', weight='bold')
-plt.tight_layout()
-plt.savefig(os.path.join(plots_dir, "02_oil_vs_loss_probability.png"), dpi=300)
-plt.close()
-
-# Chart 3: CARES Act distortion gap
-plt.figure(figsize=(11, 7))
-melted_cares = pd.melt(
-    q4_cares,
-    id_vars="Airline_Name",
-    value_vars=["avg_net_income", "avg_operating_income"],
-    var_name="Metric",
-    value_name="Value"
-)
-melted_cares["Value"] = melted_cares["Value"] / 1e6  # Convert to Millions
-melted_cares["Metric"] = melted_cares["Metric"].replace({
-    "avg_net_income": "Average Net Income (Post-Bailout)",
-    "avg_operating_income": "Average Operating Income (True Operations)"
-})
-
-sns.barplot(
-    data=melted_cares,
-    x="Airline_Name",
-    y="Value",
-    hue="Metric",
-    palette=[TEAL, CRIMSON],
-    edgecolor="black"
-)
-plt.title("CARES Act Distortion Window: Net Income vs. Operating Profit/Loss (2020-Q2 to 2021-Q2)")
-plt.xlabel("Airline Name")
-plt.ylabel("Quarterly Average Value ($ Millions)")
-plt.xticks(rotation=45, ha='right')
-plt.axhline(0, color="black", linewidth=0.8)
-plt.legend(title="Financial Metric", loc="upper right")
-plt.tight_layout()
-plt.savefig(os.path.join(plots_dir, "03_cares_net_vs_operating_gap.png"), dpi=300)
-plt.close()
-
-# Chart 4: Load Factor vs. Operating Margin Recovery
-timeline_avg = merged.groupby("Year_Quarter").agg(
-    avg_load_factor=("load_factor", "mean"),
-    avg_operating_margin=("Operating_Margin", "mean")
-).reset_index()
-
-timeline_covid = timeline_avg[timeline_avg["Year_Quarter"] >= "2019-Q1"].reset_index(drop=True)
-
-fig, ax1 = plt.subplots(figsize=(12, 6.5))
+fig.patch.set_facecolor(BG)
 ax2 = ax1.twinx()
 
-ax1.plot(
-    timeline_covid["Year_Quarter"],
-    timeline_covid["avg_load_factor"],
-    color=NAVY,
-    marker="s",
-    linewidth=2.5,
-    label="Average Load Factor (Left Axis)"
-)
-ax2.plot(
-    timeline_covid["Year_Quarter"],
-    timeline_covid["avg_operating_margin"],
-    color=TEAL,
-    marker="D",
-    linewidth=2.5,
-    linestyle="--",
-    label="Average Operating Margin (Right Axis)"
-)
+bar_width = 0.5
+x_pos = np.arange(len(BUCKET_ORDER))
+bars = ax1.bar(x_pos, oil_analysis['Loss_Probability'] * 100, width=bar_width,
+               color=AMBER, alpha=0.85, edgecolor='white', zorder=2)
+ax2.plot(x_pos, oil_analysis['Avg_Oil_Price'], color=CRIMSON,
+         marker='o', linewidth=2.5, markersize=9, zorder=3, label='Avg WTI Price ($/bbl)')
 
-ax1.set_title("Industry Recovery Timeline: Average Load Factor vs. Operating Profit Margin (2019-Q1 to 2022-Q4)")
-ax1.set_xlabel("Year and Quarter")
-ax1.set_ylabel("Load Factor (Seats Filled)", color=NAVY)
-ax2.set_ylabel("Operating Profit Margin", color=TEAL)
+for bar, val in zip(bars, oil_analysis['Loss_Probability'] * 100):
+    ax1.text(bar.get_x() + bar.get_width()/2, val + 0.8, f'{val:.1f}%',
+             ha='center', fontsize=11, fontweight='bold', color=AMBER)
 
-ax1.tick_params(axis='x', rotation=45)
-ax1.tick_params(axis='y', labelcolor=NAVY)
-ax2.tick_params(axis='y', labelcolor=TEAL)
-ax1.yaxis.set_major_formatter(lambda x, pos: f"{x * 100:.0f}%")
-ax2.yaxis.set_major_formatter(lambda x, pos: f"{x * 100:.0f}%")
-ax2.axhline(0, color="gray", linestyle="-.", linewidth=1)
-
-ax1.axvspan("2020-Q1", "2021-Q2", color='red', alpha=0.1, label="COVID Shock Period")
-ax1.text("2020-Q3", 0.35, "COVID Shock & CARES Support Window", color=CRIMSON, weight='bold', ha='center')
-
-lines1, labels1 = ax1.get_legend_handles_labels()
-lines2, labels2 = ax2.get_legend_handles_labels()
-ax1.legend(lines1 + lines2, labels1 + labels2, loc="lower left")
-
+ax1.set_xticks(x_pos)
+ax1.set_xticklabels(BUCKET_LABELS, fontsize=11)
+ax1.set_ylabel('Loss Probability  (% of quarters with negative Op. Income)', color=AMBER, labelpad=10)
+ax2.set_ylabel('Average WTI Crude Oil Price ($/barrel)', color=CRIMSON, labelpad=10)
+ax1.tick_params(axis='y', colors=AMBER)
+ax2.tick_params(axis='y', colors=CRIMSON)
+ax1.set_ylim(0, 45)
+ax1.yaxis.set_major_formatter(mticker.FormatStrFormatter('%.0f%%'))
+ax1.set_facecolor(BG)
+ax1.grid(axis='y', alpha=0.25, color=CHARCOAL)
+ax1.spines[['top', 'right']].set_visible(False)
+ax2.spines[['top']].set_visible(False)
+ax1.set_title('Loss Probability & Average Oil Price by WTI Crude Oil Price Bucket', pad=15)
+ax2.legend(loc='upper right')
+fig.text(0.5, -0.02, 'Each bar = share of airline-quarters that ended with operating loss, grouped by prevailing WTI price range.',
+         ha='center', fontsize=9, color='gray', style='italic')
 plt.tight_layout()
-plt.savefig(os.path.join(plots_dir, "04_load_factor_vs_operating_margin.png"), dpi=300)
-plt.close()
+save_fig('02_oil_vs_loss_probability.png')
 
-print("\n--- Summary of Business Questions Results ---")
-print("1. Ranking by Weighted Operating Margin:")
-print(q1_rank[["Airline_Name", "weighted_operating_margin"]])
-print("\n2. Oil Shock Correlation:")
-print(f"Oil Price Qtr Avg vs. Operating Income Correlation: {q2_corr['operating_income']:.4f}")
-print(f"Oil Price Qtr Avg vs. Operating Margin Correlation: {q2_corr['Operating_Margin']:.4f}")
-print("\n3. COVID Collapse Value:")
-print(q3_collapse[["Airline_Name", "COVID_Collapse_Value"]])
-print("\n4. CARES Act Distortion Gap (Net - Operating):")
-print(q4_cares[["Airline_Name", "Bailout_Distortion_Gap"]])
-print("\n5. Recovery speed:")
-print(q5_recovery)
-print("\n6. Loss thresholds by oil bucket:")
-print(q6_oil_thresholds)
+# ── CHART 3: COVID Collapse — Pre vs Shock per Airline ───────────────────────
+collapse = merged.groupby(['Airline_Name', 'Period_Group'], observed=True)['operating_income'].mean().unstack()
+collapse = collapse[['Pre_COVID', 'COVID_Shock']].dropna()
+collapse['Collapse_K'] = collapse['COVID_Shock'] - collapse['Pre_COVID']
+collapse = collapse.sort_values('Collapse_K').reset_index()
 
-print("\nAll scripts and visualizations generated successfully.")
+fig, ax = plt.subplots(figsize=(12, 7))
+fig.patch.set_facecolor(BG)
+x = np.arange(len(collapse))
+w = 0.38
+b1 = ax.bar(x - w/2, collapse['Pre_COVID'] / 1000, width=w, label='Pre-COVID Avg (2009–2019)', color=NAVY, alpha=0.9)
+b2 = ax.bar(x + w/2, collapse['COVID_Shock'] / 1000, width=w, label='COVID Shock Avg (2020-Q1–2021-Q2)', color=CRIMSON, alpha=0.9)
+ax.axhline(0, color=CHARCOAL, linewidth=1.0)
+ax.set_xticks(x)
+ax.set_xticklabels(collapse['Airline_Name'], rotation=35, ha='right', fontsize=10)
+ax.set_ylabel('Average Quarterly Operating Income ($M)', labelpad=10)
+ax.set_title('COVID-19 Operating Income Collapse: Pre-COVID Baseline vs. COVID Shock Period', pad=15)
+ax.legend(loc='upper right')
+ax.set_facecolor(BG)
+ax.grid(axis='y', alpha=0.25, color=CHARCOAL)
+ax.spines[['top', 'right']].set_visible(False)
+ax.yaxis.set_major_formatter(mticker.FuncFormatter(lambda x, _: f'${x:,.0f}M'))
+fig.text(0.5, -0.02, 'Values in $millions (thousands of dollars). Legacy network carriers show deepest absolute collapse.',
+         ha='center', fontsize=9, color='gray', style='italic')
+plt.tight_layout()
+save_fig('03_covid_collapse_pre_vs_shock.png')
+
+# ── CHART 4: CARES Act Distortion — Net vs Operating Income ──────────────────
+fig, ax = plt.subplots(figsize=(12, 7))
+fig.patch.set_facecolor(BG)
+x = np.arange(len(q4))
+w = 0.38
+ax.bar(x - w/2, q4['Avg_Net_Income_K'] / 1000, width=w,
+       label='Avg Net Income (Post-Bailout)', color=TEAL, alpha=0.9)
+ax.bar(x + w/2, q4['Avg_Op_Income_K'] / 1000, width=w,
+       label='Avg Operating Income (True Operations)', color=CRIMSON, alpha=0.9)
+ax.axhline(0, color=CHARCOAL, linewidth=1.2, linestyle='--')
+ax.set_xticks(x)
+ax.set_xticklabels(q4['Airline_Name'], rotation=35, ha='right', fontsize=10)
+ax.set_ylabel('Quarterly Average Value ($M)', labelpad=10)
+ax.set_title('CARES Act Distortion Window: Net Income vs. Operating Income (2020-Q2 to 2021-Q2)', pad=15)
+ax.legend(loc='upper right')
+ax.set_facecolor(BG)
+ax.grid(axis='y', alpha=0.25, color=CHARCOAL)
+ax.spines[['top', 'right']].set_visible(False)
+ax.yaxis.set_major_formatter(mticker.FuncFormatter(lambda x, _: f'${x:,.0f}M'))
+fig.text(0.5, -0.02, 'Gap = federal PSP grant income. Positive gap = government support made losses look smaller than true operational reality.',
+         ha='center', fontsize=9, color='gray', style='italic')
+plt.tight_layout()
+save_fig('04_cares_distortion_gap.png')
+
+# ── CHART 5: Industry Recovery Timeline — Load Factor & Margin ───────────────
+timeline = merged[merged['Year_Quarter'] >= '2019-Q1'].groupby('Year_Quarter').agg(
+    Avg_Load_Factor_Pct  = ('load_factor_pct', 'mean'),
+    Avg_Op_Margin_Pct    = ('operating_margin_pct', 'mean'),
+).reset_index().sort_values('Year_Quarter')
+
+fig, ax1 = plt.subplots(figsize=(14, 7))
+fig.patch.set_facecolor(BG)
+ax2 = ax1.twinx()
+
+labels = timeline['Year_Quarter'].tolist()
+x = np.arange(len(labels))
+shock_start = labels.index('2020-Q1')
+shock_end   = labels.index('2021-Q2')
+
+ax1.fill_between(x, 0, 100,
+                  where=[(shock_start <= i <= shock_end) for i in range(len(x))],
+                  color=CRIMSON, alpha=0.08, label='COVID Shock & CARES Window')
+ax1.plot(x, timeline['Avg_Load_Factor_Pct'], color=NAVY, marker='s',
+         linewidth=2.5, markersize=7, label='Avg Load Factor (Left Axis, %)')
+ax2.plot(x, timeline['Avg_Op_Margin_Pct'], color=TEAL, marker='D',
+         linewidth=2.5, markersize=7, linestyle='--', label='Avg Op. Margin % (Right Axis)')
+ax2.axhline(0, color='gray', linewidth=1.0, linestyle='-.')
+
+ax1.set_xticks(x)
+ax1.set_xticklabels(labels, rotation=45, ha='right', fontsize=9)
+ax1.set_ylabel('Average Load Factor (%)', color=NAVY, labelpad=10)
+ax2.set_ylabel('Average Operating Profit Margin (%)', color=TEAL, labelpad=10)
+ax1.tick_params(axis='y', colors=NAVY)
+ax2.tick_params(axis='y', colors=TEAL)
+ax1.set_ylim(0, 105)
+ax1.yaxis.set_major_formatter(mticker.FormatStrFormatter('%.0f%%'))
+ax2.yaxis.set_major_formatter(mticker.FormatStrFormatter('%.0f%%'))
+ax1.set_facecolor(BG)
+ax1.grid(axis='y', alpha=0.2, color=CHARCOAL)
+ax1.spines[['top']].set_visible(False)
+ax2.spines[['top']].set_visible(False)
+
+lines1, lbls1 = ax1.get_legend_handles_labels()
+lines2, lbls2 = ax2.get_legend_handles_labels()
+ax1.legend(lines1 + lines2, lbls1 + lbls2, loc='lower left', fontsize=9)
+ax1.set_title('Industry Recovery Timeline: Load Factor vs. Operating Margin (2019-Q1 – 2022-Q4)', pad=15)
+fig.text(0.5, -0.03, 'Shaded zone = COVID Shock and CARES Act support window. Load factor is % of seats filled per quarter.',
+         ha='center', fontsize=9, color='gray', style='italic')
+plt.tight_layout()
+save_fig('05_recovery_timeline.png')
+
+# ── CHART 6: Airline-level Recovery Bars ─────────────────────────────────────
+q5_plot = q5[q5['Quarters_to_Recovery'].notna()].copy()
+q5_plot['Quarters_to_Recovery'] = q5_plot['Quarters_to_Recovery'].astype(int)
+q5_sorted = q5_plot.sort_values('Quarters_to_Recovery')
+
+fig, ax = plt.subplots(figsize=(10, 6))
+fig.patch.set_facecolor(BG)
+palette = [AIRLINE_COLORS.get(a, NAVY) for a in q5_sorted['Airline_Name']]
+bars = ax.barh(q5_sorted['Airline_Name'], q5_sorted['Quarters_to_Recovery'],
+               color=palette, edgecolor='white', height=0.6)
+for bar, qtr, fq in zip(bars, q5_sorted['Quarters_to_Recovery'], q5_sorted['First_Profit_Quarter']):
+    ax.text(bar.get_width() + 0.1, bar.get_y() + bar.get_height()/2,
+            f'{qtr}Q  ({fq})', va='center', fontsize=10, color=CHARCOAL)
+ax.set_xlabel('Quarters to First Positive Operating Income (from 2020-Q2)', labelpad=10)
+ax.set_title('COVID-19 Recovery Speed: Quarters to First Profitable Operating Quarter', pad=15)
+ax.set_facecolor(BG)
+ax.grid(axis='x', alpha=0.25, color=CHARCOAL)
+ax.spines[['top', 'right']].set_visible(False)
+ax.set_xlim(0, max(q5_sorted['Quarters_to_Recovery']) + 4)
+not_recovered = q5[q5['Quarters_to_Recovery'].isna()]['Airline_Name'].tolist()
+if not_recovered:
+    fig.text(0.5, -0.03, f'Not recovered by 2022-Q4: {", ".join(not_recovered)}',
+             ha='center', fontsize=9, color=CRIMSON, style='italic')
+plt.tight_layout()
+save_fig('06_recovery_speed.png')
+
+# ── CHART 7: Correlation Heatmap ─────────────────────────────────────────────
+fig, ax = plt.subplots(figsize=(9, 7))
+fig.patch.set_facecolor(BG)
+mask = np.triu(np.ones_like(corr_matrix, dtype=bool))
+sns.heatmap(corr_matrix, mask=mask, annot=True, fmt='.2f', cmap='RdYlBu_r',
+            center=0, vmin=-1, vmax=1, linewidths=0.5,
+            ax=ax, cbar_kws={'shrink': 0.8, 'label': 'Pearson r'})
+ax.set_title('Pearson Correlation Matrix: Financial & Macro-Shock Variables', pad=15)
+ax.set_facecolor(BG)
+plt.tight_layout()
+save_fig('07_correlation_heatmap.png')
+
+# ── CHART 8: Fuel Cost vs Operating Margin Scatter ───────────────────────────
+fig, ax = plt.subplots(figsize=(10, 7))
+fig.patch.set_facecolor(BG)
+for airline, grp in merged.groupby('Airline_Name'):
+    color = AIRLINE_COLORS.get(airline, NAVY)
+    fuel_pct = (grp['fuel_cost_k'] / grp['operating_revenue']) * 100
+    ax.scatter(fuel_pct, grp['operating_margin_pct'],
+               color=color, alpha=0.45, s=30, label=airline)
+ax.axhline(0, color=CHARCOAL, linewidth=1.0, linestyle='--', alpha=0.6)
+ax.set_xlabel('Fuel Cost as % of Operating Revenue', labelpad=10)
+ax.set_ylabel('Operating Profit Margin (%)', labelpad=10)
+ax.set_title('Fuel Cost Burden vs. Operating Profit Margin (All Airlines, 2009–2022)', pad=15)
+ax.legend(loc='upper right', fontsize=8, ncol=2)
+ax.set_facecolor(BG)
+ax.grid(alpha=0.2, color=CHARCOAL)
+ax.spines[['top', 'right']].set_visible(False)
+fig.text(0.5, -0.02, 'Each dot = one airline-quarter. Fuel cost ratio = quarterly fuel spend ÷ operating revenue.',
+         ha='center', fontsize=9, color='gray', style='italic')
+plt.tight_layout()
+save_fig('08_fuel_cost_vs_margin_scatter.png')
+
+# ── CHART 9: Revenue Trend — Stacked Area by Airline ────────────────────────
+yearly_rev = merged.groupby(['Year_Quarter', 'Airline_Name'])['operating_revenue'].sum().unstack(fill_value=0)
+yearly_rev = yearly_rev / 1000  # → $millions
+
+fig, ax = plt.subplots(figsize=(14, 7))
+fig.patch.set_facecolor(BG)
+airline_colors_list = [AIRLINE_COLORS.get(c, NAVY) for c in yearly_rev.columns]
+ax.stackplot(yearly_rev.index, yearly_rev.T, labels=yearly_rev.columns,
+             colors=airline_colors_list, alpha=0.82)
+ax.set_xlabel('Quarter', labelpad=10)
+ax.set_ylabel('Total Industry Revenue ($M)', labelpad=10)
+ax.set_title('US Passenger Aviation: Total Quarterly Revenue by Airline (2009-Q1 – 2022-Q4)', pad=15)
+tick_positions = [i for i, q in enumerate(yearly_rev.index) if q.endswith('Q1')]
+ax.set_xticks(tick_positions)
+ax.set_xticklabels([yearly_rev.index[i][:4] for i in tick_positions], fontsize=10)
+ax.yaxis.set_major_formatter(mticker.FuncFormatter(lambda x, _: f'${x:,.0f}M'))
+ax.legend(loc='upper left', fontsize=8, ncol=2)
+ax.set_facecolor(BG)
+ax.grid(axis='y', alpha=0.2, color=CHARCOAL)
+ax.spines[['top', 'right']].set_visible(False)
+plt.tight_layout()
+save_fig('09_stacked_revenue_by_airline.png')
+
+# ─────────────────────────────────────────────────────────────────────────────
+# 4. PRINT SUMMARY REPORT
+# ─────────────────────────────────────────────────────────────────────────────
+
+print("\n" + "=" * 60)
+print("  ANALYSIS RESULTS SUMMARY")
+print("=" * 60)
+
+print("\n-- Q1: 14-Year Weighted Operating Profit Margin Ranking --")
+print(q1.to_string(index=False))
+
+print("\n-- Industry Period Comparison --")
+print(period_summary.to_string(index=False))
+
+print("\n-- Q4: CARES Act Distortion (2020-Q2 to 2021-Q2) --")
+print(q4.to_string(index=False))
+
+print("\n-- Q5: Recovery Speed --")
+print(q5.to_string(index=False))
+
+print("\n-- Oil Shock: Loss Probability by WTI Bucket --")
+print(oil_analysis[['Oil_Bucket', 'Avg_Oil_Price', 'Loss_Probability', 'Avg_Op_Income_K', 'Quarter_Count']].to_string(index=False))
+
+print("\n-- Pearson Correlation (WTI Oil & COVID vs. Financials) --")
+print(corr_matrix[['WTI_Oil_Price', 'COVID_Cases_M']].to_string())
+
+print("\n" + "=" * 60)
+print("  ALL DONE — charts saved to python/plots/")
+print(f"  CSV tables saved to python/")
+print("=" * 60)

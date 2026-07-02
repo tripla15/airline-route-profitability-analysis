@@ -1,0 +1,11 @@
+Airline_Name,Avg_Load_Factor_Pct_Pre_COVID,Avg_Load_Factor_Pct_COVID_Shock,Avg_Load_Factor_Pct_Recovery,Avg_Op_Margin_Pct_Pre_COVID,Avg_Op_Margin_Pct_COVID_Shock,Avg_Op_Margin_Pct_Recovery,Avg_Op_Income_K_Pre_COVID,Avg_Op_Income_K_COVID_Shock,Avg_Op_Income_K_Recovery
+Alaska Airlines,84.34,53.94,82.83,14.67,-79.07,2.3,210369.0,-534848.0,71286.0
+Allegiant Airlines,87.68,58.86,82.37,16.52,-37.59,5.82,47448.0,-46562.0,32684.0
+American Airlines,84.56,66.53,85.2,4.9,-103.43,-1.16,495993.0,-3139067.0,74624.0
+Delta Airlines,85.84,52.89,85.29,10.13,-71.47,6.25,1063271.0,-1817046.0,837976.0
+Frontier Airlines,86.75,66.17,80.1,7.1,-48.35,-5.25,33258.0,-135925.0,-26576.0
+Hawaiian Airlines,86.34,47.66,81.31,10.89,-164.43,-9.54,64304.0,-170008.0,-48446.0
+JetBlue Airlines,83.87,57.36,81.45,10.72,-107.86,-3.77,162973.0,-468291.0,-59504.0
+Southwest Airlines,81.49,56.97,82.31,10.94,-80.3,2.89,536130.0,-1216895.0,197011.0
+Spirit Airlines,84.76,71.15,81.87,15.06,-68.81,-10.66,75565.0,-185948.0,-122138.0
+United Airlines,85.52,61.22,84.47,6.5,-92.53,0.89,606811.0,-2405268.0,306157.0

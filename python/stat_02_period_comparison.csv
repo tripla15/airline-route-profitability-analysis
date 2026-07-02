@@ -1,0 +1,4 @@
+Period_Group,Airline_Quarter_Obs,Avg_Load_Factor_Pct,Avg_Op_Margin_Pct,Avg_Op_Income_K,Avg_Revenue_K,Avg_WTI_Price,Loss_Rate_Pct
+Pre_COVID,440,85.11,10.74,329612.0,3471664.0,71.93,8.6
+COVID_Shock,60,59.27,-85.38,-1011986.0,1929106.0,46.67,96.7
+Recovery,60,82.72,-1.22,126307.0,4600275.0,85.97,46.7
