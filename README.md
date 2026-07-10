@@ -68,6 +68,7 @@ airline-route-profitability-analysis/
 │   ├── BTS_Fuel_Cost_ALL_Carriers.csv
 │   └── BTS_Operating_Income_ALL_Carriers.csv
 │
+│
 ├── Excel/                                 # Excel models and data processing sheets
 │   ├── BTS_Data.xlsx
 │   ├── Oil_Qtr.xlsx
@@ -75,6 +76,18 @@ airline-route-profitability-analysis/
 │       ├── BTS_data_processed.xlsx
 │       ├── Oil_Qtr.xlsx
 │       └── covid_19_clean_Final.xlsx
+│
+├── Power BI/                              # Power BI desktop model and reporting workspace
+│   ├── README.md
+│   └── skies-under-pressure-analysis.pbix
+│
+├── Python/                                # Programmatic analysis notebook
+│   ├── README.md
+│   └── Skies_Under_Pressure_Notebook.ipynb
+│
+├── Tableau/                               # Tableau desktop visualization workbook
+│   ├── README.md
+│   └── Skies-Under-Pressure.twb
 │
 └── Raw Data/                              # Unprocessed raw global variable data
     ├── covid_19_clean_complete.csv
@@ -105,6 +118,9 @@ airline-route-profitability-analysis/
 2. **Raw Collected Data**: Review [Collected BTS data before processing/](file:///F:/Engineering%202nd%20year/Extracurriculars/1.%20DEPI/Final%20Project/Collected%20BTS%20data%20before%20processing) to inspect raw aviation datasets.
 3. **Processed Data**: Review [Excel/Processed Data/](file:///F:/Engineering%202nd%20year/Extracurriculars/1.%20DEPI/Final%20Project/Excel/Processed%20Data) to see cleaned and aligned quarterly datasets.
 4. **Excel Workbooks**: Open [Excel/](file:///F:/Engineering%202nd%20year/Extracurriculars/1.%20DEPI/Final%20Project/Excel) to explore the Power Pivot data models and dashboard sheets.
+5. **Python Pipeline**: Open [Python/](file:///F:/Engineering%202nd%20year/Extracurriculars/1.%20DEPI/Final%20Project/Python) to view the unified preprocessing and analysis notebook.
+6. **Power BI Dashboard**: Open [Power BI/](file:///F:/Engineering%202nd%20year/Extracurriculars/1.%20DEPI/Final%20Project/Power%20BI) to inspect the Power BI model.
+7. **Tableau Workbook**: Open [Tableau/](file:///F:/Engineering%202nd%20year/Extracurriculars/1.%20DEPI/Final%20Project/Tableau) to inspect the Tableau sheet visualizations.
 
 ---
 
