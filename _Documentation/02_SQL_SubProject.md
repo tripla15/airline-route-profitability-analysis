@@ -6,136 +6,150 @@ This document details the database schema design, DDL scripts, data ingestion st
 
 ## 1. Relational Database Design (Star Schema)
 
-To model the dataset relationally, we designed a Star Schema matching the Power Pivot architecture. The time dimension table (`Dim_Time`) is the conformed parent table, and the other tables are joined to it via foreign keys.
+To model the dataset relationally, we designed a Star Schema matching the Power Pivot architecture. The conformed time dimension table (`dim_date`) is the conformed parent table, and the other tables are joined to it via foreign keys.
 
 ```sql
 -- DDL Schema for Skies Under Pressure Database
--- Designed as a Star Schema matching the Power Pivot model configuration
+-- Designed as a Star Schema matching the Power Pivot model configuration in MySQL
 
--- 1. Create Dim_Time (Time Dimension)
-CREATE TABLE Dim_Time (
-    Date_Key INT PRIMARY KEY,
-    Year_Quarter VARCHAR(7) UNIQUE NOT NULL,
-    Year INT
+-- 1. Create dim_date (Conformed Calendar Dimension)
+CREATE TABLE dim_date (
+    Date_Key INT AUTO_INCREMENT PRIMARY KEY,
+    Year_Qtr VARCHAR(7) NOT NULL,
+    Year INT NOT NULL
 );
 
--- 2. Create Oil_Price_Qtr_Avg (Oil Price Data Table)
-CREATE TABLE Oil_Price_Qtr_Avg (
-    Date_Key INT NOT NULL,
-    Oil_Price_Qtr_Avg DECIMAL(10, 4) NOT NULL,
-    Oil_Bucket VARCHAR(20) NOT NULL,
-    FOREIGN KEY (Date_Key) REFERENCES Dim_Time(Date_Key)
+-- 2. Create fact_bts (Financial Fact Table)
+CREATE TABLE fact_bts (
+    Date_Key INT,
+    Airline_name VARCHAR(50) NOT NULL,
+    Fuel_cost BIGINT,
+    Operating_revenue BIGINT,
+    Operating_income INT,
+    Load_factor DECIMAL(6,2),
+    Net_income INT,
+    Cares_flag VARCHAR(20) NOT NULL,
+    FOREIGN KEY (Date_Key) REFERENCES dim_date(Date_Key)
 );
 
--- 3. Create covid_19_clean_complete (Covid Tracker Data Table)
-CREATE TABLE covid_19_clean_complete (
-    Date_Key INT NOT NULL,
-    Covid_US_Cases_Quarterly INT NOT NULL,
-    FOREIGN KEY (Date_Key) REFERENCES Dim_Time(Date_Key)
+-- 3. Create fact_covid (COVID-19 Tracker Fact Table)
+CREATE TABLE fact_covid (
+    Date_Key INT,
+    Confirmed INT NOT NULL,
+    FOREIGN KEY (Date_Key) REFERENCES dim_date(Date_Key)
 );
 
--- 4. Create Fact_Financials_Master (Financial Facts Master Table)
-CREATE TABLE Fact_Financials_Master (
-    Date_Key INT NOT NULL,
-    Airline_Name VARCHAR(50) NOT NULL,
-    net_income BIGINT NOT NULL,
-    load_factor DECIMAL(5, 4) NOT NULL,
-    operating_revenue BIGINT NOT NULL,
-    operating_income DECIMAL(15, 2) NOT NULL,
-    fuel_cost BIGINT NOT NULL,
-    CARES_FLAG1 VARCHAR(20) NOT NULL,
-    CARES_Flag VARCHAR(20) NOT NULL,
-    PRIMARY KEY (Date_Key, Airline_Name),
-    FOREIGN KEY (Date_Key) REFERENCES Dim_Time(Date_Key)
+-- 4. Create fact_oil_price (Oil Price Fact Table)
+CREATE TABLE fact_oil_price (
+    Date_Key INT,
+    Price DECIMAL(15,2),
+    FOREIGN KEY (Date_Key) REFERENCES dim_date(Date_Key)
 );
 ```
 
 ---
 
-## 2. Ingestion & Insertion Strategy
+## 2. Ingestion & Preprocessing Strategy
 
-Manually loading Excel data into a relational database can introduce errors and mismatches. To automate this process:
-1. We developed a Python ingestion script (`generate_sql_data.py`).
-2. The script extracts the cleaned datasets from the active sheets of `Master_Tables_file.xlsx`.
-3. It maps fields to the SQL schema, adds missing fields (such as calendar `Year` in the time dimension), and generates a SQL insertion file ([02_insert_data.sql](file:///F:/Engineering%202nd%20year/Extracurriculars/1.%20DEPI/Final%20Project/sql/02_insert_data.sql)) containing 560 ANSI-compliant `INSERT` statements.
-4. It compiles and populates a local SQLite database (`skies_under_pressure.db`), enabling immediate testing.
+The data loading pipeline is handled programmatically in SQL to prepare raw data for queries:
+1.  **Date Formatting:** Dates in the raw CSV files are converted from string formats using `STR_TO_DATE(..., '%m/%d/%Y')`.
+2.  **Date Dimension Generation:** The `dim_date` table is populated dynamically by cross-joining Year and Quarter tables from 2009 to 2022.
+3.  **Aggregation Grain:** Daily COVID-19 confirmed cases are filtered for the US and aggregated to quarterly maximums using window functions (`ROW_NUMBER() OVER (PARTITION BY Year_Qtr ORDER BY Confirmed DESC)`). Monthly WTI crude oil prices are aggregated to quarterly averages using `AVG(Price)`.
+4.  **Relationship Mapping:** All tables are joined on `Year_Qtr` to fill the conformed `Date_Key`, then the text quarter columns are dropped, and foreign key constraints are established.
 
 ---
 
 ## 3. Query Library & Results
 
-We developed an analytical query library using advanced SQL constructs (Common Table Expressions, window functions, and conditional aggregations) to answer the business questions.
+We developed an analytical query library containing 8 business queries using SQL window functions, CTEs, and conditional aggregations to validate our project metrics.
 
-### Query 1: Airline Profit Margin Ranking
-Ranks the 10 airlines by Weighted Operating Profit Margin (`SUM(operating_income) / SUM(operating_revenue)`):
+### Query 1: Average Quarterly Operating Income (CARES vs Normal)
+Compares average quarterly operating incomes across CARES bailout and normal periods:
 ```sql
-SELECT 
-    Airline_Name,
-    SUM(operating_income) AS Total_Operating_Income,
-    SUM(operating_revenue) AS Total_Operating_Revenue,
-    (SUM(operating_income) * 1.0 / SUM(operating_revenue)) AS Weighted_Operating_Margin,
-    AVG(operating_income * 1.0 / operating_revenue) AS Avg_Quarterly_Operating_Margin,
-    RANK() OVER (ORDER BY (SUM(operating_income) * 1.0 / SUM(operating_revenue)) DESC) AS Margin_Rank
-FROM Fact_Financials_Master
-GROUP BY Airline_Name
-ORDER BY Margin_Rank;
+SELECT Cares_flag , ROUND(AVG(Operating_income),2) AS Avg_Operating_Income
+FROM fact_bts
+GROUP BY Cares_flag;
 ```
 
-### Query 2: COVID-19 Operating Income Collapse
-Calculates the average quarterly operating income collapse between the pre-COVID baseline and the COVID shock period (`2020-Q1` to `2021-Q2`):
+### Query 2: Recovery Profile: Annual Income vs Revenue (2018-2022)
+Tracks annual totals to evaluate the pandemic shock and subsequent recovery window:
 ```sql
-WITH Period_Averages AS (
-    SELECT 
-        f.Airline_Name,
-        AVG(CASE WHEN t.Year_Quarter < '2020-Q1' THEN f.operating_income END) AS Pre_COVID_Avg,
-        AVG(CASE WHEN t.Year_Quarter BETWEEN '2020-Q1' AND '2021-Q2' THEN f.operating_income END) AS COVID_Shock_Avg
-    FROM Fact_Financials_Master f
-    JOIN Dim_Time t ON f.Date_Key = t.Date_Key
-    GROUP BY f.Airline_Name
-)
-SELECT 
-    Airline_Name,
-    Pre_COVID_Avg,
-    COVID_Shock_Avg,
-    (COVID_Shock_Avg - Pre_COVID_Avg) AS COVID_Collapse_Value
-FROM Period_Averages
-ORDER BY COVID_Collapse_Value ASC;
+SELECT
+    d.Year,
+    SUM(b.Operating_income) AS Total_Operating_Income,
+    SUM(b.Operating_revenue) AS Total_Operating_Revenue
+FROM fact_bts b
+JOIN dim_date d ON b.Date_key = d.Date_key
+WHERE d.Year BETWEEN '2018' AND '2022'
+GROUP BY d.Year
+ORDER BY d.Year;
 ```
 
-### Query 3: CARES Act Payroll Support distortion gap
-Exposes the bailout distortion gap by comparing Average Net Income vs. Average Operating Income during the CARES period:
+### Query 3: Operating Revenue for Airlines
+Ranks the 10 airlines based on total operating revenues descending:
 ```sql
-SELECT 
-    Airline_Name,
-    AVG(net_income) AS Avg_Net_Income,
-    AVG(operating_income) AS Avg_Operating_Income,
-    AVG(net_income - operating_income) AS Bailout_Distortion_Gap,
-    RANK() OVER (ORDER BY AVG(net_income - operating_income) DESC) AS Distortion_Rank
-FROM Fact_Financials_Master
-WHERE CARES_Flag = 'CARES_Period'
-GROUP BY Airline_Name
-ORDER BY Distortion_Rank;
+SELECT
+    Airline_name,
+    SUM(Operating_revenue) AS Total_Operating_Revenue
+FROM fact_bts
+GROUP BY Airline_name
+ORDER BY Total_Operating_Revenue DESC;
 ```
 
-### Query 4: Oil Price Loss Thresholds
-Calculates the frequency of loss quarters (operating income < 0) across WTI crude oil price buckets:
+### Query 4: Average Load Factor by Airline
+Ranks airlines based on passenger capacity utilization:
 ```sql
-SELECT 
-    o.Oil_Bucket,
-    COUNT(CASE WHEN f.operating_income < 0 THEN 1 END) AS Loss_Quarters,
-    COUNT(*) AS Total_Quarters,
-    (COUNT(CASE WHEN f.operating_income < 0 THEN 1 END) * 1.0 / COUNT(*)) AS Loss_Probability,
-    AVG(f.operating_income) AS Avg_Operating_Income
-FROM Fact_Financials_Master f
-JOIN Oil_Price_Qtr_Avg o ON f.Date_Key = o.Date_Key
-GROUP BY o.Oil_Bucket
-ORDER BY 
-    CASE o.Oil_Bucket
-        WHEN 'Below_50' THEN 1
-        WHEN '50_to_80' THEN 2
-        WHEN '80_to_100' THEN 3
-        WHEN '100_Plus' THEN 4
-    END;
+SELECT
+    Airline_name,
+    ROUND(AVG(Load_factor),2) AS Avg_Load_Factor
+FROM fact_bts
+GROUP BY Airline_name
+ORDER BY Avg_Load_Factor DESC;
 ```
 
-*Results Summary*: Run against the database, Query 1 ranks Allegiant first (11.73% margin) and American last (0.77%). Query 4 demonstrates that the highest probability of loss (33.08%) occurs when WTI prices drop below $50/bbl, correlating with global economic recessions.
+### Query 5: Average Fuel Cost by Year
+Extracts the historical annual fuel expense averages:
+```sql
+SELECT
+    d.Year,
+    ROUND(AVG(b.Fuel_cost),2) AS Avg_Fuel_Cost
+FROM fact_bts b
+JOIN dim_date d ON b.Date_key = d.Date_key
+GROUP BY d.Year
+ORDER BY d.Year;
+```
+
+### Query 6: Total Confirmed COVID Cases
+Tracks annual US cumulative COVID case counts:
+```sql
+SELECT
+    d.Year,
+    SUM(c.Confirmed) AS Total_Confirmed_Cases
+FROM fact_covid c
+JOIN dim_date d ON c.Date_key = d.Date_key
+GROUP BY d.Year
+ORDER BY d.Year;
+```
+
+### Query 7: Top Airline by Net Income
+Ranks airlines by their total cumulative net income:
+```sql
+SELECT
+    Airline_name,
+    SUM(Net_income) AS Total_Net_Income
+FROM fact_bts
+GROUP BY Airline_name
+ORDER BY Total_Net_Income DESC;
+```
+
+### Query 8: Top Year_Qtr by Total Revenue
+Finds the highest-performing quarters in history based on total revenue:
+```sql
+SELECT
+    d.Year_Qtr,
+    SUM(b.Operating_revenue) AS Total_Revenue
+FROM fact_bts b
+JOIN dim_date d ON b.Date_key = d.Date_key
+GROUP BY d.Year_Qtr
+ORDER BY Total_Revenue DESC;
+```

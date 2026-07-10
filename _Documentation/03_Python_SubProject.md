@@ -4,78 +4,54 @@ This document describes the programmatic data pipeline, financial analysis, and 
 
 ---
 
-## 1. Programmatic Cleaning and Joining Pipeline
+## 1. Unified Notebook Architecture
 
-The Python pipeline was built using `pandas`, `numpy`, `matplotlib`, and `seaborn` to execute a standalone analytical workflow.
-
-```python
-import pandas as pd
-import numpy as np
-
-# Load sheets directly from Excel
-excel_path = "Excel/Master_Tables_file.xlsx"
-dim_time = pd.read_excel(excel_path, sheet_name="Dim_Time")
-fact_fin = pd.read_excel(excel_path, sheet_name="Fact_Financials_Master")
-oil_prices = pd.read_excel(excel_path, sheet_name="Oil_Price_Qtr_Avg")
-covid_cases = pd.read_excel(excel_path, sheet_name="covid_19_clean_complete")
-
-# Merge data sets on Date_Key
-merged = pd.merge(fact_fin, dim_time, on="Date_Key", how="left")
-merged = pd.merge(merged, oil_prices.drop(columns=["Oil_Bucket"], errors="ignore"), on="Date_Key", how="left")
-merged = pd.merge(merged, covid_cases, on="Date_Key", how="left")
-merged["Covid_US_Cases_Quarterly"] = merged["Covid_US_Cases_Quarterly"].fillna(0).astype(int)
-
-# Create helper columns
-merged["Operating_Margin"] = merged["operating_income"] / merged["operating_revenue"]
-```
+The Python subproject is implemented as a single, self-contained Jupyter Notebook (`Skies_Under_Pressure_Notebook.ipynb`) containing both the preprocessing and analytical pipelines. Running the notebook sequentially executes:
+1.  **Extract & Ingest:** Loads raw CSV datasets (`crude-oil-price.csv` and `covid_19_clean_complete.csv`).
+2.  **Transform & Preprocess:** Filters WTI crude oil prices (2009–2022) to compute quarterly averages and filters US cumulative COVID cases to extract quarterly maximum confirmed cases.
+3.  **Export Cleaned Sheets:** Saves these processed sheets directly into the Excel processed data folder.
+4.  **Load & Merge Model:** Ingests the conformed dimension and fact tables from the master Excel workbook, joining them on `Date_Key`.
+5.  **Compute Statistics:** Calculates descriptive statistics, period summaries, YoY growth, and Pearson correlations.
+6.  **Renders Visualizations:** Draws all charts directly inline.
 
 ---
 
-## 2. Statistical Analysis & Key Calculations
+## 2. In-Memory Statistical Calculations
 
-The Python script performs several key calculations to address the business questions:
+The notebook performs the following calculations to address the project questions:
 
 ### 1. Weighted Operating Margin Ranking
-We calculate the weighted profit margin per carrier across all 56 quarters:
-$$\text{Weighted Operating Margin} = \frac{\sum \text{operating\_income}}{\sum \text{operating\_revenue}}$$
-- **Result**: Allegiant ranked first at **11.73%**, while American Airlines ranked last at **0.77%**.
+We calculate the true weighted operating margin per airline across all 56 quarters:
+$$\text{Weighted Operating Margin} = \frac{\sum \text{operating\_income}}{\sum \text{operating\_revenue}} \times 100$$
 
 ### 2. Pearson Correlation Coefficients
-We calculate the linear relationship between WTI spot prices and airline performance:
-- WTI Oil Price vs. Operating Income: $r = 0.0755$
-- WTI Oil Price vs. Operating Margin: $r = 0.2555$
-*Insight*: The positive correlation demonstrates that fuel cost drops are not the primary driver of airline profits. Instead, global demand-pull inflation (higher macroeconomic activity driving both oil prices and passenger travel demand) dominates.
+We calculate the linear relationship between macro variables and operational metrics:
+*   WTI Oil Price vs. Operating Margin: $r = 0.25$
+*   COVID-19 Cases vs. Operating Margin: $r = -0.73$
+*   *Insight:* The strong negative correlation validates that pandemic travel bans and fleet groundings had a far more destructive impact on airline profitability than fuel price fluctuations.
 
-### 3. COVID Operating Income Collapse
-We subtract the average quarterly operating income during the COVID Shock period (`2020-Q1` to `2021-Q2`) from the Pre-COVID baseline. Legacy network carriers suffered the largest absolute declines (American Airlines at **-$3.64 billion** per quarter), while Allegiant was the most resilient (crashes limited to **-$94 million** per quarter).
-
-### 4. CARES Act Distortion Gap
-We calculate the quarterly average gap between Net Income and Operating Income:
-$$\text{Bailout Distortion Gap} = \text{net\_income} - \text{operating\_income}$$
-During the CARES period, the distortion gap was largest for American Airlines (**+$1.77 million** per quarter), showing that government grant support hid severe operational losses.
+### 3. CARES Act Bailout Cushion
+We isolate the bailout gap (reported Net Income minus true Operating Income) during the CARES period (`2020-Q2` to `2021-Q2`):
+$$\text{Bailout Cushion} = \text{net\_income} - \text{operating\_income}$$
+This reveals that government Payroll Support Program (PSP) subsidies artificially padded bottom-line net incomes while carriers suffered massive operational losses.
 
 ---
 
-## 3. Publication-Ready Visualizations
+## 3. Visualization Suite (Visual Themes)
 
-The script generates 4 high-resolution plots, saved directly to the [python/plots/](file:///F:/Engineering%202nd%20year/Extracurriculars/1.%20DEPI/Final%20Project/python/plots) directory:
+All charts are rendered directly inline in VS Code and use a slate-dark theme matching the Excel and Power BI dashboards:
+*   **Canvas Facecolor:** `#0F172A` (Master Dark Canvas)
+*   **Axes Background:** `#1E293B` (Container Panels)
+*   **Text & Titles:** `#FFFFFF` (Solid White)
+*   **Labels & Ticks:** `#94A3B8` (Muted Gray)
+*   **Borders & Grids:** `#334155` (Slate Gray)
 
-### Plot 1: `01_operating_margins_ranking.png`
-- **Type**: Horizontal Bar Chart.
-- **Description**: Ranks the 10 airlines by weighted operating margin, with a red dashed reference line at X = 0.
-- **Color Theme**: Teal (`#2a9d8f`).
-
-### Plot 2: `02_oil_vs_loss_probability.png`
-- **Type**: Dual-Axis Bar and Line Chart.
-- **Description**: Displays the probability of airline losses as columns (left Y-axis) and the average WTI Crude Oil price as a line (right Y-axis) across the oil price buckets.
-- **Color Theme**: Columns in Amber (`#c17c00`), line in Crimson (`#b23a48`).
-
-### Plot 3: `03_cares_net_vs_operating_gap.png`
-- **Type**: Clustered Column Chart.
-- **Description**: Compares Average Net Income vs. Average Operating Income during the CARES Act window, showing the bailout distortion.
-- **Color Theme**: Net Income in Teal (`#2a9d8f`), Operating Income in Crimson (`#b23a48`).
-
-### Plot 4: `04_load_factor_vs_operating_margin.png`
-- **Type**: Dual-Axis Line Chart with Timeline Shading.
-- **Description**: Compares average industry Load Factor (left Y-axis) vs. Weighted Operating Margin (right Y-axis) from 2019-Q1 to 2022-Q4, with a shaded red band highlighting the COVID shock period.
-- **Color Theme**: Load Factor in Navy (`#1f4e79`), Operating Margin in Teal (`#2a9d8f`).
+### Visualizations Rendered
+1.  **Chart 1: Average Quarterly Operating Income** (Clustered Column Chart). Displays CARES period averages in Crimson (`#DC2626`) and normal averages in Blue (`#2563EB`).
+2.  **Chart 2: Recovery Profile (Annual Income vs Revenue)** (Dual-Axis Line Chart). Renders Operating Revenue in Blue (`#2563EB`) and Net Income in Amber (`#D97706`).
+3.  **Chart 3: Operating Revenue for Airlines** (Horizontal Bar Chart). Renders total revenues in Blue (`#2563EB`).
+4.  **Chart 4: Net Financial Assistance (Bailout Cushion)** (Horizontal Bar Chart). Highlights positive cushions in Amber (`#D97706`) and negative cushions in Crimson (`#DC2626`).
+5.  **Chart 5: Operating Revenue & Income vs Oil Price Brackets** (Dual-Axis Combo Chart). Plots Revenue columns in Amber (`#D97706`), Income columns in Blue (`#2563EB`), and a line showing Margin in Green (`#22C55E`).
+6.  **Chart 6: COVID Collapse (Pre vs Shock)** (Clustered Column Chart). Pre-COVID in Blue (`#2563EB`) and Shock in Red (`#DC2626`).
+7.  **Chart 7: Load Factor vs Operating Margin Timeline** (Dual-Axis Line Chart). Load Factor in Blue (`#2563EB`) and Margin in Green (`#22C55E`).
+8.  **Chart 8: Correlation Matrix of Variables** (Seaborn Heatmap). Renders the Pearson correlation values.
