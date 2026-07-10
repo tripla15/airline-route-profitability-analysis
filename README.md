@@ -81,6 +81,11 @@ airline-route-profitability-analysis/
 │   ├── README.md
 │   └── skies-under-pressure-analysis.pbix
 │
+├── SQL/                                  # MySQL database schemas and analytical queries
+│   ├── README.md
+│   ├── skies-under-pressure-model.mwb    # MySQL Workbench visual EER model
+│   └── skies-under-pressure-queries.sql  # SQL queries (preprocessing & analysis)
+│
 ├── Python/                                # Programmatic analysis notebook
 │   ├── README.md
 │   └── Skies_Under_Pressure_Notebook.ipynb
